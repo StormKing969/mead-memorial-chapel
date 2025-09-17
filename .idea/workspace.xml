@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/components/PreviewBlogComponent.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sections/Footer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sections/home/AboutPreview.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sections/home/HeroSection.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sections/home/LatestBlogPosts.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sections/home/TimelinePreview.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/home/chapel-aboutPreview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/home/chapel-hero.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/root.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/welcome/logo-dark.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/welcome/logo-light.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/welcome/welcome.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="32nO7dBiFRLYTZdzyGyoNTROek5" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
+    <option name="sortKey" value="BY_TYPE" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "git-widget-placeholder": "master",
+    "junie.onboarding.icon.badge.shown": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.dev.executor": "Run",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Work\\Web Development\\mead-memorial-chapel\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "advanced.settings",
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "C:\\Work\\Web Development\\mead-memorial-chapel\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Work\Web Development\mead-memorial-chapel\public" />
+      <recent name="C:\Work\Web Development\mead-memorial-chapel\public\home" />
+      <recent name="C:\Work\Web Development\mead-memorial-chapel\app\sections\home" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-b598e85cdad2-JavaScript-WS-252.25557.126" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="" />
+      <created>1758052707779</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1758052707779</updated>
+      <workItem from="1758052709309" duration="12097000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
