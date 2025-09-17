@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="">
+    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="Adding Configs for Netlify I">
+      <change afterPath="$PROJECT_DIR$/constants/timeline/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/PreviewBlogComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/PreviewBlogComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sections/home/AboutPreview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/home/AboutPreview.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sections/home/HeroSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/home/HeroSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sections/home/LatestBlogPosts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/home/LatestBlogPosts.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sections/home/TimelinePreview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/home/TimelinePreview.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,11 +102,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1758052707779</updated>
-      <workItem from="1758052709309" duration="12785000" />
+      <workItem from="1758052709309" duration="14583000" />
     </task>
+    <task id="LOCAL-00001" summary="Adding Configs for Netlify I">
+      <option name="closed" value="true" />
+      <created>1758087776112</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1758087776112</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adding Configs for Netlify I" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding Configs for Netlify I" />
   </component>
 </project>
