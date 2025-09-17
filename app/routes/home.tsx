@@ -6,8 +6,8 @@ import TimelinePreview from "~/sections/home/TimelinePreview";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "Mead Memorial Chapel" },
+    { name: "description", content: "Mead Memorial Chapel located in Vermont" },
   ];
 }
 
@@ -16,8 +16,8 @@ export default function Home() {
     <main >
         <HeroSection />
         <AboutPreview />
-        <LatestBlogPosts />
         <TimelinePreview />
+        <LatestBlogPosts />
     </main>
   );
 }

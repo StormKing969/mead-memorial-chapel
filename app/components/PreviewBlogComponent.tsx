@@ -3,7 +3,7 @@ import { Link } from "react-router";
 
 const PreviewBlogComponent = ({ post }: { post: number }) => {
   return (
-    <div key={post} className={"bg-white rounded-lg shadow-md overflow-hidden"}>
+    <div key={post} className={"bg-gray-50 rounded-lg shadow-md overflow-hidden"}>
       <img
         src={`/blog-${post}.jpg`}
         alt={"Blog thumbnail"}

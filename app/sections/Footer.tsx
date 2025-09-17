@@ -53,7 +53,7 @@ const Footer = () => {
           <div>
             <h3 className={"font-bold text-xl mb-4"}>Contact Info</h3>
             <ul>
-              <li><p className={"font-semibold"}>Address: <span className={"font-normal"}>Middlebury, VT 05753</span></p></li>
+              <li><p className={"font-semibold"}>Address: <span className={"font-normal"}>75 Hepburn Road, Middlebury, VT 05753</span></p></li>
                 <li><p className={"font-semibold"}>Email: <span className={"font-normal"}>xxx@gmail.com</span></p></li>
             </ul>
           </div>
