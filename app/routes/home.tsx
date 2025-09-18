@@ -7,7 +7,7 @@ import TimelinePreview from "~/sections/home/TimelinePreview";
 export function meta({}: Route.MetaArgs) {
   return [
     { title: "Mead Memorial Chapel" },
-    { name: "description", content: "Mead Memorial Chapel located in Vermont" },
+    { name: "description", content: "Mead Memorial Chapel Homepage" },
   ];
 }
 

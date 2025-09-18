@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router";
 
-const PreviewBlogComponent = ({ post }: { post: number }) => {
+const PreviewPost = ({ post }: { post: number }) => {
   return (
     <div key={post} className={"bg-gray-50 rounded-lg shadow-md overflow-hidden"}>
-      <img
-        src={`/blog-${post}.jpg`}
-        alt={"Blog thumbnail"}
-        className={"h-48 w-full object-cover"}
-      />
+      {/*<img*/}
+      {/*  src={`/blog-${post}.jpg`}*/}
+      {/*  alt={"Blog thumbnail"}*/}
+      {/*  className={"h-48 w-full object-cover"}*/}
+      {/*/>*/}
 
       <div className={"p-6"}>
         <h3 className={"text-xl font-semibold mb-2"}>Blog Post Title {post}</h3>
@@ -25,4 +25,4 @@ const PreviewBlogComponent = ({ post }: { post: number }) => {
   );
 };
 
-export default PreviewBlogComponent;
+export default PreviewPost;

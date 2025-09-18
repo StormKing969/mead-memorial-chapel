@@ -1,18 +1,18 @@
 import React from 'react'
 import type {Route} from "../../.react-router/types/app/routes/+types/home";
-import BlogList from "~/sections/blog/BlogList";
+import BlogPage from "~/sections/blog/BlogPage";
 
 export function meta({}: Route.MetaArgs) {
     return [
-        { title: "Mead Memorial Chapel Blog" },
-        { name: "description", content: "Mead Memorial Chapel Blog" },
+        { title: "Mead Memorial Chapel - Blog" },
+        { name: "description", content: "Mead Memorial Chapel - Blog" },
     ];
 }
 
 const Blog = () => {
     return (
         <main>
-            <BlogList />
+            <BlogPage />
         </main>
     )
 }

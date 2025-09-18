@@ -1,17 +1,17 @@
 import React from "react";
-import PreviewBlogComponent from "~/components/PreviewBlogComponent";
+import PreviewPost from "~/components/PreviewPost";
 import { Link } from "react-router";
 
 const LatestBlogPosts = () => {
   return (
-    <section className={"py-16 px-6 md:px-25"}>
+    <section className={"py-16 px-6 md:px-25 bg-white"}>
       <h2 className={"text-3xl font-bold mb-8 text-center"}>
         Latest Blog Posts
       </h2>
 
       <div className={"grid md:grid-cols-3 gap-8"}>
-        {[1, 2, 3].map((post) => (
-          <PreviewBlogComponent post={post} />
+        {[1, 2, 3].map((post, index) => (
+          <PreviewPost key={index} post={post} />
         ))}
       </div>
 

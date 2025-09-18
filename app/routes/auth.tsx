@@ -1,0 +1,20 @@
+import React from "react";
+import type { Route } from "../../.react-router/types/app/routes/+types/home";
+import Authentication from "~/sections/authentication/Authentication";
+
+export function meta({}: Route.MetaArgs) {
+  return [
+    { title: "Mead Memorial Chapel - Authentication" },
+    { name: "description", content: "Mead Memorial Chapel - Authentication" },
+  ];
+}
+
+const Auth = () => {
+  return (
+    <main>
+      <Authentication />
+    </main>
+  );
+};
+
+export default Auth;

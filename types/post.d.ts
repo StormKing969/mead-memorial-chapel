@@ -4,7 +4,15 @@ export interface Post {
     content: string;
     authorName: string;
     authorID: string;
-    createdAt?: Date;
+    createdAt?: string;
     imageUrl: string;
-    links?: string[];
+    category: CategoryOptions;
 }
+
+export type CategoryOptions =
+    | "Personal Thought"
+    | "Lawsuit"
+    | "General"
+    | "Events"
+    | "Announcements"
+    | "Community"

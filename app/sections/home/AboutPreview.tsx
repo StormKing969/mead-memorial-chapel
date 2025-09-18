@@ -4,7 +4,7 @@ import { Link } from "react-router";
 const AboutPreview = () => {
   return (
     <section
-      className={"py-16 px-6 md:px-25 grid md:grid-cols-2 gap-10 items-center"}
+      className={"py-16 px-6 md:px-25 grid md:grid-cols-2 gap-10 items-center bg-white"}
     >
       <img
         src={"/home/chapel-aboutPreview.jpg"}

@@ -4,22 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="Minor Changes to existing HomePage Code">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/lib/firebase.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/routes/blog.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/sections/auth/Auth.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/sections/blog/BlogList.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/sections/blog/CreateBlog.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/types/post.d.ts" afterDir="false" />
+    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="BLog Post Display Update I">
+      <change afterPath="$PROJECT_DIR$/app/components/CreateBlogLinkCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/DetailedPostPreview.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/routes/auth.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/routes/create-blog-post.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sections/blog/BlogPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/blog/plus-icon.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/PreviewBlogComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/PreviewBlogComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/PreviewBlogComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/PreviewPost.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lib/firebase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/lib/firebase.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/root.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/blog.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/blog.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/routes/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/home.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/sections/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sections/auth/Auth.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/authentication/Authentication.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sections/blog/BlogList.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sections/blog/CreateBlog.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/blog/CreateBlog.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sections/home/AboutPreview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/home/AboutPreview.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/sections/home/LatestBlogPosts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/home/LatestBlogPosts.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/types/post.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/post.d.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,22 +35,25 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "StormKing969"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;StormKing969&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/StormKing969/mead-memorial-chapel.git",
-    "accountId": "357e3ca3-1ddc-4479-b425-ee54c9f2715b"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/StormKing969/mead-memorial-chapel.git&quot;,
+    &quot;accountId&quot;: &quot;357e3ca3-1ddc-4479-b425-ee54c9f2715b&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 0
-}]]></component>
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="32nO7dBiFRLYTZdzyGyoNTROek5" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -57,6 +66,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "junie.onboarding.icon.badge.shown": "true",
     "node.js.detected.package.eslint": "true",
@@ -74,6 +84,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Work\Web Development\mead-memorial-chapel\public\blog" />
       <recent name="C:\Work\Web Development\mead-memorial-chapel\public" />
       <recent name="C:\Work\Web Development\mead-memorial-chapel\public\home" />
       <recent name="C:\Work\Web Development\mead-memorial-chapel\app\sections\home" />
@@ -99,7 +110,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-b598e85cdad2-JavaScript-WS-252.25557.126" />
+        <option value="bundled-js-predefined-d6986cc7102b-9c94529fcfe0-JavaScript-WS-252.26199.162" />
       </set>
     </attachedChunks>
   </component>
@@ -110,7 +121,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1758052707779</updated>
-      <workItem from="1758052709309" duration="23579000" />
+      <workItem from="1758052709309" duration="41549000" />
+      <workItem from="1758231600225" duration="528000" />
     </task>
     <task id="LOCAL-00001" summary="Adding Configs for Netlify I">
       <option name="closed" value="true" />
@@ -128,7 +140,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758091036128</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="BLog Post Display Update I">
+      <option name="closed" value="true" />
+      <created>1758146449881</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1758146449881</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +157,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding Configs for Netlify I" />
     <MESSAGE value="Minor Changes to existing HomePage Code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor Changes to existing HomePage Code" />
+    <MESSAGE value="BLog Post Display Update I" />
+    <option name="LAST_COMMIT_MESSAGE" value="BLog Post Display Update I" />
   </component>
 </project>

@@ -81,11 +81,11 @@ const Footer = () => {
           </div>
         </div>
 
-        <p className="text-sm text-gray-400">
+        <p className={"text-sm text-gray-400"}>
           © 2025 Mead Memorial Chapel | Designed & Built by {" "}
           <a
-            href="https://sajana-wijesinghe-portfolio-v4.netlify.app/"
-            className="underline text-blue-600 hover:text-blue-800"
+            href={"https://sajana-wijesinghe-portfolio-v4.netlify.app/"}
+            className={"underline text-blue-600 hover:text-blue-800"}
           >
             Sajana Wijesinghe
           </a>
