@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import type { Route } from "../../.react-router/types/app/routes/+types/home";
 import { useParams } from "react-router";
 import { getPostById } from "~/lib/firebase";
+import ArticlePage from "~/sections/article/ArticlePage";
+import BlogNavbar from "~/sections/blog/BlogNavbar";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -29,14 +31,10 @@ const BlogPost = () => {
   console.log(post);
 
   return (
-    <article className="max-w-3xl mx-auto p-6">
-      <h1 className="text-3xl font-bold mb-4">{post.title}</h1>
-      <img src={post.imageUrl} alt={post.title} className="mb-4 rounded" />
-      <p className="text-gray-600 mb-2">
-        By {post.authorName} • {post.createdAt}
-      </p>
-      <div className="prose">{post.content}</div>
-    </article>
+    <main>
+        <BlogNavbar user={null} />
+        <ArticlePage post={post} />
+    </main>
   );
 };
 

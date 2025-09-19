@@ -31,12 +31,20 @@ const CreateBlog = () => {
     const formattedDate = date.toLocaleDateString("en-US");
 
     if (
+      imageName.length !== 0 &&
       !imageName.endsWith(".jpg") &&
       !imageName.endsWith(".png") &&
       !imageName.endsWith(".svg")
     ) {
       alert("Image name must end with .jpg, .png, or .svg");
       return;
+    }
+
+    let imgUrl: string;
+    if (imageName.length === 0) {
+      imgUrl = "";
+    } else {
+      imgUrl = "/blog/" + category.toLowerCase() + "/" + imageName;
     }
 
     const newId = doc(collection(db, "posts")).id;
@@ -49,7 +57,7 @@ const CreateBlog = () => {
       createdAt: formattedDate,
       authorName: userName || "Anonymous",
       category: category,
-      imageUrl: `/blog/${category.toLowerCase()}/${imageName}` || "",
+      imageUrl: imgUrl,
     })
       .then(() => {
         setTitle("");

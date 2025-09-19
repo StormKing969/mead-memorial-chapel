@@ -1,10 +1,11 @@
 import React from "react";
 import type { User } from "@firebase/auth";
-import { Link } from "react-router";
-import {authFunctions} from "~/lib/firebase";
+import { Link, useParams } from "react-router";
+import { authFunctions } from "~/lib/firebase";
 
 const BlogNavbar = ({ user }: { user: User | null }) => {
-    const { logoutFunction } = authFunctions();
+  const { logoutFunction } = authFunctions();
+  const { id } = useParams<{ id: string }>();
 
   return (
     <section
@@ -15,7 +16,7 @@ const BlogNavbar = ({ user }: { user: User | null }) => {
       <Link to={"/"} className={"flex flex-row items-center gap-4"}>
         <img src={"/logo.svg"} alt={"logo"} className={"size-1/12"} />
         <h3 className={"text-xl font-bold text-blue-400"}>
-          Mead Memorial Chapel Blog Page
+          Mead Memorial Chapel
         </h3>
       </Link>
 
@@ -31,10 +32,23 @@ const BlogNavbar = ({ user }: { user: User | null }) => {
 
         <button
           onClick={() => logoutFunction()}
-          className={"bg-gray-600 text-white px-4 py-2 rounded cursor-pointer hover:bg-gray-700 focus:outline-none"}
+          className={
+            "bg-gray-600 text-white px-4 py-2 rounded cursor-pointer hover:bg-gray-700 focus:outline-none"
+          }
         >
           Logout
         </button>
+      </div>
+
+      <div className={`${id ? "visible" : "hidden"} flex flex-row gap-5`}>
+          <Link
+              to={"/blog"}
+              className={
+                  "bg-blue-400 text-white px-4 py-2 rounded hover:bg-blue-700"
+              }
+          >
+              Blog
+          </Link>
       </div>
     </section>
   );
