@@ -1,34 +1,10 @@
 import React, { useState } from "react";
-import {
-  createUserWithEmailAndPassword,
-  signInWithEmailAndPassword,
-  signOut,
-} from "@firebase/auth";
-import { auth } from "~/lib/firebase";
-import { useNavigate } from "react-router";
+import {authFunctions} from "~/lib/firebase";
 
 const Authentication = () => {
-  const navigate = useNavigate();
+  const { logoutFunction, registerFunction, loginFunction } = authFunctions();
   const [email, setEmail] = useState<string>("");
   const [password, setPassword] = useState<string>("");
-
-  const register = async () => {
-    await createUserWithEmailAndPassword(auth, email, password).then(() => {
-      navigate("/create-blog-post");
-    });
-  };
-
-  const login = async () => {
-    await signInWithEmailAndPassword(auth, email, password).then(() => {
-      navigate("/create-blog-post");
-    });
-  };
-
-  const logout = async () => {
-    await signOut(auth).then(() => {
-      navigate("/");
-    });
-  };
 
   return (
     <section className={"p-6 bg-white shadow-md rounded-lg space-y-4"}>
@@ -46,19 +22,19 @@ const Authentication = () => {
       />
       <div className={"flex gap-2"}>
         <button
-          onClick={register}
+          onClick={() => registerFunction(email, password)}
           className={"bg-green-600 text-white px-4 py-2 rounded"}
         >
           Register
         </button>
         <button
-          onClick={login}
+          onClick={() => loginFunction(email, password)}
           className={"bg-blue-600 text-white px-4 py-2 rounded"}
         >
           Login
         </button>
         <button
-          onClick={logout}
+          onClick={() => logoutFunction()}
           className={"bg-gray-600 text-white px-4 py-2 rounded"}
         >
           Logout

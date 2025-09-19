@@ -1,12 +1,19 @@
 import React, { useState } from "react";
 import { auth, db, useAuth } from "~/lib/firebase";
-import { addDoc, collection } from "@firebase/firestore";
+import { addDoc, collection, doc } from "@firebase/firestore";
 import type { CategoryOptions } from "../../../types/post";
 import { useNavigate } from "react-router";
 
 const CreateBlog = () => {
   const { user } = useAuth();
   const navigate = useNavigate();
+  const Categories = [
+    "Lawsuit",
+    "General",
+    "Events",
+    "Announcements",
+    "Community",
+  ];
   const [title, setTitle] = useState<string>("");
   const [content, setContent] = useState<string>("");
   const [userName, setUserName] = useState<string>("");
@@ -23,13 +30,26 @@ const CreateBlog = () => {
     const date = new Date();
     const formattedDate = date.toLocaleDateString("en-US");
 
+    if (
+      !imageName.endsWith(".jpg") &&
+      !imageName.endsWith(".png") &&
+      !imageName.endsWith(".svg")
+    ) {
+      alert("Image name must end with .jpg, .png, or .svg");
+      return;
+    }
+
+    const newId = doc(collection(db, "posts")).id;
+
     await addDoc(collection(db, "posts"), {
+      id: newId,
       title,
       content,
       authorID: auth.currentUser?.uid || null,
       createdAt: formattedDate,
       authorName: userName || "Anonymous",
-      imageUrl: `/blog/${category}/${imageName}` || "",
+      category: category,
+      imageUrl: `/blog/${category.toLowerCase()}/${imageName}` || "",
     })
       .then(() => {
         setTitle("");
@@ -46,38 +66,74 @@ const CreateBlog = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className={"max-w-xl mx-auto bg-white shadow-md rounded-lg p-6 space-y-4"}
+      className={
+        "max-w-[750px] mx-auto my-16 bg-white shadow-md rounded-lg px-24 py-16"
+      }
     >
-      <h2 className={"text-2xl font-bold"}>Create Blog Post</h2>
-      <input
-        type="text"
-        placeholder="Title"
-        className={"border px-3 py-2 w-full"}
-        value={title}
-        onChange={(e) => setTitle(e.target.value)}
-        required
-      />
-      <input
-        type="text"
-        placeholder="Name"
-        className={"border px-3 py-2 w-full"}
-        value={userName}
-        onChange={(e) => setUserName(e.target.value)}
-        required
-      />
-      <textarea
-        placeholder="Content"
-        className={"border px-3 py-2 w-full h-40"}
-        value={content}
-        onChange={(e) => setContent(e.target.value)}
-        required
-      />
-      <button
-        type="submit"
-        className={"bg-gray-900 text-white px-6 py-2 rounded hover:bg-gray-700"}
-      >
-        Publish
-      </button>
+      <h2 className={"text-2xl font-bold mb-8"}>Create Blog Post</h2>
+
+      <div className={"space-y-4 flex flex-col"}>
+        <input
+          type="text"
+          placeholder="Title"
+          className={"border px-3 py-2 w-full"}
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
+          required
+        />
+
+        <input
+          type="text"
+          placeholder="Written By Name"
+          className={"border px-3 py-2 w-full"}
+          value={userName}
+          onChange={(e) => setUserName(e.target.value)}
+          required
+        />
+
+        <textarea
+          placeholder="Content"
+          className={"border px-3 py-2 w-full h-40"}
+          value={content}
+          onChange={(e) => setContent(e.target.value)}
+          required
+        />
+
+        <div className={"flex flex-row items-center justify-between gap-5"}>
+          <select
+            className={"w-fit bg-gray-50 p-3 border"}
+            value={category}
+            onChange={(e) => {
+              setCategory(e.target.value as CategoryOptions);
+            }}
+            required
+          >
+            {Categories.map((ele, index) => (
+              <option key={index} value={ele}>
+                {ele}
+              </option>
+            ))}
+          </select>
+
+          <input
+            type="text"
+            placeholder="Image Name (with extension)"
+            className={"border p-3 w-fit h-full"}
+            value={imageName}
+            onChange={(e) => setImageName(e.target.value)}
+            required
+          />
+        </div>
+
+        <button
+          type="submit"
+          className={
+            "bg-gray-900 text-white px-6 py-2 rounded hover:bg-gray-700"
+          }
+        >
+          Publish
+        </button>
+      </div>
     </form>
   );
 };

@@ -17,6 +17,14 @@ const Footer = () => {
             <ul className={"space-y-1"}>
               <li>
                 <Link
+                  to={"/"}
+                  className={"text-blue-600 hover:text-blue-800"}
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
                   to={"/about"}
                   className={"text-blue-600 hover:text-blue-800"}
                 >
@@ -53,8 +61,19 @@ const Footer = () => {
           <div>
             <h3 className={"font-bold text-xl mb-4"}>Contact Info</h3>
             <ul>
-              <li><p className={"font-semibold"}>Address: <span className={"font-normal"}>75 Hepburn Road, Middlebury, VT 05753</span></p></li>
-                <li><p className={"font-semibold"}>Email: <span className={"font-normal"}>xxx@gmail.com</span></p></li>
+              <li>
+                <p className={"font-semibold"}>
+                  Address:{" "}
+                  <span className={"font-normal"}>
+                    75 Hepburn Road, Middlebury, VT 05753
+                  </span>
+                </p>
+              </li>
+              <li>
+                <p className={"font-semibold"}>
+                  Email: <span className={"font-normal"}>xxx@gmail.com</span>
+                </p>
+              </li>
             </ul>
           </div>
 
@@ -82,7 +101,7 @@ const Footer = () => {
         </div>
 
         <p className={"text-sm text-gray-400"}>
-          © 2025 Mead Memorial Chapel | Designed & Built by {" "}
+          © 2025 Mead Memorial Chapel | Designed & Built by{" "}
           <a
             href={"https://sajana-wijesinghe-portfolio-v4.netlify.app/"}
             className={"underline text-blue-600 hover:text-blue-800"}

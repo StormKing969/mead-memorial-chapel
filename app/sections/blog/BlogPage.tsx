@@ -1,29 +1,19 @@
-import React, { useEffect, useState } from "react";
-import type { Post } from "../../../types/post";
-import { collection, onSnapshot, orderBy, query } from "@firebase/firestore";
-import { db } from "~/lib/firebase";
+import React from "react";
+import { getCurrentBlogPosts } from "~/lib/firebase";
 import DetailedPostPreview from "~/components/DetailedPostPreview";
 import CreateBlogLinkCard from "~/components/CreateBlogLinkCard";
+import type { User } from "@firebase/auth";
 
-const BlogPage = () => {
-  const [posts, setPosts] = useState<Post[]>([]);
-
-  useEffect(() => {
-    const q = query(collection(db, "posts"), orderBy("createdAt", "desc"));
-
-    return onSnapshot(q, (snapshot) => {
-      setPosts(
-        snapshot.docs.map((doc) => ({
-          id: doc.id,
-          ...doc.data(),
-        })) as Post[],
-      );
-    });
-  }, []);
+const BlogPage = ({ user }: { user: User | null }) => {
+  const posts = getCurrentBlogPosts();
 
   return (
-    <section className={"md:px-25 mx-auto h-full py-16 bg-gray-50"}>
-      <h1 className={"text-4xl md:text-5xl font-bold text-center mb-12 text-gray-900"}>
+    <section className={"md:px-25 mx-auto h-full py-16 bg-white"}>
+      <h1
+        className={
+          "text-4xl md:text-5xl font-bold text-center mb-12 text-gray-900"
+        }
+      >
         Blog
       </h1>
 
@@ -39,7 +29,7 @@ const BlogPage = () => {
           <DetailedPostPreview key={post.id} post={post} />
         ))}
 
-        <CreateBlogLinkCard />
+        {user && <CreateBlogLinkCard />}
       </div>
     </section>
   );

@@ -1,8 +1,17 @@
 // Import the functions you need from the SDKs you need
 import {initializeApp} from "firebase/app";
-import {getFirestore} from "@firebase/firestore";
-import {getAuth, onAuthStateChanged, type User} from "@firebase/auth";
+import {collection, getFirestore, onSnapshot, orderBy, query} from "@firebase/firestore";
+import {
+    createUserWithEmailAndPassword,
+    getAuth,
+    onAuthStateChanged,
+    signInWithEmailAndPassword,
+    signOut,
+    type User
+} from "@firebase/auth";
 import {useEffect, useState} from "react";
+import type {Post} from "../../types/post";
+import {useNavigate} from "react-router";
 
 // Your web app's Firebase configuration
 const apiKey = import.meta.env.VITE_API_KEY;
@@ -39,4 +48,50 @@ export function useAuth() {
     }, []);
 
     return { user };
+}
+
+export function getCurrentBlogPosts() {
+    const [posts, setPosts] = useState<Post[]>([]);
+
+    useEffect(() => {
+        const q = query(collection(db, "posts"), orderBy("createdAt", "desc"));
+
+        return onSnapshot(q, (snapshot) => {
+            setPosts(
+                snapshot.docs.map((doc) => ({
+                    id: doc.id,
+                    ...doc.data(),
+                })) as Post[],
+            );
+        });
+    }, []);
+
+    return posts;
+}
+
+export function authFunctions() {
+    const navigate = useNavigate();
+
+    const logoutFunction = async () => {
+        try {
+            await signOut(auth);
+            navigate("/");
+        } catch (error) {
+            console.error("Error signing out: ", error);
+        }
+    };
+
+    const loginFunction = async (email: string, password: string) => {
+        await signInWithEmailAndPassword(auth, email, password).then(() => {
+            navigate("/create-blog-post");
+        });
+    }
+
+    const registerFunction = async (email: string, password: string) => {
+        await createUserWithEmailAndPassword(auth, email, password).then(() => {
+            navigate("/create-blog-post");
+        });
+    }
+
+    return { logoutFunction, loginFunction, registerFunction };
 }

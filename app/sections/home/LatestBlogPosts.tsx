@@ -1,8 +1,11 @@
 import React from "react";
 import PreviewPost from "~/components/PreviewPost";
 import { Link } from "react-router";
+import {getCurrentBlogPosts} from "~/lib/firebase";
 
 const LatestBlogPosts = () => {
+    const posts = getCurrentBlogPosts();
+
   return (
     <section className={"py-16 px-6 md:px-25 bg-white"}>
       <h2 className={"text-3xl font-bold mb-8 text-center"}>
@@ -10,8 +13,8 @@ const LatestBlogPosts = () => {
       </h2>
 
       <div className={"grid md:grid-cols-3 gap-8"}>
-        {[1, 2, 3].map((post, index) => (
-          <PreviewPost key={index} post={post} />
+        {posts.map((post) => (
+          <PreviewPost key={post.id} post={post} />
         ))}
       </div>
 

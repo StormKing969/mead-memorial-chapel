@@ -1,20 +1,25 @@
-import React from 'react'
-import type {Route} from "../../.react-router/types/app/routes/+types/home";
+import React from "react";
+import type { Route } from "../../.react-router/types/app/routes/+types/home";
 import BlogPage from "~/sections/blog/BlogPage";
+import BlogNavbar from "~/sections/blog/BlogNavbar";
+import { useAuth } from "~/lib/firebase";
 
 export function meta({}: Route.MetaArgs) {
-    return [
-        { title: "Mead Memorial Chapel - Blog" },
-        { name: "description", content: "Mead Memorial Chapel - Blog" },
-    ];
+  return [
+    { title: "Mead Memorial Chapel - Blog" },
+    { name: "description", content: "Mead Memorial Chapel - Blog" },
+  ];
 }
 
 const Blog = () => {
-    return (
-        <main>
-            <BlogPage />
-        </main>
-    )
-}
+  const { user } = useAuth();
 
-export default Blog
+  return (
+    <main>
+      <BlogNavbar user={user} />
+      <BlogPage user={user} />
+    </main>
+  );
+};
+
+export default Blog;
