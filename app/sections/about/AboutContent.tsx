@@ -61,13 +61,13 @@ const AboutContent = () => {
           <img
             src="/about/chapel-side.png"
             alt="Chapel interiro side"
-            className="rounded shadow object-cover h-full"
+            className="rounded shadow object-cover h-full max-h-[500px]"
           />
 
           <img
             src="/about/chapel-interior.jpg"
             alt="Chapel interior"
-            className="rounded shadow object-cover h-full"
+            className="rounded shadow object-cover h-full max-h-[500px]"
           />
         </div>
       </div>
