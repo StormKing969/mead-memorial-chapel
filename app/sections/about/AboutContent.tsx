@@ -45,8 +45,8 @@ const AboutContent = () => {
           <div className="max-w-4xl mx-auto px-6">
             <h2 className="text-3xl font-bold mb-8 text-center">Timeline</h2>
             <ul className="border-l-2 border-gray-300 space-y-8 relative">
-              {AboutTimelineEvent.map((ele) => (
-                <li className="ml-6">
+              {AboutTimelineEvent.map((ele, index) => (
+                <li className="ml-6" key={index}>
                   <MiniTimelineVertical
                     year={ele.year}
                     description={ele.description}
