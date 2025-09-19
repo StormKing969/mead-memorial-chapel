@@ -4,21 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="BLog Post Display Update II">
-      <change afterPath="$PROJECT_DIR$/app/sections/blog/BlogNavbar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/blog/general/rematch-pc-game-steam-cover.jpg" afterDir="false" />
+    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="BLog Post Display Update III">
+      <change afterPath="$PROJECT_DIR$/app/routes/blog-post.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/CreateBlogLinkCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/CreateBlogLinkCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/DetailedPostPreview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/DetailedPostPreview.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/PreviewPost.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/PreviewPost.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/lib/firebase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/lib/firebase.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/blog.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/blog.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/sections/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/sections/authentication/Authentication.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/authentication/Authentication.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/sections/blog/BlogPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/blog/BlogPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sections/blog/BlogNavbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/blog/BlogNavbar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/sections/blog/CreateBlog.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/blog/CreateBlog.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/sections/home/LatestBlogPosts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/home/LatestBlogPosts.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/types/post.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/post.d.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +109,7 @@
       <option name="presentableId" value="Default" />
       <updated>1758052707779</updated>
       <workItem from="1758052709309" duration="41549000" />
-      <workItem from="1758231600225" duration="8696000" />
+      <workItem from="1758231600225" duration="14708000" />
     </task>
     <task id="LOCAL-00001" summary="Adding Configs for Netlify I">
       <option name="closed" value="true" />
@@ -150,7 +143,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758232484041</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="BLog Post Display Update III">
+      <option name="closed" value="true" />
+      <created>1758241642924</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1758241642924</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,6 +162,7 @@
     <MESSAGE value="Minor Changes to existing HomePage Code" />
     <MESSAGE value="BLog Post Display Update I" />
     <MESSAGE value="BLog Post Display Update II" />
-    <option name="LAST_COMMIT_MESSAGE" value="BLog Post Display Update II" />
+    <MESSAGE value="BLog Post Display Update III" />
+    <option name="LAST_COMMIT_MESSAGE" value="BLog Post Display Update III" />
   </component>
 </project>

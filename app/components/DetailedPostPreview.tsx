@@ -13,14 +13,22 @@ const DetailedPostPreview = ({
       className={"bg-white shadow-md rounded-lg overflow-hidden flex flex-col"}
     >
       {/* Image */}
-      <a href={imageUrl} aria-label={title}>
+
+      {imageUrl ? (
         <img
           src={imageUrl}
-          alt={title}
+          alt={`${title} thumbnail`}
           className={"h-48 w-full object-cover"}
           loading={"lazy"}
         />
-      </a>
+      ) : (
+        <img
+          src={"/no-image-icon.png"}
+          alt={`${title} thumbnail`}
+          className={"h-48 w-full object-contain"}
+          loading={"lazy"}
+        />
+      )}
 
       {/* Content */}
       <div className={"p-6 flex flex-col flex-1"}>

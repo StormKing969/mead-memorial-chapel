@@ -121,7 +121,6 @@ const CreateBlog = () => {
             className={"border p-3 w-fit h-full"}
             value={imageName}
             onChange={(e) => setImageName(e.target.value)}
-            required
           />
         </div>
 

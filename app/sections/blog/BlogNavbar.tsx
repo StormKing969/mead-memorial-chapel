@@ -19,7 +19,7 @@ const BlogNavbar = ({ user }: { user: User | null }) => {
         </h3>
       </Link>
 
-      <div className={`${user ? "visible" : "hidden"}`}>
+      <div className={`${user ? "visible" : "hidden"} flex flex-row gap-5`}>
         <Link
           to={"/create-blog-post"}
           className={
@@ -31,7 +31,7 @@ const BlogNavbar = ({ user }: { user: User | null }) => {
 
         <button
           onClick={() => logoutFunction()}
-          className={"bg-gray-600 text-white px-4 py-2 rounded"}
+          className={"bg-gray-600 text-white px-4 py-2 rounded cursor-pointer hover:bg-gray-700 focus:outline-none"}
         >
           Logout
         </button>
