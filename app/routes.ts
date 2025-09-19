@@ -7,4 +7,5 @@ export default [
   route("/blog", "routes/blog.tsx"),
   route("/blog/:id", "routes/blog-post.tsx"),
   route("/create-blog-post", "routes/create-blog-post.tsx"),
+  route("/lawsuit", "routes/lawsuit.tsx"),
 ] satisfies RouteConfig;

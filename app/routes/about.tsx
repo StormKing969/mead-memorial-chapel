@@ -2,6 +2,7 @@ import React from "react";
 import type { Route } from "../../.react-router/types/app/routes/+types/home";
 import AboutHeroSection from "~/sections/about/AboutHeroSection";
 import AboutContent from "~/sections/about/AboutContent";
+import Navbar from "~/components/Navbar";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -13,6 +14,7 @@ export function meta({}: Route.MetaArgs) {
 const About = () => {
   return (
     <main className={"bg-white"}>
+      <Navbar user={null} />
       <AboutHeroSection />
       <AboutContent />
     </main>

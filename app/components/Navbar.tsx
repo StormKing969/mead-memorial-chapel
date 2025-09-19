@@ -1,11 +1,12 @@
 import React from "react";
 import type { User } from "@firebase/auth";
-import { Link, useParams } from "react-router";
+import {Link, useLocation, useParams} from "react-router";
 import { authFunctions } from "~/lib/firebase";
 
 const Navbar = ({ user }: { user: User | null }) => {
   const { logoutFunction } = authFunctions();
   const { id } = useParams<{ id: string }>();
+  const currentUrl = useLocation();
 
   return (
     <section
@@ -40,7 +41,7 @@ const Navbar = ({ user }: { user: User | null }) => {
         </button>
       </div>
 
-      <div className={`${id ? "visible" : "hidden"} flex flex-row gap-5`}>
+      <div className={`${id || !currentUrl.pathname.startsWith("/blog") ? "visible" : "hidden"} flex flex-row gap-5`}>
           <Link
               to={"/blog"}
               className={
@@ -48,6 +49,15 @@ const Navbar = ({ user }: { user: User | null }) => {
               }
           >
               Blog
+          </Link>
+
+          <Link
+              to={"/lawsuit"}
+              className={
+                  "bg-blue-400 text-white px-4 py-2 rounded hover:bg-blue-700"
+              }
+          >
+              Lawsuit
           </Link>
       </div>
     </section>

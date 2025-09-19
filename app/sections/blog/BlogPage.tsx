@@ -23,7 +23,6 @@ const BlogPage = ({ user }: { user: User | null }) => {
         </div>
       )}
 
-      {/* Grid */}
       <div className={"grid gap-8 md:grid-cols-2 lg:grid-cols-3"}>
         {posts.map((post) => (
           <DetailedPostPreview key={post.id} post={post} />
