@@ -1,6 +1,6 @@
 import React from "react";
 import type { User } from "@firebase/auth";
-import {Link, useLocation, useParams} from "react-router";
+import { Link, useLocation, useParams } from "react-router";
 import { authFunctions } from "~/lib/firebase";
 
 const Navbar = ({ user }: { user: User | null }) => {
@@ -41,24 +41,45 @@ const Navbar = ({ user }: { user: User | null }) => {
         </button>
       </div>
 
-      <div className={`${id || !currentUrl.pathname.startsWith("/blog") ? "visible" : "hidden"} flex flex-row gap-5`}>
+      <div className={"flex flex-row gap-5"}>
+        <div
+          className={`${id || !currentUrl.pathname.startsWith("/about") ? "visible" : "hidden"}`}
+        >
           <Link
-              to={"/blog"}
-              className={
-                  "bg-blue-400 text-white px-4 py-2 rounded hover:bg-blue-700"
-              }
+            to={"/about"}
+            className={
+              "bg-blue-400 text-white px-4 py-2 rounded hover:bg-blue-700"
+            }
           >
-              Blog
+            About
           </Link>
+        </div>
 
+        <div
+          className={`${id || !currentUrl.pathname.startsWith("/blog") ? "visible" : "hidden"}`}
+        >
           <Link
-              to={"/lawsuit"}
-              className={
-                  "bg-blue-400 text-white px-4 py-2 rounded hover:bg-blue-700"
-              }
+            to={"/blog"}
+            className={
+              "bg-blue-400 text-white px-4 py-2 rounded hover:bg-blue-700"
+            }
           >
-              Lawsuit
+            Blog
           </Link>
+        </div>
+
+        <div
+          className={`${id || !currentUrl.pathname.startsWith("/lawsuit") ? "visible" : "hidden"}`}
+        >
+          <Link
+            to={"/lawsuit"}
+            className={
+              "bg-blue-400 text-white px-4 py-2 rounded hover:bg-blue-700"
+            }
+          >
+            Lawsuit
+          </Link>
+        </div>
       </div>
     </section>
   );

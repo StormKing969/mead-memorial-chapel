@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="Blog Article Page Complete">
-      <change afterPath="$PROJECT_DIR$/app/routes/lawsuit.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="About Page Complete II">
       <change beforePath="$PROJECT_DIR$/app/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/about.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/about.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/sections/blog/BlogPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/blog/BlogPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/lawsuit.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/lawsuit.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +167,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758311133392</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="About Page Complete II">
+      <option name="closed" value="true" />
+      <created>1758318656029</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1758318656029</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +189,7 @@
     <MESSAGE value="BLog Post Display Update III" />
     <MESSAGE value="BLog Post Display Complete. Working on Blog Article Page" />
     <MESSAGE value="Blog Article Page Complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="Blog Article Page Complete" />
+    <MESSAGE value="About Page Complete II" />
+    <option name="LAST_COMMIT_MESSAGE" value="About Page Complete II" />
   </component>
 </project>
