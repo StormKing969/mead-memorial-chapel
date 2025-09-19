@@ -3,12 +3,12 @@ import type { Route } from "../../.react-router/types/app/routes/+types/home";
 import { useParams } from "react-router";
 import { getPostById } from "~/lib/firebase";
 import ArticlePage from "~/sections/article/ArticlePage";
-import BlogNavbar from "~/sections/blog/BlogNavbar";
+import Navbar from "~/components/Navbar";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Mead Memorial Chapel - Create Post" },
-    { name: "description", content: "Mead Memorial Chapel - Create Post" },
+    { title: "Mead Memorial Chapel - Blog Post" },
+    { name: "description", content: "Mead Memorial Chapel - Blog Post" },
   ];
 }
 
@@ -32,7 +32,7 @@ const BlogPost = () => {
 
   return (
     <main>
-        <BlogNavbar user={null} />
+        <Navbar user={null} />
         <ArticlePage post={post} />
     </main>
   );

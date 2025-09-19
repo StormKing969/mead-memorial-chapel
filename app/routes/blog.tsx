@@ -1,7 +1,7 @@
 import React from "react";
 import type { Route } from "../../.react-router/types/app/routes/+types/home";
 import BlogPage from "~/sections/blog/BlogPage";
-import BlogNavbar from "~/sections/blog/BlogNavbar";
+import Navbar from "~/components/Navbar";
 import { useAuth } from "~/lib/firebase";
 
 export function meta({}: Route.MetaArgs) {
@@ -16,7 +16,7 @@ const Blog = () => {
 
   return (
     <main>
-      <BlogNavbar user={user} />
+      <Navbar user={user} />
       <BlogPage user={user} />
     </main>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import { TimelineEvent } from "../../../constants/timeline";
+import { TimelineEvent } from "../../../constants/lawsuit";
 import { Link } from "react-router";
 
 const TimelinePreview = () => {
@@ -45,7 +45,7 @@ const TimelinePreview = () => {
 
       <div className={"text-center mt-10"}>
         <Link
-          to={"/timeline"}
+          to={"/lawsuit"}
           className={
             "bg-gray-900 text-white px-6 py-3 rounded-md hover:bg-gray-700"
           }

@@ -33,7 +33,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to={"/timeline"}
+                  to={"/lawsuit"}
                   className={"text-blue-600 hover:text-blue-800"}
                 >
                   Timeline
