@@ -59,7 +59,7 @@ const LawsuitContent = () => {
           className="bg-white rounded-xl shadow-md px-8 py-10 mb-12 border border-gray-100"
         >
           <h2 className="text-3xl font-extrabold mb-4 text-gray-900">
-            Background
+            Context
           </h2>
           <p className="text-lg text-gray-800 leading-relaxed">
             {LawsuitPageBackgroundContent}
@@ -80,30 +80,24 @@ const LawsuitContent = () => {
               <div className={"py-4 w-1 h-full bg-slate-200 rounded"} />
             </div>
 
-            <div
-              className={
-                "overflow-y-auto no-scrollbar h-[400px] flex items-center"
-              }
-            >
-              <ul className={"flex flex-col items-center gap-6"} role="list">
+            <div className="no-scrollbar flex items-start overflow-y-auto">
+              <ul className="flex flex-col items-center gap-6 w-full max-h-[450px] relative">
                 {TimelineEvents.map((ev, i) => {
-                  const above = i % 2 === 0;
+                  const left = i % 2 === 0;
                   return (
                     <li
                       key={ev.date + i}
-                      className={"relative flex flex-col items-center"}
+                      className="relative flex flex-col items-center justify-start"
                     >
                       {/* connector node */}
                       <span
-                        className={
-                          "absolute top-1/2 transform -translate-y-1/2 w-4 h-4 bg-white border-4 border-indigo-600 rounded-full z-10"
-                        }
+                        className="absolute left-[51%] -translate-x-1/2 top-1/2 w-4 h-4 bg-white border-4 border-indigo-600 rounded-full z-10"
                         aria-hidden="true"
                       />
 
-                      {/* position card above or below */}
+                      {/* position card left or right on md+ screens */}
                       <div
-                        className={`transform ${above ? "-translate-y-20 md:-translate-y-24" : "translate-y-20 md:translate-y-24"}`}
+                        className={`transform ${left ? "-translate-x-50 md:-translate-x-50" : "translate-x-50 md:translate-x-50"}`}
                       >
                         <LawsuitTimelineCard event={ev} />
                       </div>

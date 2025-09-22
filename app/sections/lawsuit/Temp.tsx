@@ -1,4 +1,6 @@
 import React from "react";
+import {TimelineEvents} from "../../../constants/lawsuit";
+import LawsuitTimelineCard from "~/components/LawsuitTimelineCard";
 
 const Temp = () => {
   return (
