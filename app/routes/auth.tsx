@@ -11,7 +11,7 @@ export function meta({}: Route.MetaArgs) {
 
 const Auth = () => {
   return (
-    <main>
+    <main className={"font-serif"}>
       <Authentication />
     </main>
   );

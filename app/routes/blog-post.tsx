@@ -31,7 +31,7 @@ const BlogPost = () => {
   console.log(post);
 
   return (
-    <main>
+    <main className={"font-serif"}>
         <Navbar user={null} />
         <ArticlePage post={post} />
     </main>

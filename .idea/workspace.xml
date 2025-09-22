@@ -4,17 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="About Page Bug Fix III">
-      <change afterPath="$PROJECT_DIR$/app/components/LawsuitTimelineCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/routes/temp.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/types/timelinecard.d.ts" afterDir="false" />
+    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="HomePage Complete">
+      <change afterPath="$PROJECT_DIR$/app/sections/lawsuit/LawsuitContent.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sections/lawsuit/LawsuitHeader.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sections/lawsuit/Temp.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/LawsuitTimelineCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/LawsuitTimelineCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/MiniTimelineVertical.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/MiniTimelineVertical.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/about.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/about.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/auth.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/auth.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/blog-post.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/blog-post.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/blog.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/blog.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/create-blog-post.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/create-blog-post.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/routes/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/home.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/routes/lawsuit.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/lawsuit.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/sections/home/TimelinePreview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/home/LawsuitPreview.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sections/about/AboutContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/about/AboutContent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sections/about/AboutHeroSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/about/AboutHeroSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sections/home/LawsuitPreview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/home/LawsuitPreview.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/constants/lawsuit/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/constants/lawsuit/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,7 +217,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758319486690</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="HomePage Complete">
+      <option name="closed" value="true" />
+      <created>1758516810334</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1758516810334</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,6 +243,7 @@
     <MESSAGE value="About Page Bug Fix I" />
     <MESSAGE value="About Page Bug Fix II" />
     <MESSAGE value="About Page Bug Fix III" />
-    <option name="LAST_COMMIT_MESSAGE" value="About Page Bug Fix III" />
+    <MESSAGE value="HomePage Complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="HomePage Complete" />
   </component>
 </project>

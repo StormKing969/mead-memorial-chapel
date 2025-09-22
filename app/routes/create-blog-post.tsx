@@ -10,7 +10,11 @@ export function meta({}: Route.MetaArgs) {
 }
 
 const CreateBlogPost = () => {
-  return <CreateBlog />;
+  return (
+    <main className={"font-serif"}>
+      <CreateBlog />
+    </main>
+  );
 };
 
 export default CreateBlogPost;

@@ -40,3 +40,6 @@ export const TimelineEvents = [
     desc: "Parties submit post-trial and appellate briefs on damages and remedies while awaiting the final appellate decision.",
   },
 ];
+
+export const LawsuitPageBackgroundContent =
+  "The Mead Memorial Chapel at Middlebury College is a historic monument built to honor the Mead family’s legacy, specifically that of Vermont Governor John Mead. In 2021, Middlebury College’s trustees elected to remove the Mead family name from the chapel, citing remarks from a 1912 speech given by Governor Mead. The decision caused significant outcry among the Mead descendants and associated community, who asserted that the deed for the chapel explicitly required the continued use of the Mead name. The estate filed suit against the college, contending both breach of a covenant and injury to the Mead family’s reputation and intent, leading to an ongoing dispute punctuated by motions, appeals, and considerable media coverage.";

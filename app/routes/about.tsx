@@ -13,7 +13,7 @@ export function meta({}: Route.MetaArgs) {
 
 const About = () => {
   return (
-    <main className={"bg-white"}>
+    <main className={"bg-white font-serif"}>
       <Navbar user={null} />
       <AboutHeroSection />
       <AboutContent />

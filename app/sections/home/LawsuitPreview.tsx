@@ -11,23 +11,23 @@ const LawsuitPreview = () => {
         Follow the case in chronological order →
       </p>
 
-      <div className="relative">
-        <div className="pointer-events-none absolute left-0 right-0 top-1/2 transform -translate-y-1/2">
-          <div className="mx-4 h-1 bg-slate-200 rounded" />
+      <div className={"relative"}>
+        <div className={"pointer-events-none absolute left-0 right-0 top-1/2 transform -translate-y-1/2"}>
+          <div className={"mx-4 h-1 bg-slate-200 rounded"} />
         </div>
 
-        <div className="overflow-x-auto no-scrollbar h-[400px] flex items-center ">
-          <ul className="flex items-center gap-6 px-6 py-6" role="list">
+        <div className={"overflow-x-auto no-scrollbar h-[400px] flex items-center"}>
+          <ul className={"flex items-center gap-6 px-6 py-6"} role="list">
             {TimelineEvents.map((ev, i) => {
               const above = i % 2 === 0;
               return (
                 <li
                   key={ev.date + i}
-                  className="relative flex flex-col items-center"
+                  className={"relative flex flex-col items-center"}
                 >
                   {/* connector node */}
                   <span
-                    className="absolute top-1/2 transform -translate-y-1/2 w-4 h-4 bg-white border-4 border-indigo-600 rounded-full z-10"
+                    className={"absolute top-1/2 transform -translate-y-1/2 w-4 h-4 bg-white border-4 border-indigo-600 rounded-full z-10"}
                     aria-hidden="true"
                   />
 

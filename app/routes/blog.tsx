@@ -15,7 +15,7 @@ const Blog = () => {
   const { user } = useAuth();
 
   return (
-    <main>
+    <main className={"font-serif"}>
       <Navbar user={user} />
       <BlogPage user={user} />
     </main>

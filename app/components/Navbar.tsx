@@ -9,7 +9,7 @@ const Navbar = ({ user }: { user: User | null }) => {
   const currentUrl = useLocation();
 
   return (
-    <section
+    <nav
       className={
         "w-full bg-gray-50 shadow-md flex items-center justify-between py-4 px-8"
       }
@@ -81,7 +81,7 @@ const Navbar = ({ user }: { user: User | null }) => {
           </Link>
         </div>
       </div>
-    </section>
+    </nav>
   );
 };
 
