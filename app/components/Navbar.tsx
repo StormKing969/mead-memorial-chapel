@@ -15,7 +15,7 @@ const Navbar = ({ user }: { user: User | null }) => {
       }
     >
       <Link to={"/"} className={"flex flex-row items-center gap-4"}>
-        <img src={"/logo.svg"} alt={"logo"} className={"size-1/12"} />
+        <img src={"/logo.svg"} alt={"logo"} className={"w-fit h-20"} />
         <h3 className={"text-xl font-bold text-blue-400"}>
           Mead Memorial Chapel
         </h3>

@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 import Navbar from "~/components/Navbar";
 
 const Lawsuit = () => {
-    return (
-        <div>
-            <Navbar user={null} />
-        </div>
-    )
-}
+  return (
+    <main>
+      <Navbar user={null} />
+    </main>
+  );
+};
 
-export default Lawsuit
+export default Lawsuit;

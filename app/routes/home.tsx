@@ -2,7 +2,7 @@ import type { Route } from "./+types/home";
 import HeroSection from "~/sections/home/HeroSection";
 import AboutPreview from "~/sections/home/AboutPreview";
 import LatestBlogPosts from "~/sections/home/LatestBlogPosts";
-import TimelinePreview from "~/sections/home/TimelinePreview";
+import LawsuitPreview from "~/sections/home/LawsuitPreview";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -16,7 +16,7 @@ export default function Home() {
     <main >
         <HeroSection />
         <AboutPreview />
-        <TimelinePreview />
+        <LawsuitPreview />
         <LatestBlogPosts />
     </main>
   );
