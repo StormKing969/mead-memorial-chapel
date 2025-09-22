@@ -8,4 +8,5 @@ export default [
   route("/blog/:id", "routes/blog-post.tsx"),
   route("/create-blog-post", "routes/create-blog-post.tsx"),
   route("/lawsuit", "routes/lawsuit.tsx"),
+  route("/lawsuit/documents", "routes/documents.tsx"),
 ] satisfies RouteConfig;

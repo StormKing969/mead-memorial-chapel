@@ -69,7 +69,7 @@ const Navbar = ({ user }: { user: User | null }) => {
         </div>
 
         <div
-          className={`${id || !currentUrl.pathname.startsWith("/lawsuit") ? "visible" : "hidden"}`}
+          className={`${id || !currentUrl.pathname.startsWith("/lawsuit") || currentUrl.pathname.endsWith("documents") ? "visible" : "hidden"}`}
         >
           <Link
             to={"/lawsuit"}
