@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="Minor Changes I">
-      <change beforePath="$PROJECT_DIR$/app/components/FilePreview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/FilePreview.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants/lawsuit/documents/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/constants/lawsuit/documents/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/types/documents.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/documents.d.ts" afterDir="false" />
+    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="Minor Changes II">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sections/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sections/home/HeroSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/home/HeroSection.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +111,7 @@
       <workItem from="1758052709309" duration="41549000" />
       <workItem from="1758231600225" duration="15573000" />
       <workItem from="1758297691489" duration="10184000" />
-      <workItem from="1758520541219" duration="23649000" />
+      <workItem from="1758520541219" duration="24654000" />
     </task>
     <task id="LOCAL-00001" summary="Adding Configs for Netlify I">
       <option name="closed" value="true" />
@@ -249,7 +249,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758651803153</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Minor Changes II">
+      <option name="closed" value="true" />
+      <created>1758652449965</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1758652449965</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,6 +281,7 @@
     <MESSAGE value="Lawsuit Page Done" />
     <MESSAGE value="Documents Page Done" />
     <MESSAGE value="Minor Changes I" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor Changes I" />
+    <MESSAGE value="Minor Changes II" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor Changes II" />
   </component>
 </project>

@@ -9,7 +9,7 @@ const Footer = () => {
       <div
         className={"flex flex-col items-center justify-center bg-gray-50 py-6"}
       >
-        <div className={"flex flex-row justify-evenly gap-10 w-full"}>
+        <div className={"flex flex-col items-center text-center px-5 md:flex-row md:justify-evenly md:text-left gap-10 w-full"}>
           <img src={"/logo.svg"} alt={"logo"} className={"max-h-[200px]"} />
 
           <div>
@@ -100,7 +100,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <p className={"text-sm text-gray-400"}>
+        <p className={"text-sm text-gray-400 mt-5 text-center p-5 md:mt-3 sm:p-0 sm:text-left"}>
           © 2025 Mead Memorial Chapel | Designed & Built by{" "}
           <a
             href={"https://sajana-wijesinghe-portfolio-v4.netlify.app/"}

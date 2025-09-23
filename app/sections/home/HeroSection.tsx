@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <section
       className={
-        "md:px-25 relative bg-gray-900 text-white h-[65vh] flex flex-col justify-center items-start text-left"
+        "md:px-25 px-5 relative bg-gray-900 text-white h-[65vh] flex flex-col justify-center items-start text-left"
       }
     >
       <div
@@ -14,7 +14,7 @@ const HeroSection = () => {
         }
       ></div>
 
-      <div className={"relative z-10 max-w-1/2"}>
+      <div className={"relative z-10 lg:max-w-1/2"}>
         <div className={"text-4xl md:text-6xl font-bold mb-6 space-y-2"}>
           <h1>Preserving History.</h1>
           <h1>Seeking Justice.</h1>
