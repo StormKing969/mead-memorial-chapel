@@ -11,54 +11,70 @@ export const Files = [
         title: "Exhibit A",
         category: "Exhibits",
         date: "N/A",
-        fileName: "Exhibit-A.pdf"
+        fileName: "Exhibit-A.pdf",
+        videoLink: null
     },
     {
         title: "Rutland Herald and Times Argus",
         category: "Press Releases",
         date: "Oct 19, 2024",
-        fileName: "Rutland-Herald-and-Times-Argus.pdf"
+        fileName: "Rutland-Herald-and-Times-Argus.pdf",
+        videoLink: null
+    },
+    {
+        title: " Times Argus",
+        category: "Press Releases",
+        date: "Oct 19, 2024",
+        fileName: "Rutland-Herald-and-Times-Argus.pdf",
+        videoLink: null
+    },
+    {
+        title: "Rutland Herald Argus",
+        category: "Press Releases",
+        date: "Oct 19, 2024",
+        fileName: "Rutland-Herald-and-Times-Argus.pdf",
+        videoLink: null
     },
     {
         title: "Rutland Herald and Times Argus",
         category: "Press Releases",
         date: "Oct 19, 2024",
-        fileName: "Rutland-Herald-and-Times-Argus.pdf"
+        fileName: "Rutland-Herald-and-Times-Argus.pdf",
+        videoLink: null
+    },
+    {
+        title: "Rutland Argus",
+        category: "Press Releases",
+        date: "Oct 19, 2024",
+        fileName: "Rutland-Herald-and-Times-Argus.pdf",
+        videoLink: null
     },
     {
         title: "Rutland Herald and Times Argus",
         category: "Press Releases",
         date: "Oct 19, 2024",
-        fileName: "Rutland-Herald-and-Times-Argus.pdf"
+        fileName: "Rutland-Herald-and-Times-Argus.pdf",
+        videoLink: null
     },
     {
         title: "Rutland Herald and Times Argus",
         category: "Press Releases",
         date: "Oct 19, 2024",
-        fileName: "Rutland-Herald-and-Times-Argus.pdf"
+        fileName: "Rutland-Herald-and-Times-Argus.pdf",
+        videoLink: null
     },
     {
         title: "Rutland Herald and Times Argus",
         category: "Press Releases",
         date: "Oct 19, 2024",
-        fileName: "Rutland-Herald-and-Times-Argus.pdf"
+        fileName: "Rutland-Herald-and-Times-Argus.pdf",
+        videoLink: null
     },
     {
-        title: "Rutland Herald and Times Argus",
-        category: "Press Releases",
+        title: "Video Test",
+        category: "Other Documents",
         date: "Oct 19, 2024",
-        fileName: "Rutland-Herald-and-Times-Argus.pdf"
-    },
-    {
-        title: "Rutland Herald and Times Argus",
-        category: "Press Releases",
-        date: "Oct 19, 2024",
-        fileName: "Rutland-Herald-and-Times-Argus.pdf"
-    },
-    {
-        title: "Rutland Herald and Times Argus",
-        category: "Press Releases",
-        date: "Oct 19, 2024",
-        fileName: "Rutland-Herald-and-Times-Argus.pdf"
+        fileName: null,
+        videoLink: "https://www.youtube.com/"
     },
 ]

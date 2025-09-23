@@ -9,5 +9,6 @@ export interface DocumentObj {
   title: string;
   category: string;
   date: string;
-  fileName: string;
+  fileName: string | null;
+  videoLink: string | null;
 }
