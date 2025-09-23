@@ -41,7 +41,7 @@ const HeroSection = () => {
               "bg-gray-800 border border-white px-6 py-3 rounded-md font-semibold hover:bg-gray-700"
             }
           >
-            View Timeline
+            View Lawsuit
           </Link>
         </div>
       </div>

@@ -11,7 +11,7 @@ const Navbar = ({ user }: { user: User | null }) => {
   return (
     <nav
       className={
-        "w-full bg-gray-50 shadow-md flex items-center justify-between py-4 px-8"
+        "w-full bg-gray-50 shadow-md border-b border-gray-200 flex items-center justify-between py-4 px-8"
       }
     >
       <Link to={"/"} className={"flex flex-row items-center gap-4"}>
