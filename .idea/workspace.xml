@@ -4,19 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="Lawsuit Page Done">
-      <change afterPath="$PROJECT_DIR$/app/components/FilePreview.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/sections/lawsuit/documents/DocumentContent.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/sections/lawsuit/documents/DocumentHeader.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/constants/lawsuit/documents/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lawsuit/exhibits/Exhibit-A.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lawsuit/press/Rutland-Herald-and-Times-Argus.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/types/documents.d.ts" afterDir="false" />
+    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="Documents Page Done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/documents.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/documents.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/sections/home/HeroSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/home/HeroSection.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/sections/lawsuit/Temp.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/lawsuit.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/lawsuit.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sections/lawsuit/documents/DocumentContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/lawsuit/documents/DocumentContent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sections/lawsuit/documents/DocumentHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/lawsuit/documents/DocumentHeader.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +112,7 @@
       <workItem from="1758052709309" duration="41549000" />
       <workItem from="1758231600225" duration="15573000" />
       <workItem from="1758297691489" duration="10184000" />
-      <workItem from="1758520541219" duration="22125000" />
+      <workItem from="1758520541219" duration="23245000" />
     </task>
     <task id="LOCAL-00001" summary="Adding Configs for Netlify I">
       <option name="closed" value="true" />
@@ -242,7 +234,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758569989273</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Documents Page Done">
+      <option name="closed" value="true" />
+      <created>1758650723956</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1758650723957</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,6 +264,7 @@
     <MESSAGE value="Temp Update" />
     <MESSAGE value="Temp Update I" />
     <MESSAGE value="Lawsuit Page Done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lawsuit Page Done" />
+    <MESSAGE value="Documents Page Done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Documents Page Done" />
   </component>
 </project>

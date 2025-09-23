@@ -5,7 +5,7 @@ import LawsuitContent from "~/sections/lawsuit/LawsuitContent";
 
 const Lawsuit = () => {
   return (
-    <main>
+    <main className={"font-serif"}>
       <Navbar user={null} />
       <LawsuitHeader />
       <LawsuitContent />

@@ -23,16 +23,16 @@ const DocumentContent = () => {
   }, [currentCategory]);
 
   return (
-    <div className={"px-6 md:px-25 flex flex-row gap-8 mb-10"}>
+    <div className={"bg-white px-6 md:px-25 flex flex-row gap-8 pb-10"}>
       <ul
         className={
-          "self-start sticky top-32 min-w-[200px] gap-2 border-b md:border-b-0 md:border-r border-gray-300"
+          "self-start sticky top-32 min-w-[200px] gap-2 border md:border-b-0 md:border-r border-gray-100 rounded-lg"
         }
       >
         {DocumentCategories.map((category, i) => (
           <li
             key={i}
-            className={`${category.startsWith(currentCategory) ? "text-blue-600 shadow-md" : ""} cursor-pointer border-b-2 border-gray-300 w-full last:border-none hover:shadow-md hover:text-blue-600`}
+            className={`${category.startsWith(currentCategory) ? "text-blue-600 shadow-md" : ""} cursor-pointer border-gray-300 w-full last:border-none hover:shadow-md hover:text-blue-600`}
             onClick={() => setCurrentCategory(category)}
           >
             <button

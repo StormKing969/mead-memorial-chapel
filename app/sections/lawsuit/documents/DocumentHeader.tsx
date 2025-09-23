@@ -2,7 +2,7 @@ import React from "react";
 
 const DocumentHeader = () => {
   return (
-    <section className={"my-10 px-6 md:px-25"}>
+    <section className={"bg-white py-10 px-6 md:px-25"}>
       <h1
         className={
           "text-3xl md:text-4xl font-bold mb-2 text-gray-900 tracking-tight"
