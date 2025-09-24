@@ -8,8 +8,8 @@ const Navbar = ({ user }: { user: User | null }) => {
   const navigate = useNavigate();
   const { logoutFunction } = authFunctions();
 
-    return (
-        <nav
+  return (
+    <nav
       className={
         "w-full bg-gray-50 shadow-md border-b border-gray-200 flex items-center justify-between py-4 px-8 sticky top-0 z-50"
       }
