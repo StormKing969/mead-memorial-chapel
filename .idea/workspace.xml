@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="Minor Changes II">
-      <change afterPath="$PROJECT_DIR$/constants/navbar/index.ts" afterDir="false" />
+    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="Mobile Responsive Changes III">
+      <change afterPath="$PROJECT_DIR$/app/components/MobileNavbar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sections/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/Footer.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -257,7 +257,23 @@
       <option name="project" value="LOCAL" />
       <updated>1758652449965</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Mobile Responsive Changes II">
+      <option name="closed" value="true" />
+      <created>1758677012168</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1758677012168</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Mobile Responsive Changes III">
+      <option name="closed" value="true" />
+      <created>1758678462935</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1758678462935</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,6 +298,8 @@
     <MESSAGE value="Documents Page Done" />
     <MESSAGE value="Minor Changes I" />
     <MESSAGE value="Minor Changes II" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor Changes II" />
+    <MESSAGE value="Mobile Responsive Changes II" />
+    <MESSAGE value="Mobile Responsive Changes III" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mobile Responsive Changes III" />
   </component>
 </project>

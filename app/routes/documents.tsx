@@ -5,7 +5,7 @@ import DocumentContent from "~/sections/lawsuit/documents/DocumentContent";
 
 const Documents = () => {
   return (
-    <main className={"font-serif"}>
+    <main className={"font-serif min-h-[80vh] h-full bg-white"}>
       <Navbar user={null} />
       <DocumentHeader />
       <DocumentContent />
