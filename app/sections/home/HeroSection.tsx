@@ -20,10 +20,29 @@ const HeroSection = () => {
           <h1>Seeking Justice.</h1>
         </div>
 
-        <p className={"max-w-2xl mb-12 text-lg"}>
-          Dedicated to maintaining the legacy of Mead Memorial Chapel while
-          ensuring transparency and justice through the legal proceedings.
-        </p>
+        <div className={"max-w-2xl mb-12 text-lg"}>
+          <p>
+            This site is dedicated to preserving the legacy of Mead Memorial
+            Chapel while promoting transparency and justice throughout the
+            ongoing legal proceedings. It serves as the updated iteration of the
+            original website, created to support the case currently before the
+            Vermont Supreme Court.
+          </p>
+          <br />
+          <p>
+            You can view the original site{" "}
+            <a
+              href={"https://meadmemorialchapel.com/"}
+              className={
+                "underline font-bold hover:text-blue-400 transition-colors"
+              }
+            >
+              here
+            </a>
+            , which documents the early efforts and background leading up to
+            this new phase.
+          </p>
+        </div>
 
         <div className={"space-x-4"}>
           <Link

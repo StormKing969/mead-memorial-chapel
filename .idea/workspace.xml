@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="Mobile Responsive Changes III">
+    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="Mobile Responsive Changes IV">
       <change afterPath="$PROJECT_DIR$/app/components/MobileNavbar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/sections/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sections/home/HeroSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/home/HeroSection.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +52,7 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Work/Web Development/mead-memorial-chapel/constants/about&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Work/Web Development/mead-memorial-chapel&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -97,7 +98,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-9c94529fcfe0-JavaScript-WS-252.26199.162" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-WS-252.26830.93" />
       </set>
     </attachedChunks>
   </component>
@@ -112,6 +113,10 @@
       <workItem from="1758231600225" duration="15573000" />
       <workItem from="1758297691489" duration="10184000" />
       <workItem from="1758520541219" duration="24654000" />
+      <workItem from="1759284272026" duration="2473000" />
+      <workItem from="1759510035444" duration="1288000" />
+      <workItem from="1759634900730" duration="18000" />
+      <workItem from="1760387218948" duration="769000" />
     </task>
     <task id="LOCAL-00001" summary="Adding Configs for Netlify I">
       <option name="closed" value="true" />
@@ -273,7 +278,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758678462935</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Mobile Responsive Changes IV">
+      <option name="closed" value="true" />
+      <created>1758727587052</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1758727587052</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,6 +313,7 @@
     <MESSAGE value="Minor Changes II" />
     <MESSAGE value="Mobile Responsive Changes II" />
     <MESSAGE value="Mobile Responsive Changes III" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mobile Responsive Changes III" />
+    <MESSAGE value="Mobile Responsive Changes IV" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mobile Responsive Changes IV" />
   </component>
 </project>

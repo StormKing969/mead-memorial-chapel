@@ -9,7 +9,11 @@ const Footer = () => {
       <div
         className={"flex flex-col items-center justify-center bg-gray-50 py-6"}
       >
-        <div className={"flex flex-col text-center px-5 md:flex-row md:justify-evenly md:text-left gap-10 w-full"}>
+        <div
+          className={
+            "flex flex-col text-center px-5 md:flex-row md:justify-evenly md:text-left gap-10 w-full"
+          }
+        >
           <img src={"/logo.svg"} alt={"logo"} className={"max-h-[200px]"} />
 
           <div>
@@ -18,7 +22,9 @@ const Footer = () => {
               <li>
                 <Link
                   to={"/"}
-                  className={"text-blue-600 hover:text-blue-800"}
+                  className={
+                    "text-blue-600 hover:text-blue-800 hover:font-bold transition-all"
+                  }
                 >
                   Home
                 </Link>
@@ -26,7 +32,9 @@ const Footer = () => {
               <li>
                 <Link
                   to={"/about"}
-                  className={"text-blue-600 hover:text-blue-800"}
+                  className={
+                    "text-blue-600 hover:text-blue-800 hover:font-bold transition-all"
+                  }
                 >
                   About
                 </Link>
@@ -34,7 +42,9 @@ const Footer = () => {
               <li>
                 <Link
                   to={"/lawsuit"}
-                  className={"text-blue-600 hover:text-blue-800"}
+                  className={
+                    "text-blue-600 hover:text-blue-800 hover:font-bold transition-all"
+                  }
                 >
                   Timeline
                 </Link>
@@ -42,7 +52,9 @@ const Footer = () => {
               <li>
                 <Link
                   to={"/blog"}
-                  className={"text-blue-600 hover:text-blue-800"}
+                  className={
+                    "text-blue-600 hover:text-blue-800 hover:font-bold transition-all"
+                  }
                 >
                   Blog
                 </Link>
@@ -50,10 +62,22 @@ const Footer = () => {
               <li>
                 <Link
                   to={"/contact"}
-                  className={"text-blue-600 hover:text-blue-800"}
+                  className={
+                    "text-blue-600 hover:text-blue-800 hover:font-bold transition-all"
+                  }
                 >
                   Contact
                 </Link>
+              </li>
+              <li>
+                <a
+                  href={"https://meadmemorialchapel.com/"}
+                  className={
+                    "text-blue-600 hover:text-blue-800 hover:font-bold transition-all"
+                  }
+                >
+                  Original Site
+                </a>
               </li>
             </ul>
           </div>
@@ -100,7 +124,11 @@ const Footer = () => {
           </div>
         </div>
 
-        <p className={"text-sm text-gray-400 mt-5 text-center p-5 md:mt-3 sm:p-0 sm:text-left"}>
+        <p
+          className={
+            "text-sm text-gray-400 mt-5 text-center p-5 md:mt-3 sm:p-0 sm:text-left"
+          }
+        >
           © 2025 Mead Memorial Chapel | Designed & Built by{" "}
           <a
             href={"https://sajana-wijesinghe-portfolio-v4.netlify.app/"}
