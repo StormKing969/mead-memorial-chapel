@@ -4,6 +4,10 @@ export const LawsuitSection = [
         title: "Context",
     },
     {
+        link: "#letter",
+        title: "Alumni Letter",
+    },
+    {
         link: "#timeline",
         title: "Legal Timeline",
     },

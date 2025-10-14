@@ -13,7 +13,7 @@ import { Link } from "react-router";
 
 const LawsuitContent = () => {
   return (
-    <section className={"flex max-w-7xl mx-auto mt-8 mb-20 px-4 gap-8"}>
+    <section className={"flex max-w-7xl mx-auto mt-8 mb-20 px-4 gap-8 scroll-smooth"}>
       <aside
         className={
           "w-72 min-w-60 max-w-xs bg-white border border-gray-100 rounded-lg py-8 px-4 mr-4 self-start sticky top-32 shadow-sm hidden md:block"
@@ -47,6 +47,24 @@ const LawsuitContent = () => {
           <p className={"text-lg text-gray-800 leading-relaxed"}>
             {LawsuitPageBackgroundContent}
           </p>
+        </section>
+
+        <section
+          id={"letter"}
+          className={
+            "bg-white rounded-xl shadow-md px-8 py-10 mb-12 border border-gray-100"
+          }
+        >
+          <h2 className={"text-3xl font-extrabold mb-4 text-gray-900"}>
+            Letter from Middlebury Campus Alumni
+          </h2>
+          <iframe
+            src={"/lawsuit/Mead Chapel 10_25 Letter.docx.pdf"}
+            width={"100%"}
+            height={"800px"}
+            title={"Alumni's Letter"}
+            className={"border rounded"}
+          />
         </section>
 
         <section
