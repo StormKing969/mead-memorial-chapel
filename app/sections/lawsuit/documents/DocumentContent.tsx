@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {
   DocumentCategories,
   Files,
@@ -11,6 +11,19 @@ const DocumentContent = () => {
     "Pleadings & Motions",
   );
   const [documents, setDocuments] = useState<DocumentObj[]>();
+  const sectionRef = useRef(null);
+
+  const handleOnClick = ({
+    targetRef,
+    category,
+  }: {
+    targetRef: any;
+    category: string;
+  }) => {
+    const top = targetRef.current?.offsetTop - 150;
+    window.scrollTo({ top, behavior: "smooth" });
+    setCurrentCategory(category as DocumentTypes);
+  };
 
   useEffect(() => {
     const getCategorizedDocuments = Files.filter(
@@ -20,7 +33,10 @@ const DocumentContent = () => {
   }, [currentCategory]);
 
   return (
-    <div className={"bg-white px-6 md:px-25 flex flex-row gap-8 pb-10"}>
+    <div
+      className={"bg-white px-6 md:px-25 flex flex-row gap-8 pb-10"}
+      ref={sectionRef}
+    >
       <div
         className={
           "sticky top-32 flex flex-col h-fit min-w-[200px] w-full max-w-[300px] md:border-r border-gray-100"
@@ -32,7 +48,7 @@ const DocumentContent = () => {
             className={`${
               category === currentCategory ? "text-blue-600 shadow-md" : ""
             } cursor-pointer border-gray-300 w-full mb-4 last:mb-0 hover:shadow-md hover:text-blue-600 px-4 py-2 text-left rounded-lg`}
-            onClick={() => setCurrentCategory(category as DocumentTypes)}
+            onClick={() => handleOnClick({ targetRef: sectionRef, category })}
           >
             {category}
           </button>
