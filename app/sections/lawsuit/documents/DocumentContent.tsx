@@ -7,42 +7,37 @@ import FilePreview from "~/components/FilePreview";
 import type { DocumentObj, DocumentTypes } from "../../../../types/documents";
 
 const DocumentContent = () => {
-  const [currentCategory, setCurrentCategory] =
-    useState<DocumentTypes>("Court Filings");
+  const [currentCategory, setCurrentCategory] = useState<DocumentTypes>(
+    "Pleadings & Motions",
+  );
   const [documents, setDocuments] = useState<DocumentObj[]>();
 
   useEffect(() => {
-    const getCategorizedDocuments = Files.filter((ele) => {
-      if (
-        ele.category.toLowerCase().startsWith(currentCategory.toLowerCase())
-      ) {
-        return ele;
-      }
-    });
+    const getCategorizedDocuments = Files.filter(
+      (ele) => ele.category.toLowerCase() === currentCategory.toLowerCase(),
+    );
     setDocuments(getCategorizedDocuments);
   }, [currentCategory]);
 
   return (
     <div className={"bg-white px-6 md:px-25 flex flex-row gap-8 pb-10"}>
-      <ul
+      <div
         className={
-          "self-start sticky top-32 min-w-[200px] gap-2 border md:border-b-0 md:border-r border-gray-100 rounded-lg"
+          "sticky top-32 flex flex-col h-fit min-w-[200px] w-full max-w-[300px] md:border-r border-gray-100"
         }
       >
-        {DocumentCategories.map((category, i) => (
-          <li
-            key={i}
-            className={`${category.startsWith(currentCategory) ? "text-blue-600 shadow-md" : ""} cursor-pointer border-gray-300 w-full last:border-none hover:shadow-md hover:text-blue-600`}
-            onClick={() => setCurrentCategory(category)}
+        {DocumentCategories.map((category) => (
+          <button
+            key={category}
+            className={`${
+              category === currentCategory ? "text-blue-600 shadow-md" : ""
+            } cursor-pointer border-gray-300 w-full mb-4 last:mb-0 hover:shadow-md hover:text-blue-600 px-4 py-2 text-left rounded-lg`}
+            onClick={() => setCurrentCategory(category as DocumentTypes)}
           >
-            <button
-              className={"py-4 px-4 text-lg font-semibold cursor-pointer"}
-            >
-              {category}
-            </button>
-          </li>
+            {category}
+          </button>
         ))}
-      </ul>
+      </div>
 
       <div>
         <h2 className={"text-2xl font-bold text-gray-900 mb-8"}>

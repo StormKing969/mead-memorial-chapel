@@ -1,6 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import type { DocumentObj, DocumentTypes } from "../../types/documents";
-import { Link } from "react-router";
+
+const categoryToSlug: Record<DocumentTypes, string> = {
+  "Docket & Case Index": "docket-case-index",
+  "Pleadings & Motions": "pleadings-motions",
+  "Briefs, Appendices & Legal Memoranda": "briefs-appendices-legal-memoranda",
+  "Evidence & Discovery": "evidence-discovery",
+  "Transcripts, Hearings & Notices": "transcripts-hearings-notices",
+  "Administrative, Press & Public Materials":
+    "administrative-press-public-materials",
+};
 
 const FilePreview = ({
   documents: { title, date, fileName, videoLink },
@@ -11,21 +20,19 @@ const FilePreview = ({
 }) => {
   const [fileUrl, setFileUrl] = useState<string>("");
 
+  const basePath = useMemo(() => {
+    // Default to documents root if category not matched
+    const slug = categoryToSlug[currentCategory] ?? "";
+    return slug ? `/lawsuit/documents/${slug}` : "/lawsuit/documents";
+  }, [currentCategory]);
+
   useEffect(() => {
     if (!fileName) {
-      setFileUrl(videoLink);
-    } else if (currentCategory.startsWith("Court Filings")) {
-      setFileUrl("/lawsuit/filings");
-    } else if (currentCategory.startsWith("Exhibits")) {
-      setFileUrl("/lawsuit/exhibits");
-    } else if (currentCategory.startsWith("Correspondence")) {
-      setFileUrl("/lawsuit/correspondence");
-    } else if (currentCategory.startsWith("Press Releases")) {
-      setFileUrl("/lawsuit/press");
+      setFileUrl(videoLink ?? "");
     } else {
-      setFileUrl("/lawsuit/other");
+      setFileUrl(basePath);
     }
-  }, []);
+  }, [fileName, videoLink, basePath]);
 
   return (
     <div
@@ -38,24 +45,29 @@ const FilePreview = ({
       <div className={"mt-4 flex gap-3"}>
         {!fileName ? (
           <>
-            <a
-              href={`${videoLink}`}
-              className={"text-indigo-600 hover:underline text-sm font-medium"}
-              target={"_blank"}
-            >
-              View Video
-            </a>
+            {videoLink && (
+              <a
+                href={`${videoLink}`}
+                className={
+                  "text-indigo-600 hover:underline text-sm font-medium"
+                }
+                target={"_blank"}
+                rel={"noopener noreferrer"}
+              >
+                View Video
+              </a>
+            )}
           </>
         ) : (
           <>
-            <Link
-              to={`${fileUrl}/${fileName}`}
+            <a
+              href={`${fileUrl}/${fileName}`}
               className={"text-indigo-600 hover:underline text-sm font-medium"}
               target={"_blank"}
-              rel={"noopener"}
+              rel={"noopener noreferrer"}
             >
               View
-            </Link>
+            </a>
 
             <a
               href={`${fileUrl}/${fileName}`}
