@@ -1,6 +1,27 @@
-.DS_Store
-/node_modules/
+# Build artifacts
+*.o
+*.pyc
+*.class
+bin/
+dist/
+target/
 
-# React Router
-/.react-router/
-/build/
+# Dependency caches
+node_modules/
+__pycache__/
+venv/
+
+# Runtime-generated files
+*.log
+*.tmp
+*.bak
+
+# OS and Editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Sensitive information
+.env
+config.local.js

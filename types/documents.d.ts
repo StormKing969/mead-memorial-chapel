@@ -1,9 +1,10 @@
 export type DocumentTypes =
-  | "Court Filings"
-  | "Exhibits"
-  | "Correspondence"
-  | "Press Releases"
-  | "Other Documents";
+  | "Docket & Case Index"
+  | "Pleadings & Motions"
+  | "Briefs, Appendices & Legal Memoranda"
+  | "Evidence & Discovery"
+  | "Transcripts, Hearings & Notices"
+  | "Administrative, Press & Public Materials";
 
 export interface DocumentObj {
   title: string;
