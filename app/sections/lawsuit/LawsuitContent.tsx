@@ -63,7 +63,7 @@ const LawsuitContent = () => {
           <iframe
             src={"/lawsuit/Mead Chapel 10_25 Letter.docx.pdf"}
             width={"100%"}
-            height={"600px"}
+            height={"700px"}
             title={"Letter from Middlebury Campus Alumni"}
             className={"border rounded"}
             loading="lazy"

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 const MessageSection = () => {
   return (
@@ -72,13 +73,15 @@ const MessageSection = () => {
               Special Administrator, Estate of Governor John A. Mead
             </p>
 
-            <div className="mt-6">
-              <a
-                href="/lawsuit"
-                className="inline-block bg-blue-600 text-white px-4 py-2 rounded text-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300"
+            <div className={"text-center mt-10"}>
+              <Link
+                to={"/lawsuit"}
+                className={
+                  "bg-gray-900 text-white px-6 py-3 rounded-md hover:bg-gray-700"
+                }
               >
                 View related legal proceedings
-              </a>
+              </Link>
             </div>
           </div>
         </div>
