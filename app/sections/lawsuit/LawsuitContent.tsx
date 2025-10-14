@@ -13,7 +13,9 @@ import { Link } from "react-router";
 
 const LawsuitContent = () => {
   return (
-    <section className={"flex max-w-7xl mx-auto mt-8 mb-20 px-4 gap-8 scroll-smooth"}>
+    <section
+      className={"flex max-w-7xl mx-auto mt-8 mb-20 px-4 gap-8 scroll-smooth"}
+    >
       <aside
         className={
           "w-72 min-w-60 max-w-xs bg-white border border-gray-100 rounded-lg py-8 px-4 mr-4 self-start sticky top-32 shadow-sm hidden md:block"
@@ -61,9 +63,10 @@ const LawsuitContent = () => {
           <iframe
             src={"/lawsuit/Mead Chapel 10_25 Letter.docx.pdf"}
             width={"100%"}
-            height={"800px"}
-            title={"Alumni's Letter"}
+            height={"600px"}
+            title={"Letter from Middlebury Campus Alumni"}
             className={"border rounded"}
+            loading="lazy"
           />
         </section>
 
