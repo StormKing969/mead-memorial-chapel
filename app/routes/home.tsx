@@ -3,6 +3,7 @@ import HeroSection from "~/sections/home/HeroSection";
 import AboutPreview from "~/sections/home/AboutPreview";
 import LatestBlogPosts from "~/sections/home/LatestBlogPosts";
 import LawsuitPreview from "~/sections/home/LawsuitPreview";
+import MessageSection from "~/sections/home/MessageSection";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -16,6 +17,7 @@ export default function Home() {
     <main className={"font-serif"}>
         <HeroSection />
         <AboutPreview />
+        <MessageSection />
         <LawsuitPreview />
         <LatestBlogPosts />
     </main>

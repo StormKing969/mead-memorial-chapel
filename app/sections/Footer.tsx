@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <IconContext.Provider value={{ color: "#155dfc", size: "2em" }}>
       <div
-        className={"flex flex-col items-center justify-center bg-gray-50 py-6"}
+        className={"flex flex-col items-center justify-center bg-gray-50 py-6 shadow"}
       >
         <div
           className={

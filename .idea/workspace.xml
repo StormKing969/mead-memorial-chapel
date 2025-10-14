@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="Customer Changes III">
-      <change afterPath="$PROJECT_DIR$/public/lawsuit/Mead Chapel 10_25 Letter.docx.pdf" afterDir="false" />
+    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/sections/home/MessageSection.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/home/message-md.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/home/message.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/sections/lawsuit/LawsuitContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/lawsuit/LawsuitContent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants/lawsuit/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/constants/lawsuit/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sections/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sections/home/LatestBlogPosts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/home/LatestBlogPosts.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sections/home/LawsuitPreview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/home/LawsuitPreview.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,7 +22,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="legal-documents" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -55,7 +59,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;legal-documents&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Work/Web Development/mead-memorial-chapel&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -76,11 +80,11 @@
       <recent name="C:\Work\Web Development\mead-memorial-chapel\constants\about" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Work\Web Development\mead-memorial-chapel\public\home" />
       <recent name="C:\Work\Web Development\mead-memorial-chapel\public\lawsuit" />
       <recent name="C:\Work\Web Development\mead-memorial-chapel\public\lawsuit\documents\pleadings-motions" />
       <recent name="C:\Work\Web Development\mead-memorial-chapel\public\lawsuit\documents\transcripts-hearings-notices" />
       <recent name="C:\Work\Web Development\mead-memorial-chapel\public\lawsuit\documents\evidence-discovery" />
-      <recent name="C:\Work\Web Development\mead-memorial-chapel\public\lawsuit\documents\administrative-press-public-materials" />
     </key>
   </component>
   <component name="RunManager">
@@ -96,6 +100,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.dev" />
         <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
@@ -126,6 +131,8 @@
       <workItem from="1760404136692" duration="871000" />
       <workItem from="1760405022803" duration="165000" />
       <workItem from="1760405291882" duration="2218000" />
+      <workItem from="1760408875326" duration="80000" />
+      <workItem from="1760410103965" duration="961000" />
     </task>
     <task id="LOCAL-00001" summary="Adding Configs for Netlify I">
       <option name="closed" value="true" />
@@ -311,7 +318,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760406545737</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Bug Fix I - 10/13/25">
+      <option name="closed" value="true" />
+      <created>1760408942580</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1760408942580</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,6 +356,7 @@
     <MESSAGE value="Mobile Responsive Changes IV" />
     <MESSAGE value="Customer Changes II" />
     <MESSAGE value="Customer Changes III" />
-    <option name="LAST_COMMIT_MESSAGE" value="Customer Changes III" />
+    <MESSAGE value="Bug Fix I - 10/13/25" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug Fix I - 10/13/25" />
   </component>
 </project>

@@ -5,7 +5,7 @@ import LawsuitTimelineCard from "~/components/LawsuitTimelineCard";
 
 const LawsuitPreview = () => {
   return (
-    <section className={"py-16 px-6 md:px-20 bg-gray-50"}>
+    <section className={"py-16 px-6 md:px-25 bg-white"}>
       <h2 className={"text-3xl font-bold text-center mb-4"}>Lawsuit</h2>
       <p className={"text-center text-gray-600 mb-10"}>
         Follow the case in chronological order →

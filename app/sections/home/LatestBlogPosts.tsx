@@ -7,7 +7,7 @@ const LatestBlogPosts = () => {
     const posts = getCurrentBlogPosts();
 
   return (
-    <section className={"py-16 px-6 md:px-25 bg-white"}>
+    <section className={"py-16 px-6 md:px-25 bg-gray-50"}>
       <h2 className={"text-3xl font-bold mb-8 text-center"}>
         Latest Blog Posts
       </h2>
