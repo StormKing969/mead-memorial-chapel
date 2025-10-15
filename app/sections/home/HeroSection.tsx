@@ -44,23 +44,34 @@ const HeroSection = () => {
           </p>
         </div>
 
-        <div className={"space-x-4"}>
-          <Link
-            to={"/about"}
-            className={
-              "bg-white text-gray-900 px-6 py-3 rounded-md font-semibold hover:bg-gray-200"
-            }
-          >
-            Learn More
-          </Link>
+        <div className={"flex flex-col text-center w-fit gap-8"}>
+          <div className={"space-x-4"}>
+            <Link
+              to={"/about"}
+              className={
+                "bg-white text-gray-900 px-6 py-3 rounded-md font-semibold hover:bg-gray-200"
+              }
+            >
+              Learn More
+            </Link>
+
+            <Link
+              to={"/lawsuit"}
+              className={
+                "bg-gray-800 border border-white px-6 py-3 rounded-md font-semibold hover:bg-gray-700"
+              }
+            >
+              View Lawsuit
+            </Link>
+          </div>
 
           <Link
-            to={"/lawsuit"}
+            to={"/petition"}
             className={
               "bg-gray-800 border border-white px-6 py-3 rounded-md font-semibold hover:bg-gray-700"
             }
           >
-            View Lawsuit
+            Support the Cause
           </Link>
         </div>
       </div>
