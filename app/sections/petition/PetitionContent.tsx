@@ -1,5 +1,5 @@
 import React from "react";
-import { useForm } from "react-hook-form";
+import { useForm, Controller } from "react-hook-form";
 import InputField from "~/components/InputField";
 import { RadioGroup, RadioGroupItem } from "~/components/ui/radio-group";
 import { Label } from "~/components/ui/label";
@@ -8,6 +8,7 @@ import { Button } from "~/components/ui/button";
 const PetitionContent = () => {
   const {
     register,
+    control,
     handleSubmit,
     formState: { errors, isSubmitting },
   } = useForm<SignUpFormData>({
@@ -15,7 +16,7 @@ const PetitionContent = () => {
       firstName: "",
       lastName: "",
       email: null,
-      anonymous: false,
+      anonymous: true,
       phoneNumber: null,
       comments: "",
     },
@@ -33,12 +34,12 @@ const PetitionContent = () => {
   return (
     <section
       className={
-        "bg-white px-6 md:px-25 flex flex-row gap-8 pb-10 text-gray-600 py-8"
+        "bg-white px-6 md:px-25 flex flex-row justify-center gap-8 pb-10 text-gray-600 py-8"
       }
     >
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className={"flex flex-col w-full justify-center items-center space-y-5"}
+        className={"flex flex-col w-full max-w-[800px] justify-center items-center space-y-5"}
       >
         <div className={"flex flex-row gap-8 w-full"}>
           <InputField
@@ -85,9 +86,31 @@ const PetitionContent = () => {
             error={errors.phoneNumber}
             validation={{
               required: "Phone Number is required",
-              pattern: /^\(\d{3}\) \d{3}-\d{4}$/,
-              message: "Invalid phone number format. Use (123) 456-7890.",
+              pattern: /\d{10}$/,
+              message: "Invalid phone number.",
             }}
+          />
+        </div>
+
+        <div className={"w-full"}>
+          <Controller
+            name="anonymous"
+            control={control}
+            render={({ field }) => (
+              <RadioGroup
+                value={field.value ? "true" : "false"}
+                onValueChange={(val) => field.onChange(val === "true")}
+              >
+                <div className="flex items-center space-x-2">
+                  <RadioGroupItem value="false" id="acknowledged" />
+                  <Label htmlFor="acknowledged">Public</Label>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <RadioGroupItem value="true" id="anonymous" />
+                  <Label htmlFor="anonymous">Anonymous</Label>
+                </div>
+              </RadioGroup>
+            )}
           />
         </div>
 
@@ -101,26 +124,13 @@ const PetitionContent = () => {
           validation={{ maxLength: 500 }}
         />
 
-        <div className={"w-fit flex flex-row gap-5 items-center"}>
-          <RadioGroup defaultValue="anonymous">
-            <div className="flex items-center gap-3">
-              <RadioGroupItem value="anonymous" id="r1" />
-              <Label htmlFor="r1">Anonymous</Label>
-            </div>
-            <div className="flex items-center gap-3">
-              <RadioGroupItem value="public" id="r2" />
-              <Label htmlFor="r2">Public</Label>
-            </div>
-          </RadioGroup>
-
-          <Button
-            type={"submit"}
-            disabled={isSubmitting}
-            // className={"yellow-btn w-full mt-5"}
-          >
-            {isSubmitting ? "Submitting..." : "Sign Petition"}
-          </Button>
-        </div>
+        <Button
+          type={"submit"}
+          disabled={isSubmitting}
+          className={"w-full max-w-[400px] p-6 text-lg font-semibold"}
+        >
+          {isSubmitting ? "Submitting..." : "Sign Petition"}
+        </Button>
       </form>
     </section>
   );
