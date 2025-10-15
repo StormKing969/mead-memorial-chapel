@@ -39,12 +39,15 @@ type Pages = {
   "/petition": {
     params: {};
   };
+  "/petition-list": {
+    params: {};
+  };
 };
 
 type RouteFiles = {
   "root.tsx": {
     id: "root";
-    page: "/" | "/about" | "/auth" | "/blog" | "/blog/:id" | "/create-blog-post" | "/lawsuit" | "/lawsuit/documents" | "/petition";
+    page: "/" | "/about" | "/auth" | "/blog" | "/blog/:id" | "/create-blog-post" | "/lawsuit" | "/lawsuit/documents" | "/petition" | "/petition-list";
   };
   "routes/home.tsx": {
     id: "routes/home";
@@ -81,5 +84,9 @@ type RouteFiles = {
   "routes/petition.tsx": {
     id: "routes/petition";
     page: "/petition";
+  };
+  "routes/petition-list.tsx": {
+    id: "routes/petition-list";
+    page: "/petition-list";
   };
 };

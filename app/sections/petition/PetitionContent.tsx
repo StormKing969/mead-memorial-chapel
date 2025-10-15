@@ -4,8 +4,12 @@ import InputField from "~/components/InputField";
 import { RadioGroup, RadioGroupItem } from "~/components/ui/radio-group";
 import { Label } from "~/components/ui/label";
 import { Button } from "~/components/ui/button";
+import { addDoc, collection } from "@firebase/firestore";
+import { db } from "~/lib/firebase";
+import { useNavigate } from "react-router";
 
 const PetitionContent = () => {
+  const navigate = useNavigate();
   const {
     register,
     control,
@@ -24,8 +28,20 @@ const PetitionContent = () => {
   });
   const onSubmit = async (data: SignUpFormData) => {
     try {
-      // sign up logic here
-      console.log(data);
+      const date = new Date();
+      const formattedDate = date.toLocaleDateString("en-US");
+
+      await addDoc(collection(db, "petitions"), {
+        firstName: data.firstName,
+        lastName: data.lastName,
+        email: data.email,
+        anonymous: data.anonymous,
+        phoneNumber: data.phoneNumber,
+        comments: data.comments,
+        signedAt: formattedDate,
+      }).finally(() => {
+        navigate("/petition-list");
+      });
     } catch (error) {
       console.error(error);
     }
@@ -39,7 +55,9 @@ const PetitionContent = () => {
     >
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className={"flex flex-col w-full max-w-[800px] justify-center items-center space-y-5"}
+        className={
+          "flex flex-col w-full max-w-[800px] justify-center items-center space-y-5"
+        }
       >
         <div className={"flex flex-row gap-8 w-full"}>
           <InputField

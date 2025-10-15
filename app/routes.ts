@@ -10,4 +10,5 @@ export default [
   route("/lawsuit", "routes/lawsuit.tsx"),
   route("/lawsuit/documents", "routes/documents.tsx"),
   route("/petition", "routes/petition.tsx"),
+  route("/petition-list", "routes/petition-list.tsx"),
 ] satisfies RouteConfig;
