@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="Update VI" />
+    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="Temp Updates II">
+      <change afterPath="$PROJECT_DIR$/app/routes/petition-list.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sections/petition/PetitionContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/petition/PetitionContent.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,7 +18,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="legal-documents" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -50,7 +55,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;petition&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Work/Web Development/mead-memorial-chapel&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -124,6 +129,9 @@
       <workItem from="1760405291882" duration="2218000" />
       <workItem from="1760408875326" duration="80000" />
       <workItem from="1760410103965" duration="1074000" />
+      <workItem from="1760411223335" duration="157000" />
+      <workItem from="1760463791342" duration="13692000" />
+      <workItem from="1760490309565" duration="5221000" />
     </task>
     <task id="LOCAL-00001" summary="Adding Configs for Netlify I">
       <option name="closed" value="true" />
@@ -325,16 +333,37 @@
       <option name="project" value="LOCAL" />
       <updated>1760411158305</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Update VII">
+      <option name="closed" value="true" />
+      <created>1760411366847</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1760411366847</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Temp Updates I">
+      <option name="closed" value="true" />
+      <created>1760486579591</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1760486579591</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Temp Updates II">
+      <option name="closed" value="true" />
+      <created>1760538925314</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1760538925314</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adding Configs for Netlify I" />
-    <MESSAGE value="Minor Changes to existing HomePage Code" />
-    <MESSAGE value="BLog Post Display Update I" />
     <MESSAGE value="BLog Post Display Update II" />
     <MESSAGE value="BLog Post Display Update III" />
     <MESSAGE value="BLog Post Display Complete. Working on Blog Article Page" />
@@ -357,6 +386,9 @@
     <MESSAGE value="Customer Changes III" />
     <MESSAGE value="Bug Fix I - 10/13/25" />
     <MESSAGE value="Update VI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update VI" />
+    <MESSAGE value="Update VII" />
+    <MESSAGE value="Temp Updates I" />
+    <MESSAGE value="Temp Updates II" />
+    <option name="LAST_COMMIT_MESSAGE" value="Temp Updates II" />
   </component>
 </project>

@@ -36,12 +36,18 @@ type Pages = {
   "/lawsuit/documents": {
     params: {};
   };
+  "/petition": {
+    params: {};
+  };
+  "/petition-list": {
+    params: {};
+  };
 };
 
 type RouteFiles = {
   "root.tsx": {
     id: "root";
-    page: "/" | "/about" | "/auth" | "/blog" | "/blog/:id" | "/create-blog-post" | "/lawsuit" | "/lawsuit/documents";
+    page: "/" | "/about" | "/auth" | "/blog" | "/blog/:id" | "/create-blog-post" | "/lawsuit" | "/lawsuit/documents" | "/petition" | "/petition-list";
   };
   "routes/home.tsx": {
     id: "routes/home";
@@ -74,5 +80,13 @@ type RouteFiles = {
   "routes/documents.tsx": {
     id: "routes/documents";
     page: "/lawsuit/documents";
+  };
+  "routes/petition.tsx": {
+    id: "routes/petition";
+    page: "/petition";
+  };
+  "routes/petition-list.tsx": {
+    id: "routes/petition-list";
+    page: "/petition-list";
   };
 };
