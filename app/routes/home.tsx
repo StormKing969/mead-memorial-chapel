@@ -1,6 +1,6 @@
 import type { Route } from "./+types/home";
 import { Link } from "react-router";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { getPetitionListCount } from "~/lib/firebase";
 import { Button } from "~/components/ui/button";
 
@@ -12,7 +12,23 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
-  const count = getPetitionListCount();
+  const [count, setCount] = useState<number>(0);
+  const [loading, setLoading] = useState<boolean>(true);
+
+  useEffect(() => {
+    const fetchCount = async () => {
+      try {
+        const response = await getPetitionListCount();
+        setCount(response);
+      } catch (error) {
+        console.error("Error fetching petition count:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchCount();
+  }, []);
 
   return (
     <main className={"font-serif"}>
@@ -42,15 +58,18 @@ export default function Home() {
 
           <div className={"text-center"}>
             <p>
-                <span className={"font-bold text-2xl"}>{count} signatures</span> in support.{" "}
-                <Link
-                    to={"/petition"}
-                    className={
-                        "font-semibold underline hover:text-blue-400 transition-colors"
-                    }
-                >
-                    Add yours to the petition
-                </Link>
+              <span className={"font-bold text-2xl"}>
+                {loading ? "—" : count.toLocaleString()} signatures
+              </span>{" "}
+              in support.{" "}
+              <Link
+                to={"/petition"}
+                className={
+                  "font-semibold underline hover:text-blue-400 transition-colors"
+                }
+              >
+                Add yours to the petition
+              </Link>
             </p>
           </div>
         </div>

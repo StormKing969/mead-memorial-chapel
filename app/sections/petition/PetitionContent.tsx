@@ -41,7 +41,7 @@ const PetitionContent = () => {
         comments: data.comments,
         signedAt: formattedDate,
       }).finally(() => {
-        navigate("/petition-list");
+        navigate("/main");
       });
     } catch (error) {
       console.error(error);
