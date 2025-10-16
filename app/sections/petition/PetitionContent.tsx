@@ -21,6 +21,7 @@ const PetitionContent = () => {
       lastName: "",
       email: null,
       anonymous: true,
+      getNewsLetter: false,
       phoneNumber: null,
       comments: "",
     },
@@ -36,11 +37,12 @@ const PetitionContent = () => {
         lastName: data.lastName,
         email: data.email,
         anonymous: data.anonymous,
+        getNewsLetter: data.getNewsLetter,
         phoneNumber: data.phoneNumber,
         comments: data.comments,
         signedAt: formattedDate,
       }).finally(() => {
-        navigate("/petition-list");
+        navigate("/main");
       });
     } catch (error) {
       console.error(error);
@@ -126,6 +128,32 @@ const PetitionContent = () => {
                 <div className="flex items-center space-x-2">
                   <RadioGroupItem value="true" id="anonymous" />
                   <Label htmlFor="anonymous">Anonymous</Label>
+                </div>
+              </RadioGroup>
+            )}
+          />
+        </div>
+
+        <hr className={"w-full border-t border-gray-300"} />
+
+        <div className={"w-full"}>
+          <Controller
+            name="getNewsLetter"
+            control={control}
+            render={({ field }) => (
+              <RadioGroup
+                value={field.value ? "true" : "false"}
+                onValueChange={(val) => field.onChange(val === "true")}
+              >
+                <div className="flex items-center space-x-2">
+                  <RadioGroupItem value="true" id="get-news-letters" />
+                  <Label htmlFor="get-news-letters">
+                      Yes, I would like to receive newsletters from Mead Memorial Chapel
+                  </Label>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <RadioGroupItem value="false" id="dont-want" />
+                  <Label htmlFor="dont-want">No, Thanks</Label>
                 </div>
               </RadioGroup>
             )}

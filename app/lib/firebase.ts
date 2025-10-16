@@ -119,3 +119,15 @@ export async function getPostById(id: string) {
   const docSnap = querySnapshot.docs[0];
   return { ...docSnap.data() };
 }
+
+export async function getPetitionListCount() {
+    const q = query(collection(db, "petitions"));
+    const querySnapshot = await getDocs(q);
+
+    if (querySnapshot.empty) {
+        console.log("No matching documents.");
+        return 0;
+    }
+
+    return querySnapshot.docs.length;
+}

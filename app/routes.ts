@@ -9,6 +9,6 @@ export default [
   route("/create-blog-post", "routes/create-blog-post.tsx"),
   route("/lawsuit", "routes/lawsuit.tsx"),
   route("/lawsuit/documents", "routes/documents.tsx"),
+  route("/main", "routes/main.tsx"),
   route("/petition", "routes/petition.tsx"),
-  route("/petition-list", "routes/petition-list.tsx"),
 ] satisfies RouteConfig;

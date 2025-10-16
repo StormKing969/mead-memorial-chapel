@@ -15,6 +15,7 @@ type SignUpFormData = {
     lastName: string;
     email: string | null;
     anonymous: boolean;
+    getNewsLetter: boolean;
     phoneNumber: number | null;
     comments: string;
 };
