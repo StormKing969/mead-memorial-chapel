@@ -21,7 +21,7 @@ const PetitionContent = () => {
       lastName: "",
       email: null,
       anonymous: true,
-      getNewsLetter: true,
+      getNewsLetter: false,
       phoneNumber: null,
       comments: "",
     },
@@ -37,6 +37,7 @@ const PetitionContent = () => {
         lastName: data.lastName,
         email: data.email,
         anonymous: data.anonymous,
+        getNewsLetter: data.getNewsLetter,
         phoneNumber: data.phoneNumber,
         comments: data.comments,
         signedAt: formattedDate,
@@ -147,7 +148,7 @@ const PetitionContent = () => {
                 <div className="flex items-center space-x-2">
                   <RadioGroupItem value="true" id="get-news-letters" />
                   <Label htmlFor="get-news-letters">
-                    Get News Letters from Mead Memorial Chapel
+                      Yes, I would like to receive newsletters from Mead Memorial Chapel
                   </Label>
                 </div>
                 <div className="flex items-center space-x-2">

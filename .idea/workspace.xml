@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="Petition Update I">
-      <change beforePath="$PROJECT_DIR$/app/components/PetitionCount.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/home.tsx" afterDir="false" />
+    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="Petition Update II">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/sections/petition/PetitionContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/petition/PetitionContent.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -141,7 +140,7 @@
       <workItem from="1760411223335" duration="157000" />
       <workItem from="1760463791342" duration="13692000" />
       <workItem from="1760490309565" duration="5221000" />
-      <workItem from="1760580019845" duration="10668000" />
+      <workItem from="1760580019845" duration="11480000" />
     </task>
     <task id="LOCAL-00001" summary="Adding Configs for Netlify I">
       <option name="closed" value="true" />
@@ -375,14 +374,21 @@
       <option name="project" value="LOCAL" />
       <updated>1760641803197</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Petition Update II">
+      <option name="closed" value="true" />
+      <created>1760645514874</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1760645514874</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="BLog Post Display Update III" />
     <MESSAGE value="BLog Post Display Complete. Working on Blog Article Page" />
     <MESSAGE value="Blog Article Page Complete" />
     <MESSAGE value="About Page Complete II" />
@@ -407,6 +413,7 @@
     <MESSAGE value="Temp Updates I" />
     <MESSAGE value="Temp Updates II" />
     <MESSAGE value="Petition Update I" />
-    <option name="LAST_COMMIT_MESSAGE" value="Petition Update I" />
+    <MESSAGE value="Petition Update II" />
+    <option name="LAST_COMMIT_MESSAGE" value="Petition Update II" />
   </component>
 </project>
