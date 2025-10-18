@@ -39,7 +39,7 @@ const DocumentContent = () => {
     >
       <div
         className={
-          "sticky top-32 flex flex-col h-fit min-w-[200px] w-full max-w-[300px] md:border-r border-gray-100"
+          "sticky top-32 flex flex-col h-fit max-h-[550px] min-w-[200px] w-full max-w-[300px] md:border-r border-gray-100"
         }
       >
         {DocumentCategories.map((category) => (

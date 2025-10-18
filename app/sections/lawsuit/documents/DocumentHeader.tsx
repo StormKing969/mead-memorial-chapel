@@ -10,9 +10,11 @@ const DocumentHeader = () => {
       >
         Legal Documents
       </h1>
-      <p className={"text-lg text-gray-700 max-w-2xl"}>
+      <p className={"text-lg text-gray-700 w-full"}>
         Explore all legal records related to the Mead Memorial Chapel case.
-        Documents are grouped by category for convenience. Each file can be {" "}
+        Documents are carefully categorized to reflect the structure and claims
+        of the ongoing lawsuit, making it easier to locate filings, exhibits,
+        and correspondence by topic. Each file can be{" "}
         <b>viewed online or downloaded</b> for offline review.
       </p>
     </section>
