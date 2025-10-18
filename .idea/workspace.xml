@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="Petition Update III">
+    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="Document Categorization">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/sections/lawsuit/documents/DocumentContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/lawsuit/documents/DocumentContent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/sections/lawsuit/documents/DocumentHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/lawsuit/documents/DocumentHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constants/lawsuit/documents/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/constants/lawsuit/documents/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/types/documents.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/documents.d.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +18,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="petition-list" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -65,7 +66,7 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "document-updates",
     "junie.onboarding.icon.badge.shown": "true",
     "last_opened_file_path": "C:/Work/Web Development/mead-memorial-chapel",
     "node.js.detected.package.eslint": "true",
@@ -145,7 +146,7 @@
       <workItem from="1760490309565" duration="5221000" />
       <workItem from="1760580019845" duration="14062000" />
       <workItem from="1760741868618" duration="267000" />
-      <workItem from="1760822038358" duration="1445000" />
+      <workItem from="1760822038358" duration="4113000" />
     </task>
     <task id="LOCAL-00001" summary="Adding Configs for Netlify I">
       <option name="closed" value="true" />
@@ -395,14 +396,21 @@
       <option name="project" value="LOCAL" />
       <updated>1760646321224</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Document Categorization">
+      <option name="closed" value="true" />
+      <created>1760823523083</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1760823523083</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Blog Article Page Complete" />
     <MESSAGE value="About Page Complete II" />
     <MESSAGE value="About Page Bug Fix I" />
     <MESSAGE value="About Page Bug Fix II" />
@@ -427,6 +435,7 @@
     <MESSAGE value="Petition Update I" />
     <MESSAGE value="Petition Update II" />
     <MESSAGE value="Petition Update III" />
-    <option name="LAST_COMMIT_MESSAGE" value="Petition Update III" />
+    <MESSAGE value="Document Categorization" />
+    <option name="LAST_COMMIT_MESSAGE" value="Document Categorization" />
   </component>
 </project>
