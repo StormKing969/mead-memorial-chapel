@@ -4,80 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="Documents Update I">
-      <change afterPath="$PROJECT_DIR$/public/lawsuit/documents/amicus-brief-motion-granted/Amicus Brief Motion Granted.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lawsuit/documents/appeal-to-vermont-supreme-court/Appellant's Brief Filed.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lawsuit/documents/appeal-to-vermont-supreme-court/Cert of Compliance Filed.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lawsuit/documents/appeal-to-vermont-supreme-court/PRINTED CASE Vol I - Pleadings Filed.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lawsuit/documents/appeal-to-vermont-supreme-court/PRINTED CASE Vol II - Complaint Exhibits Filed.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lawsuit/documents/appeal-to-vermont-supreme-court/PRINTED CASE Vol III - D's MSJ Exhibits Filed.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lawsuit/documents/appeal-to-vermont-supreme-court/PRINTED CASE Vol IV - P's MSJ Exhibits 1-49 Filed.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lawsuit/documents/appeal-to-vermont-supreme-court/PRINTED CASE Vol V - P's MSJ Exhibits 50-71 Filed.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lawsuit/documents/appeal-to-vermont-supreme-court/Printed Case Volumes - Table of Contents Filed.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lawsuit/documents/motion-for-amicus-brief/Exh. A Licensing Card - Pro Hac Vice - Bedingfield(2591939.1).pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lawsuit/documents/motion-for-amicus-brief/Exh. A Licensing Card - Pro Hac Vice - Kidder(2591937.1).pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lawsuit/documents/motion-for-amicus-brief/Exh. A Licensing Card - Pro Hac Vice - Miller(2591938.1).pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lawsuit/documents/motion-for-amicus-brief/Hemenway - COS for Motions PHV _ NOA _ Motion for Permission to File Brief 10-10-25(2615316.1).pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lawsuit/documents/motion-for-amicus-brief/Hemenway - Motion PHV J. Miller 10-10-25.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lawsuit/documents/motion-for-amicus-brief/Hemenway - Motion PHV M. Bedingfield 10-10-25.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lawsuit/documents/motion-for-amicus-brief/Hemenway - Motion PHV S. Kidder 10-10-25.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lawsuit/documents/motion-for-amicus-brief/Hemenway - NOA 10-10-25.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lawsuit/documents/motion-for-amicus-brief/Motion for Permission to File Amicus Brief 10-10-25.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/FilePreview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/FilePreview.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/about/chapel-hero.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/about/chapel-interior.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/about/chapel-side.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/assets/LawsuitTimelineCard-BMzM-wjp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/assets/Navbar-BtVlSe0J.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/assets/about-C26lelPP.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/assets/auth-CqoO2OYb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/assets/blog-BLzjI8D3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/assets/blog-post-BMih2iIr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/assets/button-Bea-G2Nt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/assets/chunk-B7RQU5TL-BHi1Mf43.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/assets/create-blog-post-BrGs9LRB.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/assets/documents-MfcxWksd.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/assets/entry.client-DkFMJx13.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/assets/firebase-B0Xi_jMF.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/assets/home-CtSjYR8Q.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/assets/index-2ne7_dbK.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/assets/lawsuit-DrrZF6qD.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/assets/main-DzIx8LOf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/assets/manifest-fd58fea8.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/assets/petition-CXQpqYpG.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/assets/root-CcfEfb4T.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/assets/root-DsqMQi32.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/blog/general/rematch-pc-game-steam-cover.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/blog/plus-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/home/chapel-aboutPreview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/home/chapel-hero.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/home/message-md.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/home/message.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/lawsuit/Mead Chapel 10_25 Letter.docx.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/lawsuit/documents/administrative-press-public-materials/Cert of Compliance Filed.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/lawsuit/documents/briefs-appendices-legal-memoranda/Appellant's Brief Filed.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/lawsuit/documents/evidence-discovery/PRINTED CASE Vol II - Complaint Exhibits Filed.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/lawsuit/documents/evidence-discovery/PRINTED CASE Vol III - D's MSJ Exhibits Filed.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/lawsuit/documents/evidence-discovery/PRINTED CASE Vol IV - P's MSJ Exhibits 1-49 Filed.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/lawsuit/documents/evidence-discovery/PRINTED CASE Vol V - P's MSJ Exhibits 50-71 Filed.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/lawsuit/documents/pleadings-motions/Hemenway - Motion PHV J. Miller 10-10-25.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/lawsuit/documents/pleadings-motions/Hemenway - Motion PHV M. Bedingfield 10-10-25.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/lawsuit/documents/pleadings-motions/Hemenway - Motion PHV S. Kidder 10-10-25.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/lawsuit/documents/pleadings-motions/Motion for Permission to File Amicus Brief 10-10-25.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/lawsuit/documents/pleadings-motions/PRINTED CASE Vol I - Pleadings Filed.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/lawsuit/documents/pleadings-motions/Printed Case Volumes - Table of Contents Filed.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/lawsuit/documents/transcripts-hearings-notices/Exh. A Licensing Card - Pro Hac Vice - Bedingfield(2591939.1).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/lawsuit/documents/transcripts-hearings-notices/Exh. A Licensing Card - Pro Hac Vice - Kidder(2591937.1).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/lawsuit/documents/transcripts-hearings-notices/Exh. A Licensing Card - Pro Hac Vice - Miller(2591938.1).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/lawsuit/documents/transcripts-hearings-notices/Hemenway - COS for Motions PHV _ NOA _ Motion for Permission to File Brief 10-10-25(2615316.1).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/lawsuit/documents/transcripts-hearings-notices/Hemenway - NOA 10-10-25.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/client/no-image-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/server/server.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants/lawsuit/documents/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/constants/lawsuit/documents/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/types/documents.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/documents.d.ts" afterDir="false" />
+    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="Documents Update II">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sections/petition/PetitionContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/petition/PetitionContent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -520,14 +451,21 @@
       <option name="project" value="LOCAL" />
       <updated>1761163762855</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Documents Update II">
+      <option name="closed" value="true" />
+      <created>1761167062623</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1761167062623</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="HomePage Complete" />
     <MESSAGE value="Temp Update" />
     <MESSAGE value="Temp Update I" />
     <MESSAGE value="Lawsuit Page Done" />
@@ -552,6 +490,7 @@
     <MESSAGE value="Location Map" />
     <MESSAGE value="Footer Update" />
     <MESSAGE value="Documents Update I" />
-    <option name="LAST_COMMIT_MESSAGE" value="Documents Update I" />
+    <MESSAGE value="Documents Update II" />
+    <option name="LAST_COMMIT_MESSAGE" value="Documents Update II" />
   </component>
 </project>

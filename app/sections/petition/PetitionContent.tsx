@@ -7,6 +7,11 @@ import { Button } from "~/components/ui/button";
 import { addDoc, collection } from "@firebase/firestore";
 import { db } from "~/lib/firebase";
 import { useNavigate } from "react-router";
+import emailjs from "@emailjs/browser";
+
+const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
 
 const PetitionContent = () => {
   const navigate = useNavigate();
@@ -28,10 +33,10 @@ const PetitionContent = () => {
     mode: "onBlur",
   });
   const onSubmit = async (data: SignUpFormData) => {
-    try {
-      const date = new Date();
-      const formattedDate = date.toLocaleDateString("en-US");
+    const date = new Date();
+    const formattedDate = date.toLocaleDateString("en-US");
 
+    try {
       await addDoc(collection(db, "petitions"), {
         firstName: data.firstName,
         lastName: data.lastName,
@@ -41,9 +46,30 @@ const PetitionContent = () => {
         phoneNumber: data.phoneNumber,
         comments: data.comments,
         signedAt: formattedDate,
-      }).finally(() => {
-        navigate("/main");
       });
+    } catch (error) {
+      console.error(error);
+    }
+
+    emailjs.init(publicKey);
+
+    const titleContent = data.getNewsLetter
+      ? "Signed Up for the Petition & Newsletters"
+      : "Signed Up for the Petition Only";
+    const nameContent = data.firstName + " " + data.lastName;
+
+    try {
+      await emailjs
+        .send(serviceId, templateId, {
+          title: titleContent,
+          name: nameContent,
+          message: data.comments,
+          email: data.email,
+          time: formattedDate,
+        })
+        .finally(() => {
+          navigate("/main");
+        });
     } catch (error) {
       console.error(error);
     }
@@ -105,7 +131,6 @@ const PetitionContent = () => {
             register={register}
             error={errors.phoneNumber}
             validation={{
-              required: "Phone Number is required",
               pattern: /\d{10}$/,
               message: "Invalid phone number.",
             }}
@@ -148,7 +173,8 @@ const PetitionContent = () => {
                 <div className="flex items-center space-x-2">
                   <RadioGroupItem value="true" id="get-news-letters" />
                   <Label htmlFor="get-news-letters">
-                      Yes, I would like to receive newsletters from Mead Memorial Chapel
+                    Yes, I would like to receive newsletters from Mead Memorial
+                    Chapel
                   </Label>
                 </div>
                 <div className="flex items-center space-x-2">
