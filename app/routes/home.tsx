@@ -82,7 +82,7 @@ export default function Home() {
       >
         <article>
           <h1 className={"text-center text-4xl font-bold"}>
-            A Message from the Family
+            A Message from VT Governor Jim Douglas
           </h1>
           <br />
           <p>

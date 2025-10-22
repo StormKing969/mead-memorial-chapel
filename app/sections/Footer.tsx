@@ -18,7 +18,7 @@ const Footer = () => {
       >
         <div
           className={
-            "flex flex-col text-center px-5 md:flex-row md:justify-evenly md:text-left gap-10 w-full"
+            "flex flex-col text-center px-5 md:flex-row md:justify-around md:text-left gap-10 w-full"
           }
         >
           <img src={"/logo.svg"} alt={"logo"} className={"max-h-[200px]"} />
@@ -110,7 +110,7 @@ const Footer = () => {
                 "flex flex-row items-center justify-center gap-5 w-full"
               }
             >
-              <Link to={"/contact"}>
+              <Link to={"https://x.com/MeadChapelVT"}>
                 <FaTwitter />
               </Link>
 

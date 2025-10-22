@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="Document Categorization I">
-      <change afterPath="$PROJECT_DIR$/app/components/ClientMap.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/LocationMap.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/about/icon-location.svg" afterDir="false" />
+    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="Location Map">
+      <change beforePath="$PROJECT_DIR$/app/routes/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/home.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/sections/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/sections/about/AboutContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/about/AboutContent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -418,14 +413,21 @@
       <option name="project" value="LOCAL" />
       <updated>1760826446120</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Location Map">
+      <option name="closed" value="true" />
+      <created>1761162204133</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1761162204133</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="About Page Bug Fix I" />
     <MESSAGE value="About Page Bug Fix II" />
     <MESSAGE value="About Page Bug Fix III" />
     <MESSAGE value="HomePage Complete" />
@@ -450,6 +452,7 @@
     <MESSAGE value="Petition Update III" />
     <MESSAGE value="Document Categorization" />
     <MESSAGE value="Document Categorization I" />
-    <option name="LAST_COMMIT_MESSAGE" value="Document Categorization I" />
+    <MESSAGE value="Location Map" />
+    <option name="LAST_COMMIT_MESSAGE" value="Location Map" />
   </component>
 </project>
