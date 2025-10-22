@@ -4,9 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="Location Map">
-      <change beforePath="$PROJECT_DIR$/app/routes/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/sections/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/Footer.tsx" afterDir="false" />
+    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="Footer Update">
+      <change beforePath="$PROJECT_DIR$/constants/lawsuit/documents/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/constants/lawsuit/documents/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lawsuit/documents/administrative-press-public-materials/Cert of Compliance Filed.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lawsuit/documents/briefs-appendices-legal-memoranda/Appellant's Brief Filed.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lawsuit/documents/evidence-discovery/PRINTED CASE Vol II - Complaint Exhibits Filed.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lawsuit/documents/evidence-discovery/PRINTED CASE Vol III - D's MSJ Exhibits Filed.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lawsuit/documents/evidence-discovery/PRINTED CASE Vol IV - P's MSJ Exhibits 1-49 Filed.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lawsuit/documents/evidence-discovery/PRINTED CASE Vol V - P's MSJ Exhibits 50-71 Filed.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lawsuit/documents/pleadings-motions/Hemenway - Motion PHV J. Miller 10-10-25.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lawsuit/documents/pleadings-motions/Hemenway - Motion PHV M. Bedingfield 10-10-25.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lawsuit/documents/pleadings-motions/Hemenway - Motion PHV S. Kidder 10-10-25.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lawsuit/documents/pleadings-motions/Motion for Permission to File Amicus Brief 10-10-25.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lawsuit/documents/pleadings-motions/PRINTED CASE Vol I - Pleadings Filed.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lawsuit/documents/pleadings-motions/Printed Case Volumes - Table of Contents Filed.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lawsuit/documents/transcripts-hearings-notices/Exh. A Licensing Card - Pro Hac Vice - Bedingfield(2591939.1).pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lawsuit/documents/transcripts-hearings-notices/Exh. A Licensing Card - Pro Hac Vice - Kidder(2591937.1).pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lawsuit/documents/transcripts-hearings-notices/Exh. A Licensing Card - Pro Hac Vice - Miller(2591938.1).pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lawsuit/documents/transcripts-hearings-notices/Hemenway - COS for Motions PHV _ NOA _ Motion for Permission to File Brief 10-10-25(2615316.1).pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lawsuit/documents/transcripts-hearings-notices/Hemenway - NOA 10-10-25.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/types/documents.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/documents.d.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -421,14 +438,21 @@
       <option name="project" value="LOCAL" />
       <updated>1761162204133</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Footer Update">
+      <option name="closed" value="true" />
+      <created>1761162633833</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1761162633833</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="About Page Bug Fix II" />
     <MESSAGE value="About Page Bug Fix III" />
     <MESSAGE value="HomePage Complete" />
     <MESSAGE value="Temp Update" />
@@ -453,6 +477,7 @@
     <MESSAGE value="Document Categorization" />
     <MESSAGE value="Document Categorization I" />
     <MESSAGE value="Location Map" />
-    <option name="LAST_COMMIT_MESSAGE" value="Location Map" />
+    <MESSAGE value="Footer Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Footer Update" />
   </component>
 </project>

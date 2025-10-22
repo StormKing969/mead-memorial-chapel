@@ -15,7 +15,9 @@
  * category information is intentionally omitted.
  */
 export type DocumentTypes =
-  | "Ten Universities Join Brief Supporting Middlebury’s Chapel Decision"
+  | "Appeal to Vermont Supreme Court"
+  | "Motion for Amicus Brief"
+  | "Amicus Brief Motion Granted"
   | null;
 
 /**
