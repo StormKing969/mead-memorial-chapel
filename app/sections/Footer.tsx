@@ -4,10 +4,17 @@ import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import { Link } from "react-router";
 
 const Footer = () => {
+  const email = "meadmemorialchapel01@gmail.com";
+  const subject = encodeURIComponent("Inquiry about Mead Memorial Chapel");
+  const body = encodeURIComponent("Hi,\n\nI’d like to ask about...");
+  const mailto = `mailto:${email}?subject=${subject}&body=${body}`;
+
   return (
     <IconContext.Provider value={{ color: "#155dfc", size: "2em" }}>
       <div
-        className={"flex flex-col items-center justify-center bg-gray-50 py-6 shadow"}
+        className={
+          "flex flex-col items-center justify-center bg-gray-50 py-6 shadow"
+        }
       >
         <div
           className={
@@ -84,21 +91,15 @@ const Footer = () => {
 
           <div>
             <h3 className={"font-bold text-xl mb-4"}>Contact Info</h3>
-            <ul>
-              <li>
-                <p className={"font-semibold"}>
-                  Address:{" "}
-                  <span className={"font-normal"}>
-                    75 Hepburn Road, Middlebury, VT 05753
-                  </span>
-                </p>
-              </li>
-              <li>
-                <p className={"font-semibold"}>
-                  Email: <span className={"font-normal"}>xxx@gmail.com</span>
-                </p>
-              </li>
-            </ul>
+            <a
+              href={mailto}
+              aria-label={`Email ${email}`}
+              className={
+                "underline text-blue-600 hover:text-blue-800 hover:font-bold transition-all"
+              }
+            >
+              {email}
+            </a>
           </div>
 
           <div>

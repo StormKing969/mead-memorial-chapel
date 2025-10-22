@@ -1,10 +1,13 @@
 import React from "react";
 import MiniTimelineVertical from "~/components/MiniTimelineVertical";
 import { AboutTimelineEvent } from "../../../constants/about";
+import LocationMap from "~/components/LocationMap";
 
 const AboutContent = () => {
   return (
-    <section className={"max-w-[900px] mx-auto px-6 py-12 space-y-10 flex flex-col"}>
+    <section
+      className={"max-w-[900px] mx-auto px-6 py-12 space-y-10 flex flex-col"}
+    >
       <div>
         <h2 className={"text-2xl font-semibold mb-3"}>Our History</h2>
         <p className={"text-gray-700 leading-relaxed"}>
@@ -19,7 +22,9 @@ const AboutContent = () => {
       <div className={"flex flex-row justify-between gap-8"}>
         <div className={"flex flex-col items-center gap-8 max-w-[400px]"}>
           <div>
-            <h2 className={"text-2xl font-semibold mb-3"}>A Legacy of Service</h2>
+            <h2 className={"text-2xl font-semibold mb-3"}>
+              A Legacy of Service
+            </h2>
             <p className={"text-gray-700 leading-relaxed"}>
               Governor Mead’s gift was more than a building — it was a tribute
               to his family and a commitment to the values of education,
@@ -70,6 +75,13 @@ const AboutContent = () => {
             className={"rounded shadow object-cover h-full max-h-[500px]"}
           />
         </div>
+      </div>
+
+      <div>
+        <h2 className={"text-3xl font-bold mb-8 text-center"}>
+          Chapel's Location
+        </h2>
+        <LocationMap />
       </div>
     </section>
   );
