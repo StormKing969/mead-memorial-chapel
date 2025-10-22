@@ -1,13 +1,11 @@
-import React, { useEffect, useState, Suspense } from "react";
+import React, { useEffect, useState, Suspense, lazy } from "react";
 
-const ClientMap = React.lazy(() => import("./ClientMap"));
+const ClientMap = lazy(() => import("./ClientMap"));
 
 const LocationMap: React.FC = () => {
   const [isClient, setIsClient] = useState(false);
 
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
+  useEffect(() => setIsClient(true), []);
 
   if (!isClient) return null;
 
