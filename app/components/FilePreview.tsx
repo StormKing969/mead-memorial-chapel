@@ -1,15 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import type { DocumentObj, DocumentTypes } from "../../types/documents";
-
-const categoryToSlug: Record<DocumentTypes, string> = {
-  "Docket & Case Index": "docket-case-index",
-  "Pleadings & Motions": "pleadings-motions",
-  "Briefs, Appendices & Legal Memoranda": "briefs-appendices-legal-memoranda",
-  "Evidence & Discovery": "evidence-discovery",
-  "Transcripts, Hearings & Notices": "transcripts-hearings-notices",
-  "Administrative, Press & Public Materials":
-    "administrative-press-public-materials",
-};
+import { BaseFilePath } from "../../constants/lawsuit/documents";
 
 const FilePreview = ({
   documents: { title, date, fileName, videoLink },
@@ -22,8 +13,8 @@ const FilePreview = ({
 
   const basePath = useMemo(() => {
     // Default to documents root if category not matched
-    const slug = categoryToSlug[currentCategory] ?? "";
-    return slug ? `/lawsuit/documents/${slug}` : "/lawsuit/documents";
+    const folderName = currentCategory ? BaseFilePath[currentCategory] : "";
+    return folderName ? `/lawsuit/documents/${folderName}` : "";
   }, [currentCategory]);
 
   useEffect(() => {
@@ -37,7 +28,7 @@ const FilePreview = ({
   return (
     <div
       className={
-        "border border-gray-200 rounded-lg p-5 bg-white shadow flex flex-col justify-between"
+        "border border-gray-200 rounded-lg p-5 bg-white shadow flex flex-col justify-between min-w-fit"
       }
     >
       <h3 className={"text-xl font-semibold mb-1"}>{title}</h3>
