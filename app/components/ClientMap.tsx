@@ -1,6 +1,4 @@
-import React from "react";
-import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
-import L, {type PointTuple} from "leaflet";
+import React, { useEffect, useState } from "react";
 import "leaflet/dist/leaflet.css";
 
 // Fix icon URLs for many bundlers (Vite-friendly approach)
@@ -8,14 +6,61 @@ import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
 import markerIcon from "leaflet/dist/images/marker-icon.png";
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
 
-delete (L.Icon.Default.prototype as any)._getIconUrl;
-L.Icon.Default.mergeOptions({
-  iconRetinaUrl: markerIcon2x,
-  iconUrl: markerIcon,
-  shadowUrl: markerShadow,
-});
+// Local tuple type to avoid importing Leaflet at module scope during SSR
+type PointTuple = [number, number];
 
 const ClientMap: React.FC = () => {
+  const [mods, setMods] = useState<null | {
+    L: any;
+    MapContainer: any;
+    Marker: any;
+    Popup: any;
+    TileLayer: any;
+  }>(null);
+
+  useEffect(() => {
+    let mounted = true;
+    // Ensure we only load Leaflet on the client
+    if (typeof window === "undefined") return;
+
+    (async () => {
+      const [{ default: L }, RL] = await Promise.all([
+        import("leaflet"),
+        import("react-leaflet"),
+      ]);
+
+      // Patch default icon URLs (required for many bundlers)
+      if ((L.Icon.Default.prototype as any)._getIconUrl) {
+        delete (L.Icon.Default.prototype as any)._getIconUrl;
+      }
+      L.Icon.Default.mergeOptions({
+        iconRetinaUrl: markerIcon2x,
+        iconUrl: markerIcon,
+        shadowUrl: markerShadow,
+      });
+
+      if (mounted) {
+        setMods({
+          L,
+          MapContainer: RL.MapContainer,
+          Marker: RL.Marker,
+          Popup: RL.Popup,
+          TileLayer: RL.TileLayer,
+        });
+      }
+    })();
+
+    return () => {
+      mounted = false;
+    };
+  }, []);
+
+  if (!mods) {
+    return <div style={{ height: 400 }}>Loading map…</div>;
+  }
+
+  const { L, MapContainer, Marker, Popup, TileLayer } = mods;
+
   const getIcon = (size: PointTuple) => {
     return L.icon({
       iconUrl: "./about/icon-location.svg",
