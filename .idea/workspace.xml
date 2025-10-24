@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="EmailJS Setup">
+    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="Netlify - Leaflet Fix II">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/LocationMap.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/LocationMap.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/home.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,30 +58,30 @@
     <option name="sortByType" value="true" />
     <option name="sortKey" value="BY_TYPE" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "master",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/Work/Web Development/mead-memorial-chapel",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.build.executor": "Run",
-    "npm.dev.executor": "Run",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Work\\Web Development\\mead-memorial-chapel\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "junie.project.settings",
-    "to.speed.mode.migration.done": "true",
-    "ts.external.directory.path": "C:\\Work\\Web Development\\mead-memorial-chapel\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Work/Web Development/mead-memorial-chapel&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.build.executor&quot;: &quot;Run&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Work\\Web Development\\mead-memorial-chapel\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;junie.project.settings&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Work\\Web Development\\mead-memorial-chapel\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Work\Web Development\mead-memorial-chapel\constants\about" />
@@ -160,6 +161,7 @@
       <workItem from="1760822038358" duration="4482000" />
       <workItem from="1760826767599" duration="133000" />
       <workItem from="1761148392985" duration="3815000" />
+      <workItem from="1761264257289" duration="9532000" />
     </task>
     <task id="LOCAL-00001" summary="Adding Configs for Netlify I">
       <option name="closed" value="true" />
@@ -465,15 +467,29 @@
       <option name="project" value="LOCAL" />
       <updated>1761171582663</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Netlify - Leaflet Fix I">
+      <option name="closed" value="true" />
+      <created>1761172487713</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1761172487713</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Netlify - Leaflet Fix II">
+      <option name="closed" value="true" />
+      <created>1761172853529</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1761172853529</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Temp Update I" />
-    <MESSAGE value="Lawsuit Page Done" />
     <MESSAGE value="Documents Page Done" />
     <MESSAGE value="Minor Changes I" />
     <MESSAGE value="Minor Changes II" />
@@ -497,6 +513,8 @@
     <MESSAGE value="Documents Update I" />
     <MESSAGE value="Documents Update II" />
     <MESSAGE value="EmailJS Setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="EmailJS Setup" />
+    <MESSAGE value="Netlify - Leaflet Fix I" />
+    <MESSAGE value="Netlify - Leaflet Fix II" />
+    <option name="LAST_COMMIT_MESSAGE" value="Netlify - Leaflet Fix II" />
   </component>
 </project>

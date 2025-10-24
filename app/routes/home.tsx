@@ -72,6 +72,38 @@ export default function Home() {
               </Link>
             </p>
           </div>
+
+          <div
+            className={"flex flex-row items-center justify-center gap-5 mt-8 cursor-pointer"}
+          >
+            <div
+              className={
+                "w-full hover:scale-[1.02] animate-rotate-border rounded-lg bg-conic/[from_var(--border-angle)] from-[#10182C] via-red-600 to-[#10182C] from-70% via-90% to-100% p-[2px]"
+              }
+            >
+              <Button
+                className={
+                  "border border-[#10182C] bg-[#10182C] text-white"
+                }
+              >
+                <Link to={"/lawsuit"}>View Lawsuit Timeline</Link>
+              </Button>
+            </div>
+
+            <div
+              className={
+                "w-full hover:scale-[1.02] animate-rotate-border rounded-lg bg-conic/[from_var(--border-angle)] from-[#10182C] via-yellow-600 to-[#10182C] from-70% via-90% to-100% p-[2px]"
+              }
+            >
+              <Button
+                className={
+                  "border border-[#10182C] bg-[#10182C] text-white"
+                }
+              >
+                <Link to={"/lawsuit/documents"}>View Legal Documents</Link>
+              </Button>
+            </div>
+          </div>
         </div>
       </section>
 
