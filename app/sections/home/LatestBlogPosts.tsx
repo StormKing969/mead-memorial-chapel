@@ -10,12 +10,12 @@ const LatestBlogPosts = () => {
   return (
     <section className={"py-16 px-6 md:px-25 bg-gray-50"}>
       <h2 className={"text-3xl font-bold mb-8 text-center"}>
-        Latest Blog Posts
+        Latest News
       </h2>
 
       {posts.length === 0 && (
         <div className={"max-w-xl mx-auto text-center text-gray-600"}>
-          No posts yet. Check back soon.
+          No news posts yet. Check back soon.
         </div>
       )}
 
@@ -31,7 +31,7 @@ const LatestBlogPosts = () => {
           className={`bg-gray-900 px-6 py-3 rounded-md hover:bg-gray-700 ${posts.length === 0 ? "cursor-none" : ""}`}
         >
           <Link to={"/blog"} className={"text-white"}>
-            See All Posts
+            See All News Posts
           </Link>
         </Button>
       </div>

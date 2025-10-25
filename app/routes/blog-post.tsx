@@ -28,8 +28,6 @@ const BlogPost = () => {
 
   if (!post) return <p>Loading...</p>;
 
-  console.log(post);
-
   return (
     <main className={"font-serif"}>
         <Navbar user={null} />

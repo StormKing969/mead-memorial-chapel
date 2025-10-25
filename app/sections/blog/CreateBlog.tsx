@@ -78,7 +78,7 @@ const CreateBlog = () => {
         "max-w-[750px] mx-auto my-16 bg-white shadow-md rounded-lg px-24 py-16"
       }
     >
-      <h2 className={"text-2xl font-bold mb-8"}>Create Blog Post</h2>
+      <h2 className={"text-2xl font-bold mb-8"}>Create News Post</h2>
 
       <div className={"space-y-4 flex flex-col"}>
         <input

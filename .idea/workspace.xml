@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="Netlify - Leaflet Fix II">
+    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="Customer Change Request I">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/home.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +159,8 @@
       <workItem from="1760822038358" duration="4482000" />
       <workItem from="1760826767599" duration="133000" />
       <workItem from="1761148392985" duration="3815000" />
-      <workItem from="1761264257289" duration="9532000" />
+      <workItem from="1761264257289" duration="10092000" />
+      <workItem from="1761360579624" duration="6000" />
     </task>
     <task id="LOCAL-00001" summary="Adding Configs for Netlify I">
       <option name="closed" value="true" />
@@ -483,14 +482,21 @@
       <option name="project" value="LOCAL" />
       <updated>1761172853529</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Customer Change Request I">
+      <option name="closed" value="true" />
+      <created>1761333121741</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1761333121741</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Documents Page Done" />
     <MESSAGE value="Minor Changes I" />
     <MESSAGE value="Minor Changes II" />
     <MESSAGE value="Mobile Responsive Changes II" />
@@ -515,6 +521,7 @@
     <MESSAGE value="EmailJS Setup" />
     <MESSAGE value="Netlify - Leaflet Fix I" />
     <MESSAGE value="Netlify - Leaflet Fix II" />
-    <option name="LAST_COMMIT_MESSAGE" value="Netlify - Leaflet Fix II" />
+    <MESSAGE value="Customer Change Request I" />
+    <option name="LAST_COMMIT_MESSAGE" value="Customer Change Request I" />
   </component>
 </project>
