@@ -6,8 +6,8 @@ import { useAuth } from "~/lib/firebase";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Mead Memorial Chapel - Blog" },
-    { name: "description", content: "Mead Memorial Chapel - Blog" },
+    { title: "Mead Memorial Chapel - News" },
+    { name: "description", content: "Mead Memorial Chapel - News" },
   ];
 }
 

@@ -4,8 +4,8 @@ import CreateBlog from "~/sections/blog/CreateBlog";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Mead Memorial Chapel - Create Post" },
-    { name: "description", content: "Mead Memorial Chapel - Create Post" },
+    { title: "Mead Memorial Chapel - Create News Post" },
+    { name: "description", content: "Mead Memorial Chapel - Create News Post" },
   ];
 }
 

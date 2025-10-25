@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="Customer Change Request I">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="Customer Change Request II">
+      <change beforePath="$PROJECT_DIR$/app/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/blog-post.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/blog-post.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/blog.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/blog.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/create-blog-post.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/create-blog-post.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/documents.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/documents.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/lawsuit.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/lawsuit.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sections/blog/BlogPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/blog/BlogPage.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,30 +63,39 @@
     <option name="sortByType" value="true" />
     <option name="sortKey" value="BY_TYPE" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Work/Web Development/mead-memorial-chapel&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.build.executor&quot;: &quot;Run&quot;,
-    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Work\\Web Development\\mead-memorial-chapel\\node_modules\\prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;junie.project.settings&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Work\\Web Development\\mead-memorial-chapel\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Work/Web Development/mead-memorial-chapel",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.build.executor": "Run",
+    "npm.dev.executor": "Run",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Work\\Web Development\\mead-memorial-chapel\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "junie.project.settings",
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "C:\\Work\\Web Development\\mead-memorial-chapel\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="ReactDesignerToolWindowState">
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.intellij.reactbuddy.reactComponents" value="false" />
+        <entry key="com.intellij.reactbuddy.reactInspector" value="false" />
+      </map>
+    </option>
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Work\Web Development\mead-memorial-chapel\constants\about" />
@@ -126,7 +142,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-WS-252.26830.93" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-WS-252.27397.92" />
       </set>
     </attachedChunks>
   </component>
@@ -161,6 +177,7 @@
       <workItem from="1761148392985" duration="3815000" />
       <workItem from="1761264257289" duration="10092000" />
       <workItem from="1761360579624" duration="6000" />
+      <workItem from="1761402170300" duration="441000" />
     </task>
     <task id="LOCAL-00001" summary="Adding Configs for Netlify I">
       <option name="closed" value="true" />
@@ -490,14 +507,21 @@
       <option name="project" value="LOCAL" />
       <updated>1761333121741</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Customer Change Request II">
+      <option name="closed" value="true" />
+      <created>1761402274856</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1761402274857</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Minor Changes I" />
     <MESSAGE value="Minor Changes II" />
     <MESSAGE value="Mobile Responsive Changes II" />
     <MESSAGE value="Mobile Responsive Changes III" />
@@ -522,6 +546,7 @@
     <MESSAGE value="Netlify - Leaflet Fix I" />
     <MESSAGE value="Netlify - Leaflet Fix II" />
     <MESSAGE value="Customer Change Request I" />
-    <option name="LAST_COMMIT_MESSAGE" value="Customer Change Request I" />
+    <MESSAGE value="Customer Change Request II" />
+    <option name="LAST_COMMIT_MESSAGE" value="Customer Change Request II" />
   </component>
 </project>

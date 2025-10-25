@@ -7,8 +7,8 @@ import Navbar from "~/components/Navbar";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Mead Memorial Chapel - Blog Post" },
-    { name: "description", content: "Mead Memorial Chapel - Blog Post" },
+    { title: "Mead Memorial Chapel - News Post" },
+    { name: "description", content: "Mead Memorial Chapel - News Post" },
   ];
 }
 

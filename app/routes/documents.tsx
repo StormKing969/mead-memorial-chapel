@@ -2,6 +2,14 @@ import React from "react";
 import Navbar from "~/components/Navbar";
 import DocumentHeader from "~/sections/lawsuit/documents/DocumentHeader";
 import DocumentContent from "~/sections/lawsuit/documents/DocumentContent";
+import type {Route} from "../../.react-router/types/app/routes/+types/home";
+
+export function meta({}: Route.MetaArgs) {
+    return [
+        { title: "Mead Memorial Chapel - Legal Documents" },
+        { name: "description", content: "Mead Memorial Chapel - Legal Documents" },
+    ];
+}
 
 const Documents = () => {
   return (

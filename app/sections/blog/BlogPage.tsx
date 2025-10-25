@@ -14,7 +14,7 @@ const BlogPage = ({ user }: { user: User | null }) => {
           "text-4xl md:text-5xl font-bold text-center mb-12 text-gray-900"
         }
       >
-        Blog
+        Latest News
       </h1>
 
       {posts.length === 0 && (
