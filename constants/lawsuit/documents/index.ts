@@ -26,6 +26,7 @@ export const BaseFilePath = {
   "Appeal to Vermont Supreme Court": "appeal-to-vermont-supreme-court",
   "Motion for Amicus Brief": "motion-for-amicus-brief",
   "Amicus Brief Motion Granted": "amicus-brief-motion-granted",
+  "Opposition to Amicus Brief Motion": "opposition-to-amicus-brief-motion",
   null: "",
 };
 
@@ -41,6 +42,7 @@ export const DocumentCategories: DocumentTypes[] = [
   "Appeal to Vermont Supreme Court",
   "Motion for Amicus Brief",
   "Amicus Brief Motion Granted",
+  "Opposition to Amicus Brief Motion",
 ];
 
 /**
@@ -193,4 +195,15 @@ export const Files: DocumentObj[] = [
     videoLink: null,
   },
   //################## Appeal to Vermont Supreme Court ##################
+
+  //################## Opposition to Amicus Brief Motion ##################
+  {
+    title:
+      "Plaintiff's Opposition to Colleges' Motion for Leave to File Amicus Brief and Request for Reconsideration",
+    category: "Opposition to Amicus Brief Motion",
+    date: "2025-10-24",
+    fileName: "Plaintiff's Opposition to Motion to File Amicus Brief.pdf",
+    videoLink: null,
+  },
+  //################## Opposition to Amicus Brief Motion ##################
 ];

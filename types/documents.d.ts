@@ -24,6 +24,7 @@ export type DocumentTypes =
   | "Appeal to Vermont Supreme Court"
   | "Motion for Amicus Brief"
   | "Amicus Brief Motion Granted"
+  | "Opposition to Amicus Brief Motion"
   | null;
 
 /**
