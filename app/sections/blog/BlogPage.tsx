@@ -19,7 +19,7 @@ const BlogPage = ({ user }: { user: User | null }) => {
 
       {posts.length === 0 && (
         <div className={"max-w-xl mx-auto text-center text-gray-600"}>
-          No posts yet. Check back soon.
+          No news posts yet. Check back soon.
         </div>
       )}
 
