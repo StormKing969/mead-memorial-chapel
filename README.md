@@ -1,6 +1,6 @@
 # Mead Memorial Chapel Website
 
-A full-stack React Router application for the Mead Memorial Chapel website. The app uses server-side rendering (SSR) with Vite, TypeScript, and Tailwind CSS. It includes public pages (Home, About), a Blog powered by Firebase, and a Lawsuit section for posting content and document previews.
+A full-stack React Router application for the Mead Memorial Chapel website. The app uses server-side rendering (SSR) with Vite, TypeScript, and Tailwind CSS. It includes public pages (Home, About), a News powered by Firebase, and a Lawsuit section for posting content and document previews.
 
 ## Overview
 
@@ -12,7 +12,7 @@ A full-stack React Router application for the Mead Memorial Chapel website. The 
 - Deployment options: Node server (react-router-serve) and Docker image
 
 Key app areas:
-- Blog: List, details, and creation of posts using Firebase.
+- News: List, details, and creation of posts using Firebase.
 - Lawsuit: Overview and documents section, with file preview support.
 
 ## Requirements
@@ -107,9 +107,9 @@ Top-level:
     - routes/home.tsx (index)
     - routes/about.tsx
     - routes/auth.tsx
-    - routes/blog.tsx
-    - routes/blog-post.tsx (dynamic route: /blog/:id)
-    - routes/create-blog-post.tsx
+    - routes/news.tsx
+    - routes/news-post.tsx (dynamic route: /blog/:id)
+    - routes/create-news-post.tsx
     - routes/lawsuit.tsx
     - routes/documents.tsx
   - components/ – shared UI components (e.g., Navbar, FilePreview, PreviewPost)

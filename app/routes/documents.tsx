@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "~/components/Navbar";
 import DocumentHeader from "~/sections/lawsuit/documents/DocumentHeader";
 import DocumentContent from "~/sections/lawsuit/documents/DocumentContent";
-import type {Route} from "../../.react-router/types/app/routes/+types/home";
+import type { Route } from "../+types/root";
 
 export function meta({}: Route.MetaArgs) {
     return [

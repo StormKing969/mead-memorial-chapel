@@ -1,10 +1,10 @@
 import React from "react";
 import { getCurrentBlogPosts } from "~/lib/firebase";
 import DetailedPostPreview from "~/components/DetailedPostPreview";
-import CreateBlogLinkCard from "~/components/CreateBlogLinkCard";
 import type { User } from "@firebase/auth";
+import CreateNewsLinkCard from "~/components/CreateNewsLinkCard";
 
-const BlogPage = ({ user }: { user: User | null }) => {
+const NewsPage = ({ user }: { user: User | null }) => {
   const posts = getCurrentBlogPosts();
 
   return (
@@ -28,10 +28,10 @@ const BlogPage = ({ user }: { user: User | null }) => {
           <DetailedPostPreview key={post.id} post={post} />
         ))}
 
-        {user && <CreateBlogLinkCard />}
+        {user && <CreateNewsLinkCard />}
       </div>
     </section>
   );
 };
 
-export default BlogPage;
+export default NewsPage;

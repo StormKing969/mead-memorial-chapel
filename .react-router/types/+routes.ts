@@ -61,16 +61,16 @@ type RouteFiles = {
     id: "routes/auth";
     page: "/auth";
   };
-  "routes/blog.tsx": {
-    id: "routes/blog";
+  "routes/news.tsx": {
+    id: "routes/news";
     page: "/news";
   };
-  "routes/blog-post.tsx": {
-    id: "routes/blog-post";
+  "routes/news-post.tsx": {
+    id: "routes/news-post";
     page: "/news/:id";
   };
-  "routes/create-blog-post.tsx": {
-    id: "routes/create-blog-post";
+  "routes/create-news-post.tsx": {
+    id: "routes/create-news-post";
     page: "/create-news-post";
   };
   "routes/lawsuit.tsx": {

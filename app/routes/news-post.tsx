@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import type { Route } from "../../.react-router/types/app/routes/+types/home";
 import { useParams } from "react-router";
 import { getPostById } from "~/lib/firebase";
 import ArticlePage from "~/sections/article/ArticlePage";
 import Navbar from "~/components/Navbar";
+import type { Route } from "../+types/root";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -12,7 +12,7 @@ export function meta({}: Route.MetaArgs) {
   ];
 }
 
-const BlogPost = () => {
+const NewsPost = () => {
   const { id } = useParams<{ id: string }>();
   const [post, setPost] = useState<any>(null);
 
@@ -30,10 +30,10 @@ const BlogPost = () => {
 
   return (
     <main className={"font-serif"}>
-        <Navbar user={null} />
-        <ArticlePage post={post} />
+      <Navbar user={null} />
+      <ArticlePage post={post} />
     </main>
   );
 };
 
-export default BlogPost;
+export default NewsPost;

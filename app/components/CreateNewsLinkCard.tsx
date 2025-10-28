@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router";
 
-const CreateBlogLinkCard = () => {
+const CreateNewsLinkCard = () => {
   return (
     <Link
       to={"/create-news-post"}
@@ -18,4 +18,4 @@ const CreateBlogLinkCard = () => {
   );
 };
 
-export default CreateBlogLinkCard;
+export default CreateNewsLinkCard;

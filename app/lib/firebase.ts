@@ -1,12 +1,13 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import {
-    collection,
-    getDocs,
-    getFirestore,
-    onSnapshot,
-    orderBy,
-    query, where,
+  collection,
+  getDocs,
+  getFirestore,
+  onSnapshot,
+  orderBy,
+  query,
+  where,
 } from "@firebase/firestore";
 import {
   createUserWithEmailAndPassword,
@@ -85,13 +86,19 @@ export function authFunctions() {
       navigate("/");
     } catch (error) {
       console.error("Error signing out: ", error);
+      alert("Failed to sign out!");
     }
   };
 
   const loginFunction = async (email: string, password: string) => {
-    await signInWithEmailAndPassword(auth, email, password).then(() => {
-      navigate("/create-news-post");
-    });
+    try {
+      await signInWithEmailAndPassword(auth, email, password).then(() => {
+        navigate("/create-news-post");
+      });
+    } catch (error) {
+      console.error("Error signing in: ", error);
+      alert("Failed to log in");
+    }
   };
 
   const registerFunction = async (email: string, password: string) => {
@@ -104,10 +111,7 @@ export function authFunctions() {
 }
 
 export async function getPostById(id: string) {
-  const q = query(
-    collection(db, "posts"),
-    where("id", "==", id),
-  );
+  const q = query(collection(db, "posts"), where("id", "==", id));
 
   const querySnapshot = await getDocs(q);
 
@@ -121,13 +125,13 @@ export async function getPostById(id: string) {
 }
 
 export async function getPetitionListCount() {
-    const q = query(collection(db, "petitions"));
-    const querySnapshot = await getDocs(q);
+  const q = query(collection(db, "petitions"));
+  const querySnapshot = await getDocs(q);
 
-    if (querySnapshot.empty) {
-        console.log("No matching documents.");
-        return 0;
-    }
+  if (querySnapshot.empty) {
+    console.log("No matching documents.");
+    return 0;
+  }
 
-    return querySnapshot.docs.length;
+  return querySnapshot.docs.length;
 }

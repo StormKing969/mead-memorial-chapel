@@ -1,5 +1,5 @@
 import React from "react";
-import type { Route } from "../../.react-router/types/app/routes/+types/home";
+import type { Route } from "../+types/root";
 import Authentication from "~/sections/authentication/Authentication";
 
 export function meta({}: Route.MetaArgs) {

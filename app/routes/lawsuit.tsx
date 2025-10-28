@@ -1,8 +1,8 @@
 import React from "react";
+import type { Route } from "../+types/root";
 import Navbar from "~/components/Navbar";
 import LawsuitHeader from "~/sections/lawsuit/LawsuitHeader";
 import LawsuitContent from "~/sections/lawsuit/LawsuitContent";
-import type {Route} from "../../.react-router/types/app/routes/+types/home";
 
 export function meta({}: Route.MetaArgs) {
     return [

@@ -1,6 +1,6 @@
 import React from "react";
-import type { Route } from "../../.react-router/types/app/routes/+types/home";
-import CreateBlog from "~/sections/blog/CreateBlog";
+import type { Route } from "../+types/root";
+import CreateArticle from "~/sections/news/CreateArticle";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -9,12 +9,12 @@ export function meta({}: Route.MetaArgs) {
   ];
 }
 
-const CreateBlogPost = () => {
+const CreateNewsPost = () => {
   return (
     <main className={"font-serif"}>
-      <CreateBlog />
+      <CreateArticle />
     </main>
   );
 };
 
-export default CreateBlogPost;
+export default CreateNewsPost;

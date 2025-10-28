@@ -1,8 +1,8 @@
 import React from "react";
-import type { Route } from "../../.react-router/types/app/routes/+types/home";
-import BlogPage from "~/sections/blog/BlogPage";
+import type { Route } from "../+types/root";
 import Navbar from "~/components/Navbar";
 import { useAuth } from "~/lib/firebase";
+import NewsPage from "~/sections/news/NewsPage";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -11,15 +11,15 @@ export function meta({}: Route.MetaArgs) {
   ];
 }
 
-const Blog = () => {
+const News = () => {
   const { user } = useAuth();
 
   return (
     <main className={"font-serif"}>
       <Navbar user={user} />
-      <BlogPage user={user} />
+      <NewsPage user={user} />
     </main>
   );
 };
 
-export default Blog;
+export default News;

@@ -1,8 +1,8 @@
 import React from "react";
-import type { Route } from "../../.react-router/types/app/routes/+types/home";
 import AboutHeroSection from "~/sections/about/AboutHeroSection";
 import AboutContent from "~/sections/about/AboutContent";
 import Navbar from "~/components/Navbar";
+import type { Route } from "../+types/root";
 
 export function meta({}: Route.MetaArgs) {
   return [

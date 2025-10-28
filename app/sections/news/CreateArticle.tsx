@@ -4,7 +4,7 @@ import { addDoc, collection, doc } from "@firebase/firestore";
 import type { CategoryOptions } from "../../../types/post";
 import { useNavigate } from "react-router";
 
-const CreateBlog = () => {
+const CreateArticle = () => {
   const { user } = useAuth();
   const navigate = useNavigate();
   const Categories = [
@@ -145,4 +145,4 @@ const CreateBlog = () => {
   );
 };
 
-export default CreateBlog;
+export default CreateArticle;

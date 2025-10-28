@@ -1,9 +1,9 @@
 import React from "react";
+import type { Route } from "../+types/root";
 import HeroSection from "~/sections/home/HeroSection";
 import AboutPreview from "~/sections/home/AboutPreview";
 import LawsuitPreview from "~/sections/home/LawsuitPreview";
 import LatestBlogPosts from "~/sections/home/LatestBlogPosts";
-import type {Route} from "../../.react-router/types/app/routes/+types/home";
 
 export function meta({}: Route.MetaArgs) {
     return [
