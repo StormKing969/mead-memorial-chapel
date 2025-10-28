@@ -43,8 +43,10 @@ const CreateArticle = () => {
     let imgUrl: string;
     if (imageName.length === 0) {
       imgUrl = "";
+    } else if (imageName.startsWith("https://")) {
+        imgUrl = imageName;
     } else {
-      imgUrl = "/blog/" + category.toLowerCase() + "/" + imageName;
+      imgUrl = "/news/" + category.toLowerCase() + "/" + imageName;
     }
 
     const newId = doc(collection(db, "posts")).id;

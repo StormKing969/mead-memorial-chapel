@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="Bug Fix II">
+    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="Footer Update I">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/CreateNewsLinkCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/CreateNewsLinkCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sections/news/CreateArticle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/news/CreateArticle.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/blog/plus-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/news/plus-icon.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,6 +181,8 @@
       <workItem from="1761590772419" duration="6000" />
       <workItem from="1761611645887" duration="1877000" />
       <workItem from="1761613839457" duration="193000" />
+      <workItem from="1761615292437" duration="54000" />
+      <workItem from="1761615704166" duration="633000" />
     </task>
     <task id="LOCAL-00001" summary="Adding Configs for Netlify I">
       <option name="closed" value="true" />
@@ -554,14 +560,21 @@
       <option name="project" value="LOCAL" />
       <updated>1761613516144</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Footer Update I">
+      <option name="closed" value="true" />
+      <created>1761615329553</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1761615329553</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Customer Changes III" />
     <MESSAGE value="Bug Fix I - 10/13/25" />
     <MESSAGE value="Update VI" />
     <MESSAGE value="Update VII" />
@@ -586,6 +599,7 @@
     <MESSAGE value="Customer Change Request III" />
     <MESSAGE value="Bug Fix I" />
     <MESSAGE value="Bug Fix II" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bug Fix II" />
+    <MESSAGE value="Footer Update I" />
+    <option name="LAST_COMMIT_MESSAGE" value="Footer Update I" />
   </component>
 </project>

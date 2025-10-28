@@ -108,7 +108,7 @@ Top-level:
     - routes/about.tsx
     - routes/auth.tsx
     - routes/news.tsx
-    - routes/news-post.tsx (dynamic route: /blog/:id)
+    - routes/news-post.tsx (dynamic route: /news/:id)
     - routes/create-news-post.tsx
     - routes/lawsuit.tsx
     - routes/documents.tsx

@@ -10,7 +10,7 @@ const CreateNewsLinkCard = () => {
       }
     >
       <img
-        src={"/blog/plus-icon.png"}
+        src={"/news/plus-icon.png"}
         alt={"plus icon"}
         className={"object-contain size-2/5"}
       />
