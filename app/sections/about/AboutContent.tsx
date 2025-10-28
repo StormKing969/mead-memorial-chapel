@@ -79,6 +79,20 @@ const AboutContent = () => {
 
       <div>
         <h2 className={"text-3xl font-bold mb-8 text-center"}>
+          Original Image Gallery
+        </h2>
+        <p className={"flex items-center justify-center"}>
+          <a
+            href={"https://meadmemorialchapel.com/MeadChapelPhotos"}
+            className={"underline text-blue-600"}
+          >
+            Mead Chapel Photos
+          </a>
+        </p>
+      </div>
+
+      <div>
+        <h2 className={"text-3xl font-bold mb-8 text-center"}>
           Chapel's Location
         </h2>
         <LocationMap />
