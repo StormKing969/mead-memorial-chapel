@@ -27,7 +27,7 @@ const PreviewPost = ({
         <h3 className={"text-xl font-semibold mb-2 capitalize"}>{title}</h3>
         <p className={"text-gray-600 mb-4"}>{content.substring(0, 100)}....</p>
 
-        <Link to={`/blog/${id}`} className={"text-blue-600 font-medium hover:text-blue-800 hover:underline"}>
+        <Link to={`/news/${id}`} className={"text-blue-600 font-medium hover:text-blue-800 hover:underline"}>
           Read More →
         </Link>
       </div>

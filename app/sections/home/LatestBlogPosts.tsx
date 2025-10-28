@@ -30,7 +30,7 @@ const LatestBlogPosts = () => {
           disabled={posts.length === 0}
           className={`bg-gray-900 px-6 py-3 rounded-md hover:bg-gray-700 ${posts.length === 0 ? "cursor-none" : ""}`}
         >
-          <Link to={"/blog"} className={"text-white"}>
+          <Link to={"/news"} className={"text-white"}>
             See All News Posts
           </Link>
         </Button>

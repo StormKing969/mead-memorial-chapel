@@ -19,15 +19,15 @@ type Pages = {
   "/auth": {
     params: {};
   };
-  "/blog": {
+  "/news": {
     params: {};
   };
-  "/blog/:id": {
+  "/news/:id": {
     params: {
       "id": string;
     };
   };
-  "/create-blog-post": {
+  "/create-news-post": {
     params: {};
   };
   "/lawsuit": {
@@ -47,7 +47,7 @@ type Pages = {
 type RouteFiles = {
   "root.tsx": {
     id: "root";
-    page: "/" | "/about" | "/auth" | "/blog" | "/blog/:id" | "/create-blog-post" | "/lawsuit" | "/lawsuit/documents" | "/main" | "/petition";
+    page: "/" | "/about" | "/auth" | "/news" | "/news/:id" | "/create-news-post" | "/lawsuit" | "/lawsuit/documents" | "/main" | "/petition";
   };
   "routes/home.tsx": {
     id: "routes/home";
@@ -63,15 +63,15 @@ type RouteFiles = {
   };
   "routes/blog.tsx": {
     id: "routes/blog";
-    page: "/blog";
+    page: "/news";
   };
   "routes/blog-post.tsx": {
     id: "routes/blog-post";
-    page: "/blog/:id";
+    page: "/news/:id";
   };
   "routes/create-blog-post.tsx": {
     id: "routes/create-blog-post";
-    page: "/create-blog-post";
+    page: "/create-news-post";
   };
   "routes/lawsuit.tsx": {
     id: "routes/lawsuit";

@@ -41,7 +41,7 @@ const Navbar = ({ user }: { user: User | null }) => {
               "bg-blue-400 text-white px-4 py-2 rounded cursor-pointer hover:bg-blue-700 focus:outline-none mr-4"
             }
             onClick={() => {
-              navigate("/create-blog-post");
+              navigate("/create-news-post");
             }}
           >
             Create Post

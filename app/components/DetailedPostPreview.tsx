@@ -39,7 +39,7 @@ const DetailedPostPreview = ({
         </p>
         <div className={"mt-4 flex flex-row items-center justify-between"}>
           <Link
-            to={`/blog/${id}`}
+            to={`/news/${id}`}
             className={"text-blue-600 hover:underline hover:text-blue-800 font-medium"}
           >
             Read More →

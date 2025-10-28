@@ -14,8 +14,8 @@ export const NavbarLinks = [
     url: "/about",
   },
   {
-    title: "Blog",
-    url: "/blog",
+    title: "News",
+    url: "/news",
   },
   {
     title: "Lawsuit",

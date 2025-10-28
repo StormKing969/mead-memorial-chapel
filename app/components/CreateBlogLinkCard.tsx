@@ -4,7 +4,7 @@ import { Link } from "react-router";
 const CreateBlogLinkCard = () => {
   return (
     <Link
-      to={"/create-blog-post"}
+      to={"/create-news-post"}
       className={
         "flex items-center justify-center md:py-15 bg-white shadow-md rounded-lg border-2 border-dashed border-gray-300 hover:border-blue-500 hover:bg-blue-50 transition-colors"
       }

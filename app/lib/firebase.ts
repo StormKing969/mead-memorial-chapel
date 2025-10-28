@@ -90,13 +90,13 @@ export function authFunctions() {
 
   const loginFunction = async (email: string, password: string) => {
     await signInWithEmailAndPassword(auth, email, password).then(() => {
-      navigate("/create-blog-post");
+      navigate("/create-news-post");
     });
   };
 
   const registerFunction = async (email: string, password: string) => {
     await createUserWithEmailAndPassword(auth, email, password).then(() => {
-      navigate("/create-blog-post");
+      navigate("/create-news-post");
     });
   };
 

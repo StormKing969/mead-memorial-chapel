@@ -67,7 +67,7 @@ const CreateBlog = () => {
         setImageName("");
       })
       .finally(() => {
-        navigate("/blog");
+        navigate("/news");
       });
   };
 
