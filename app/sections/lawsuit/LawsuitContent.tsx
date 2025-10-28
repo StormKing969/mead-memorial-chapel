@@ -42,7 +42,11 @@ const LawsuitContent = () => {
             "bg-white rounded-xl shadow-md px-8 py-10 mb-12 border border-gray-100"
           }
         >
-          <h2 className={"text-3xl font-extrabold mb-4 text-gray-900 sm:text-left text-center"}>
+          <h2
+            className={
+              "text-3xl font-extrabold mb-4 text-gray-900 sm:text-left text-center"
+            }
+          >
             Context
           </h2>
           <p className={"text-lg text-gray-800 leading-relaxed"}>
@@ -56,7 +60,11 @@ const LawsuitContent = () => {
             "bg-white rounded-xl shadow-md px-8 py-10 mb-12 border border-gray-100"
           }
         >
-          <h2 className={"text-3xl font-extrabold mb-4 text-gray-900 sm:text-left text-center"}>
+          <h2
+            className={
+              "text-3xl font-extrabold mb-4 text-gray-900 sm:text-left text-center"
+            }
+          >
             Letter from Middlebury Campus Alumni
           </h2>
           <iframe
@@ -67,7 +75,13 @@ const LawsuitContent = () => {
             className={"border rounded hidden lg:block"}
             loading="lazy"
           />
-            <img src={"lawsuit/letter.png"} alt={"Letter"} className={"p-px border-gray-400 border-2 w-full h-[500px] lg:hidden"} />
+          <img
+            src={"lawsuit/letter.png"}
+            alt={"Letter"}
+            className={
+              "p-px border-gray-400 border-2 w-full h-[500px] lg:hidden"
+            }
+          />
         </section>
 
         <section
@@ -107,7 +121,7 @@ const LawsuitContent = () => {
                     >
                       <span
                         className={
-                          "hidden sm:visible absolute left-[51%] -translate-x-1/2 top-1/2 w-4 h-4 bg-white border-4 border-indigo-600 rounded-full z-10"
+                          "hidden sm:block absolute left-[51%] -translate-x-1/8 top-1/2 w-4 h-4 bg-white border-4 border-indigo-600 rounded-full z-10"
                         }
                         aria-hidden="true"
                       />
@@ -130,7 +144,11 @@ const LawsuitContent = () => {
             "bg-white rounded-xl shadow-md px-8 py-10 mb-12 border border-gray-100"
           }
         >
-          <h2 className={"text-3xl font-extrabold mb-4 text-gray-900 sm:text-left text-center"}>
+          <h2
+            className={
+              "text-3xl font-extrabold mb-4 text-gray-900 sm:text-left text-center"
+            }
+          >
             Key Parties Involved
           </h2>
 
@@ -160,7 +178,11 @@ const LawsuitContent = () => {
             "bg-gray-50 rounded-xl shadow-sm px-8 py-10 mb-12 border border-gray-100"
           }
         >
-          <h2 className={"text-3xl font-extrabold mb-4 text-gray-900 sm:text-left text-center"}>
+          <h2
+            className={
+              "text-3xl font-extrabold mb-4 text-gray-900 sm:text-left text-center"
+            }
+          >
             Allegations
           </h2>
           <ul className={"list-disc pl-6 space-y-2 text-lg text-gray-800"}>
@@ -176,7 +198,11 @@ const LawsuitContent = () => {
             "bg-white rounded-xl shadow-md px-8 py-10 mb-12 border border-gray-100"
           }
         >
-          <h2 className={"text-3xl font-extrabold mb-4 text-gray-900 sm:text-left text-center"}>
+          <h2
+            className={
+              "text-3xl font-extrabold mb-4 text-gray-900 sm:text-left text-center"
+            }
+          >
             Defense
           </h2>
           <ul className={"list-disc pl-6 space-y-2 text-lg text-gray-800"}>
