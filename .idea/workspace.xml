@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="10/27/25 - Customer Change Request II">
-      <change afterPath="$PROJECT_DIR$/public/lawsuit/letter.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="10/28/25 - Mobile View Changes">
       <change beforePath="$PROJECT_DIR$/app/sections/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/sections/about/AboutContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/about/AboutContent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/sections/about/AboutHeroSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/about/AboutHeroSection.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/sections/article/ArticlePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/article/ArticlePage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/sections/lawsuit/LawsuitContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/lawsuit/LawsuitContent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/sections/news/NewsPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/news/NewsPage.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,15 +180,7 @@
       <workItem from="1761613839457" duration="193000" />
       <workItem from="1761615292437" duration="54000" />
       <workItem from="1761615704166" duration="1534000" />
-      <workItem from="1761662435481" duration="3762000" />
-    </task>
-    <task id="LOCAL-00002" summary="Minor Changes to existing HomePage Code">
-      <option name="closed" value="true" />
-      <created>1758091036128</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1758091036128</updated>
+      <workItem from="1761662435481" duration="4980000" />
     </task>
     <task id="LOCAL-00003" summary="BLog Post Display Update I">
       <option name="closed" value="true" />
@@ -580,14 +566,21 @@
       <option name="project" value="LOCAL" />
       <updated>1761618367523</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="10/28/25 - Mobile View Changes">
+      <option name="closed" value="true" />
+      <created>1761666805394</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1761666805394</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update VII" />
     <MESSAGE value="Temp Updates I" />
     <MESSAGE value="Temp Updates II" />
     <MESSAGE value="Petition Update I" />
@@ -612,6 +605,7 @@
     <MESSAGE value="Footer Update I" />
     <MESSAGE value="10/27/25 - Bug Fix II" />
     <MESSAGE value="10/27/25 - Customer Change Request II" />
-    <option name="LAST_COMMIT_MESSAGE" value="10/27/25 - Customer Change Request II" />
+    <MESSAGE value="10/28/25 - Mobile View Changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="10/28/25 - Mobile View Changes" />
   </component>
 </project>

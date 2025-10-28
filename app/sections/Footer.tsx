@@ -53,7 +53,7 @@ const Footer = () => {
                     "text-blue-600 hover:text-blue-800 hover:font-bold transition-all"
                   }
                 >
-                  Timeline
+                  Lawsuit
                 </Link>
               </li>
               <li>

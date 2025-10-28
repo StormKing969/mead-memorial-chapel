@@ -134,7 +134,7 @@ const LawsuitContent = () => {
             Key Parties Involved
           </h2>
 
-          <table className={"hidden sm:visible"}>
+          <table className={"hidden sm:block"}>
             <tbody className={"divide-y divide-gray-200"}>
               {InvolvedParties.map((ev, i) => (
                 <tr key={i} className={"h-[75px]"}>
