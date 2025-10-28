@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="10/27/25 - Bug Fix II">
-      <change beforePath="$PROJECT_DIR$/app/sections/lawsuit/documents/DocumentHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/lawsuit/documents/DocumentHeader.tsx" afterDir="false" />
+    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="10/27/25 - Customer Change Request II">
+      <change afterPath="$PROJECT_DIR$/public/lawsuit/letter.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sections/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sections/about/AboutContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/about/AboutContent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sections/about/AboutHeroSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/about/AboutHeroSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sections/article/ArticlePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/article/ArticlePage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sections/lawsuit/LawsuitContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/lawsuit/LawsuitContent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sections/news/NewsPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/news/NewsPage.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,11 +102,11 @@
       <recent name="C:\Work\Web Development\mead-memorial-chapel\constants\about" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Work\Web Development\mead-memorial-chapel\public\lawsuit" />
       <recent name="C:\Work\Web Development\mead-memorial-chapel\public\lawsuit\documents\opposition-to-amicus-brief-motion" />
       <recent name="C:\Work\Web Development\mead-memorial-chapel\public\lawsuit\documents\appeal-to-vermont-supreme-court" />
       <recent name="C:\Work\Web Development\mead-memorial-chapel\public\lawsuit\documents\motion-for-amicus-brief" />
       <recent name="C:\Work\Web Development\mead-memorial-chapel\public\lawsuit\documents\amicus-brief-motion-granted" />
-      <recent name="C:\Work\Web Development\mead-memorial-chapel\public\about" />
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
@@ -179,14 +186,7 @@
       <workItem from="1761613839457" duration="193000" />
       <workItem from="1761615292437" duration="54000" />
       <workItem from="1761615704166" duration="1534000" />
-    </task>
-    <task id="LOCAL-00001" summary="Adding Configs for Netlify I">
-      <option name="closed" value="true" />
-      <created>1758087776112</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1758087776112</updated>
+      <workItem from="1761662435481" duration="3762000" />
     </task>
     <task id="LOCAL-00002" summary="Minor Changes to existing HomePage Code">
       <option name="closed" value="true" />
@@ -572,14 +572,21 @@
       <option name="project" value="LOCAL" />
       <updated>1761616363476</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="10/27/25 - Customer Change Request II">
+      <option name="closed" value="true" />
+      <created>1761618367523</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1761618367523</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update VI" />
     <MESSAGE value="Update VII" />
     <MESSAGE value="Temp Updates I" />
     <MESSAGE value="Temp Updates II" />
@@ -604,6 +611,7 @@
     <MESSAGE value="Bug Fix II" />
     <MESSAGE value="Footer Update I" />
     <MESSAGE value="10/27/25 - Bug Fix II" />
-    <option name="LAST_COMMIT_MESSAGE" value="10/27/25 - Bug Fix II" />
+    <MESSAGE value="10/27/25 - Customer Change Request II" />
+    <option name="LAST_COMMIT_MESSAGE" value="10/27/25 - Customer Change Request II" />
   </component>
 </project>

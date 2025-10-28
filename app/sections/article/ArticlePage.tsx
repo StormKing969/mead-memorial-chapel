@@ -8,7 +8,7 @@ const ArticlePage = ({
 }) => {
   return (
     <article
-      className={"max-w-3xl mx-auto p-6 my-16 bg-white shadow-lg rounded-lg"}
+      className={"max-w-3xl mx-6 md:mx-auto p-6 my-16 bg-white shadow-lg rounded-lg"}
     >
       <h1 className={"text-3xl font-bold"}>{title}</h1>
       <p className={"text-gray-600 mb-4 mt-2"}>Published on {createdAt}</p>

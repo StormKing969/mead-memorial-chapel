@@ -20,7 +20,7 @@ const AboutContent = () => {
       </div>
 
       <div className={"flex flex-row justify-between gap-8"}>
-        <div className={"flex flex-col items-center gap-8 max-w-[400px]"}>
+        <div className={"flex flex-col items-center gap-8 md:max-w-[400px]"}>
           <div>
             <h2 className={"text-2xl font-semibold mb-3"}>
               A Legacy of Service
@@ -62,7 +62,9 @@ const AboutContent = () => {
           </div>
         </div>
 
-        <div className={"flex flex-col items-center gap-8 max-w-[400px]"}>
+        <div
+          className={"flex-col items-center gap-8 max-w-[400px] md:flex hidden"}
+        >
           <img
             src={"/about/chapel-side.png"}
             alt={"Chapel interior side"}
@@ -78,15 +80,39 @@ const AboutContent = () => {
       </div>
 
       <div>
-        <h2 className={"text-3xl font-bold mb-8 text-center"}>
-          Original Image Gallery
-        </h2>
-        <p className={"flex items-center justify-center"}>
+        <h2 className={"text-3xl font-bold mb-8 text-center"}>Image Gallery</h2>
+        <div
+          className={
+            "flex flex-col md:flex-row md:flex-wrap items-center justify-center md:justify-evenly gap-5"
+          }
+        >
+          <img
+            src={"/about/chapel-side.png"}
+            alt={"Chapel interior side"}
+            className={"rounded shadow object-cover h-full w-full max-w-[250px] max-h-[250px]"}
+          />
+          <img
+            src={"/about/chapel-interior.jpg"}
+            alt={"Chapel interior"}
+            className={"rounded shadow object-cover h-full w-full max-w-[250px] max-h-[250px]"}
+          />
+          <img
+            src={"/home/chapel-aboutPreview.jpg"}
+            alt={"Chapel exterior side"}
+            className={"rounded shadow object-cover h-full w-full max-w-[250px] max-h-[250px]"}
+          />
+          <img
+            src={"/home/chapel-hero.jpg"}
+            alt={"Chapel exterior side - night"}
+            className={"rounded shadow object-cover h-full w-full max-w-[250px] max-h-[250px]"}
+          />
+        </div>
+        <p className={"flex items-center justify-center mt-5"}>
           <a
             href={"https://meadmemorialchapel.com/MeadChapelPhotos"}
             className={"underline text-blue-600"}
           >
-            Mead Chapel Photos
+            More Mead Chapel Photos
           </a>
         </p>
       </div>

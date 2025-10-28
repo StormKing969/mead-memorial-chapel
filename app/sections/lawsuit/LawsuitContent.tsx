@@ -1,7 +1,6 @@
 import React from "react";
 import {
   AllegationList,
-  CurrentOutcome,
   DefenseList,
   InvolvedParties,
   LawsuitPageBackgroundContent,
@@ -43,7 +42,7 @@ const LawsuitContent = () => {
             "bg-white rounded-xl shadow-md px-8 py-10 mb-12 border border-gray-100"
           }
         >
-          <h2 className={"text-3xl font-extrabold mb-4 text-gray-900"}>
+          <h2 className={"text-3xl font-extrabold mb-4 text-gray-900 sm:text-left text-center"}>
             Context
           </h2>
           <p className={"text-lg text-gray-800 leading-relaxed"}>
@@ -57,7 +56,7 @@ const LawsuitContent = () => {
             "bg-white rounded-xl shadow-md px-8 py-10 mb-12 border border-gray-100"
           }
         >
-          <h2 className={"text-3xl font-extrabold mb-4 text-gray-900"}>
+          <h2 className={"text-3xl font-extrabold mb-4 text-gray-900 sm:text-left text-center"}>
             Letter from Middlebury Campus Alumni
           </h2>
           <iframe
@@ -65,9 +64,10 @@ const LawsuitContent = () => {
             width={"100%"}
             height={"700px"}
             title={"Letter from Middlebury Campus Alumni"}
-            className={"border rounded"}
+            className={"border rounded hidden lg:block"}
             loading="lazy"
           />
+            <img src={"lawsuit/letter.png"} alt={"Letter"} className={"p-px border-gray-400 border-2 w-full h-[500px] lg:hidden"} />
         </section>
 
         <section
@@ -76,7 +76,11 @@ const LawsuitContent = () => {
             "bg-gray-50 rounded-xl shadow-sm px-8 py-10 mb-12 border border-gray-100"
           }
         >
-          <h2 className={"text-3xl font-extrabold mb-4 text-gray-900"}>
+          <h2
+            className={
+              "text-3xl sm:text-left text-center font-extrabold mb-4 text-gray-900"
+            }
+          >
             Legal Timeline
           </h2>
           <div className={"relative"}>
@@ -103,12 +107,12 @@ const LawsuitContent = () => {
                     >
                       <span
                         className={
-                          "absolute left-[51%] -translate-x-1/2 top-1/2 w-4 h-4 bg-white border-4 border-indigo-600 rounded-full z-10"
+                          "hidden sm:visible absolute left-[51%] -translate-x-1/2 top-1/2 w-4 h-4 bg-white border-4 border-indigo-600 rounded-full z-10"
                         }
                         aria-hidden="true"
                       />
                       <div
-                        className={`transform ${left ? "-translate-x-50 md:-translate-x-50" : "translate-x-50 md:translate-x-50"}`}
+                        className={`transform ${left ? "sm:-translate-x-50 md:-translate-x-50" : "sm:translate-x-50 md:translate-x-50"}`}
                       >
                         <LawsuitTimelineCard event={ev} />
                       </div>
@@ -126,11 +130,11 @@ const LawsuitContent = () => {
             "bg-white rounded-xl shadow-md px-8 py-10 mb-12 border border-gray-100"
           }
         >
-          <h2 className={"text-3xl font-extrabold mb-4 text-gray-900"}>
+          <h2 className={"text-3xl font-extrabold mb-4 text-gray-900 sm:text-left text-center"}>
             Key Parties Involved
           </h2>
 
-          <table>
+          <table className={"hidden sm:visible"}>
             <tbody className={"divide-y divide-gray-200"}>
               {InvolvedParties.map((ev, i) => (
                 <tr key={i} className={"h-[75px]"}>
@@ -140,6 +144,14 @@ const LawsuitContent = () => {
               ))}
             </tbody>
           </table>
+
+          {InvolvedParties.map((ev, i) => (
+            <div key={i} className={" sm:hidden"}>
+              <p className={"font-bold"}>{ev.title}</p>
+              <p className={"text-neutral-800"}>{ev.people}</p>
+              <br />
+            </div>
+          ))}
         </section>
 
         <section
@@ -148,7 +160,7 @@ const LawsuitContent = () => {
             "bg-gray-50 rounded-xl shadow-sm px-8 py-10 mb-12 border border-gray-100"
           }
         >
-          <h2 className={"text-3xl font-extrabold mb-4 text-gray-900"}>
+          <h2 className={"text-3xl font-extrabold mb-4 text-gray-900 sm:text-left text-center"}>
             Allegations
           </h2>
           <ul className={"list-disc pl-6 space-y-2 text-lg text-gray-800"}>
@@ -164,7 +176,7 @@ const LawsuitContent = () => {
             "bg-white rounded-xl shadow-md px-8 py-10 mb-12 border border-gray-100"
           }
         >
-          <h2 className={"text-3xl font-extrabold mb-4 text-gray-900"}>
+          <h2 className={"text-3xl font-extrabold mb-4 text-gray-900 sm:text-left text-center"}>
             Defense
           </h2>
           <ul className={"list-disc pl-6 space-y-2 text-lg text-gray-800"}>
@@ -174,19 +186,19 @@ const LawsuitContent = () => {
           </ul>
         </section>
 
-        <section
-          id={"outcome"}
-          className={
-            "bg-gray-50 rounded-xl shadow-sm px-8 py-10 border border-gray-100 mb-8"
-          }
-        >
-          <h2 className={"text-3xl font-extrabold mb-4 text-gray-900"}>
-            Outcome
-          </h2>
-          <p className={"text-lg text-gray-800 leading-relaxed"}>
-            {CurrentOutcome}
-          </p>
-        </section>
+        {/*<section*/}
+        {/*  id={"outcome"}*/}
+        {/*  className={*/}
+        {/*    "bg-gray-50 rounded-xl shadow-sm px-8 py-10 border border-gray-100 mb-8"*/}
+        {/*  }*/}
+        {/*>*/}
+        {/*  <h2 className={"text-3xl font-extrabold mb-4 text-gray-900"}>*/}
+        {/*    Outcome*/}
+        {/*  </h2>*/}
+        {/*  <p className={"text-lg text-gray-800 leading-relaxed"}>*/}
+        {/*    {CurrentOutcome}*/}
+        {/*  </p>*/}
+        {/*</section>*/}
 
         <section></section>
       </main>

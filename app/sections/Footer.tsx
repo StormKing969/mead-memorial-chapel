@@ -66,16 +66,16 @@ const Footer = () => {
                   News
                 </Link>
               </li>
-              <li>
-                <Link
-                  to={"/contact"}
-                  className={
-                    "text-blue-600 hover:text-blue-800 hover:font-bold transition-all"
-                  }
-                >
-                  Contact
-                </Link>
-              </li>
+              {/*<li>*/}
+              {/*  <Link*/}
+              {/*    to={"/contact"}*/}
+              {/*    className={*/}
+              {/*      "text-blue-600 hover:text-blue-800 hover:font-bold transition-all"*/}
+              {/*    }*/}
+              {/*  >*/}
+              {/*    Contact*/}
+              {/*  </Link>*/}
+              {/*</li>*/}
               <li>
                 <a
                   href={"https://meadmemorialchapel.com/"}

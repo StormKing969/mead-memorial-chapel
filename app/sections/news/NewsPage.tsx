@@ -8,7 +8,7 @@ const NewsPage = ({ user }: { user: User | null }) => {
   const posts = getCurrentBlogPosts();
 
   return (
-    <section className={"md:px-25 mx-auto h-full py-16 bg-white"}>
+    <section className={"md:px-25 px-6 mx-auto h-full py-16 bg-white"}>
       <h1
         className={
           "text-4xl md:text-5xl font-bold text-center mb-12 text-gray-900"
