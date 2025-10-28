@@ -34,10 +34,10 @@ export const LawsuitSection = [
         link: "#defense",
         title: "Defense",
     },
-    {
-        link: "#outcome",
-        title: "Outcome",
-    },
+    // {
+    //     link: "#outcome",
+    //     title: "Outcome",
+    // },
     {
         link: "documents",
         title: "Legal Documents",
