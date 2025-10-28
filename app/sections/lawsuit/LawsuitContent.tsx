@@ -121,7 +121,7 @@ const LawsuitContent = () => {
                     >
                       <span
                         className={
-                          "hidden sm:block absolute left-[51%] -translate-x-1/8 top-1/2 w-4 h-4 bg-white border-4 border-indigo-600 rounded-full z-10"
+                          "hidden sm:block absolute left-[51%] -translate-x-1/2 top-1/2 w-4 h-4 bg-white border-4 border-indigo-600 rounded-full z-10"
                         }
                         aria-hidden="true"
                       />
