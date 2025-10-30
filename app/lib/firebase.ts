@@ -8,6 +8,7 @@ import {
   onSnapshot,
   orderBy,
   query,
+  updateDoc,
   where,
 } from "@firebase/firestore";
 import {
@@ -153,5 +154,37 @@ export async function deletePostById(id: string) {
     console.log("Successfully deleted");
   } catch (error) {
     console.error("Error deleting post: ", error);
+  }
+}
+
+export async function updatePostById(
+  id: string,
+  data: Partial<Pick<Post, "title" | "content" | "authorName" | "imageUrl">>,
+) {
+  try {
+    const q = query(collection(db, "posts"), where("id", "==", id));
+    const snapshot = await getDocs(q);
+
+    if (snapshot.empty) {
+      console.warn("No matching post found to update for id:", id);
+      return false;
+    }
+
+    const date = new Date();
+    const formattedDate = date.toLocaleDateString("en-US");
+
+    await Promise.all(
+      snapshot.docs.map((d) =>
+        updateDoc(d.ref, {
+          ...data,
+          createdAt: formattedDate,
+        }),
+      ),
+    );
+
+    return true;
+  } catch (error) {
+    console.error("Error updating post:", error);
+    return false;
   }
 }
