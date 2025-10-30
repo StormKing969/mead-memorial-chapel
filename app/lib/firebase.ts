@@ -2,6 +2,7 @@
 import { initializeApp } from "firebase/app";
 import {
   collection,
+  deleteDoc,
   getDocs,
   getFirestore,
   onSnapshot,
@@ -134,4 +135,23 @@ export async function getPetitionListCount() {
   }
 
   return querySnapshot.docs.length;
+}
+
+export async function deletePostById(id: string) {
+  try {
+    // In our data model, the Firestore document ID may differ from the post.id field
+    // so we first locate the document(s) by the stored field and then delete by ref.
+    const q = query(collection(db, "posts"), where("id", "==", id));
+    const snapshot = await getDocs(q);
+
+    if (snapshot.empty) {
+      console.warn("No matching post found to delete for id:", id);
+      return;
+    }
+
+    await Promise.all(snapshot.docs.map((d) => deleteDoc(d.ref)));
+    console.log("Successfully deleted");
+  } catch (error) {
+    console.error("Error deleting post: ", error);
+  }
 }

@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="10/28/25 - Mobile View Changes II">
-      <change beforePath="$PROJECT_DIR$/app/root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/root.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/sections/lawsuit/LawsuitContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/lawsuit/LawsuitContent.tsx" afterDir="false" />
+    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="10/28/25 - Mobile View Changes V">
+      <change afterPath="$PROJECT_DIR$/public/back-arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/delete.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lib/firebase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/lib/firebase.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sections/article/ArticlePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/article/ArticlePage.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,11 +99,11 @@
       <recent name="C:\Work\Web Development\mead-memorial-chapel\constants\about" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Work\Web Development\mead-memorial-chapel\public" />
       <recent name="C:\Work\Web Development\mead-memorial-chapel\public\lawsuit" />
       <recent name="C:\Work\Web Development\mead-memorial-chapel\public\lawsuit\documents\opposition-to-amicus-brief-motion" />
       <recent name="C:\Work\Web Development\mead-memorial-chapel\public\lawsuit\documents\appeal-to-vermont-supreme-court" />
       <recent name="C:\Work\Web Development\mead-memorial-chapel\public\lawsuit\documents\motion-for-amicus-brief" />
-      <recent name="C:\Work\Web Development\mead-memorial-chapel\public\lawsuit\documents\amicus-brief-motion-granted" />
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
@@ -181,6 +184,7 @@
       <workItem from="1761615292437" duration="54000" />
       <workItem from="1761615704166" duration="1534000" />
       <workItem from="1761662435481" duration="5797000" />
+      <workItem from="1761840369071" duration="4908000" />
     </task>
     <task id="LOCAL-00004" summary="BLog Post Display Update II">
       <option name="closed" value="true" />
