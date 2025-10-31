@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="10/30/25 - Delete article and back button on article">
-      <change beforePath="$PROJECT_DIR$/app/lib/firebase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/lib/firebase.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/sections/article/ArticlePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/article/ArticlePage.tsx" afterDir="false" />
+    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="10/30/25 - Added 'Edit' functionality">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sections/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sections/lawsuit/LawsuitContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/lawsuit/LawsuitContent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constants/lawsuit/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/constants/lawsuit/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,15 +183,8 @@
       <workItem from="1761615292437" duration="54000" />
       <workItem from="1761615704166" duration="1534000" />
       <workItem from="1761662435481" duration="5797000" />
-      <workItem from="1761840369071" duration="6268000" />
-    </task>
-    <task id="LOCAL-00005" summary="BLog Post Display Update III">
-      <option name="closed" value="true" />
-      <created>1758241642924</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1758241642924</updated>
+      <workItem from="1761840369071" duration="8761000" />
+      <workItem from="1761869078000" duration="1496000" />
     </task>
     <task id="LOCAL-00006" summary="BLog Post Display Complete. Working on Blog Article Page">
       <option name="closed" value="true" />
@@ -575,14 +570,21 @@
       <option name="project" value="LOCAL" />
       <updated>1761848140973</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="10/30/25 - Added 'Edit' functionality">
+      <option name="closed" value="true" />
+      <created>1761849992523</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1761849992523</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Petition Update I" />
     <MESSAGE value="Petition Update II" />
     <MESSAGE value="Petition Update III" />
     <MESSAGE value="Document Categorization" />
@@ -607,6 +609,7 @@
     <MESSAGE value="10/28/25 - Mobile View Changes" />
     <MESSAGE value="10/28/25 - Mobile View Changes II" />
     <MESSAGE value="10/30/25 - Delete article and back button on article" />
-    <option name="LAST_COMMIT_MESSAGE" value="10/30/25 - Delete article and back button on article" />
+    <MESSAGE value="10/30/25 - Added 'Edit' functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="10/30/25 - Added 'Edit' functionality" />
   </component>
 </project>

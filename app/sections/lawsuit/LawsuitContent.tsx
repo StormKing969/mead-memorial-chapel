@@ -1,7 +1,5 @@
 import React from "react";
 import {
-  AllegationList,
-  DefenseList,
   InvolvedParties,
   LawsuitPageBackgroundContent,
   LawsuitSection,
@@ -172,45 +170,45 @@ const LawsuitContent = () => {
           ))}
         </section>
 
-        <section
-          id={"allegations"}
-          className={
-            "bg-gray-50 rounded-xl shadow-sm px-8 py-10 mb-12 border border-gray-100"
-          }
-        >
-          <h2
-            className={
-              "text-3xl font-extrabold mb-4 text-gray-900 sm:text-left text-center"
-            }
-          >
-            Allegations
-          </h2>
-          <ul className={"list-disc pl-6 space-y-2 text-lg text-gray-800"}>
-            {AllegationList.map((ev, i) => (
-              <li key={i}>{ev}</li>
-            ))}
-          </ul>
-        </section>
+        {/*<section*/}
+        {/*  id={"allegations"}*/}
+        {/*  className={*/}
+        {/*    "bg-gray-50 rounded-xl shadow-sm px-8 py-10 mb-12 border border-gray-100"*/}
+        {/*  }*/}
+        {/*>*/}
+        {/*  <h2*/}
+        {/*    className={*/}
+        {/*      "text-3xl font-extrabold mb-4 text-gray-900 sm:text-left text-center"*/}
+        {/*    }*/}
+        {/*  >*/}
+        {/*    Allegations*/}
+        {/*  </h2>*/}
+        {/*  <ul className={"list-disc pl-6 space-y-2 text-lg text-gray-800"}>*/}
+        {/*    {AllegationList.map((ev, i) => (*/}
+        {/*      <li key={i}>{ev}</li>*/}
+        {/*    ))}*/}
+        {/*  </ul>*/}
+        {/*</section>*/}
 
-        <section
-          id={"defense"}
-          className={
-            "bg-white rounded-xl shadow-md px-8 py-10 mb-12 border border-gray-100"
-          }
-        >
-          <h2
-            className={
-              "text-3xl font-extrabold mb-4 text-gray-900 sm:text-left text-center"
-            }
-          >
-            Defense
-          </h2>
-          <ul className={"list-disc pl-6 space-y-2 text-lg text-gray-800"}>
-            {DefenseList.map((ev, i) => (
-              <li key={i}>{ev}</li>
-            ))}
-          </ul>
-        </section>
+        {/*<section*/}
+        {/*  id={"defense"}*/}
+        {/*  className={*/}
+        {/*    "bg-white rounded-xl shadow-md px-8 py-10 mb-12 border border-gray-100"*/}
+        {/*  }*/}
+        {/*>*/}
+        {/*  <h2*/}
+        {/*    className={*/}
+        {/*      "text-3xl font-extrabold mb-4 text-gray-900 sm:text-left text-center"*/}
+        {/*    }*/}
+        {/*  >*/}
+        {/*    Defense*/}
+        {/*  </h2>*/}
+        {/*  <ul className={"list-disc pl-6 space-y-2 text-lg text-gray-800"}>*/}
+        {/*    {DefenseList.map((ev, i) => (*/}
+        {/*      <li key={i}>{ev}</li>*/}
+        {/*    ))}*/}
+        {/*  </ul>*/}
+        {/*</section>*/}
 
         {/*<section*/}
         {/*  id={"outcome"}*/}

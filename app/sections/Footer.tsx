@@ -1,6 +1,6 @@
 import React from "react";
 import { IconContext } from "react-icons";
-import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
 import { Link } from "react-router";
 
 const Footer = () => {
@@ -114,13 +114,13 @@ const Footer = () => {
                 <FaTwitter />
               </Link>
 
-              <Link to={"/contact"}>
-                <FaInstagram />
-              </Link>
+              {/*<Link to={"/contact"}>*/}
+              {/*  <FaInstagram />*/}
+              {/*</Link>*/}
 
-              <Link to={"/contact"}>
-                <FaFacebook />
-              </Link>
+              {/*<Link to={"/contact"}>*/}
+              {/*  <FaFacebook />*/}
+              {/*</Link>*/}
             </div>
           </div>
         </div>

@@ -10,39 +10,39 @@
  * - title: string — section label.
  */
 export const LawsuitSection = [
-    {
-        link: "#context",
-        title: "Context",
-    },
-    {
-        link: "#letter",
-        title: "Alumni Letter",
-    },
-    {
-        link: "#timeline",
-        title: "Legal Timeline",
-    },
-    {
-        link: "#parties",
-        title: "Key Parties Involved",
-    },
-    {
-        link: "#allegations",
-        title: "Allegations",
-    },
-    {
-        link: "#defense",
-        title: "Defense",
-    },
-    // {
-    //     link: "#outcome",
-    //     title: "Outcome",
-    // },
-    {
-        link: "documents",
-        title: "Legal Documents",
-    },
-]
+  {
+    link: "#context",
+    title: "Context",
+  },
+  {
+    link: "#letter",
+    title: "Alumni Letter",
+  },
+  {
+    link: "#timeline",
+    title: "Legal Timeline",
+  },
+  {
+    link: "#parties",
+    title: "Key Parties Involved",
+  },
+  // {
+  //     link: "#allegations",
+  //     title: "Allegations",
+  // },
+  // {
+  //     link: "#defense",
+  //     title: "Defense",
+  // },
+  // {
+  //     link: "#outcome",
+  //     title: "Outcome",
+  // },
+  {
+    link: "documents",
+    title: "Legal Documents",
+  },
+];
 
 /**
  * Chronological legal milestones for the dispute.
