@@ -10,6 +10,10 @@
  */
 export const NavbarLinks = [
   {
+    title: "Main Page",
+    url: "/main",
+  },
+  {
     title: "About",
     url: "/about",
   },

@@ -4,7 +4,7 @@ export interface Post {
   content: string;
   authorName: string;
   authorID: string;
-  createdAt?: string;
+  createdAt: string;
   imageUrl: string;
   category: CategoryOptions;
 }

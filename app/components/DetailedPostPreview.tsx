@@ -7,7 +7,7 @@ const DetailedPostPreview = ({
 }: {
   post: Post;
 }) => {
-    console.log(imageUrl);
+  console.log(imageUrl);
   return (
     <article
       key={id}
@@ -37,18 +37,21 @@ const DetailedPostPreview = ({
         <p className={"text-gray-600 mt-2 line-clamp-3"}>
           {content.substring(0, 100)}....
         </p>
-        <div className={"mt-4 flex flex-row items-center justify-between"}>
-          <Link
-            to={`/news/${id}`}
-            className={"text-blue-600 hover:underline hover:text-blue-800 font-medium"}
-          >
-            Read More →
-          </Link>
+      </div>
 
-          <span className={"text-sm text-gray-500"}>
-            By {authorName || "Anonymous"}
-          </span>
-        </div>
+      <div className={"px-2 mb-2 flex flex-row items-center justify-between"}>
+        <Link
+          to={`/news/${id}`}
+          className={
+            "text-blue-600 hover:underline hover:text-blue-800 font-medium"
+          }
+        >
+          Read More →
+        </Link>
+
+        <span className={"text-sm text-gray-500"}>
+          By {authorName || "Anonymous"}
+        </span>
       </div>
     </article>
   );

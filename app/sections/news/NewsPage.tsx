@@ -24,9 +24,14 @@ const NewsPage = ({ user }: { user: User | null }) => {
       )}
 
       <div className={"grid gap-8 md:grid-cols-2 lg:grid-cols-3"}>
-        {posts.map((post) => (
-          <DetailedPostPreview key={post.id} post={post} />
-        ))}
+        {posts
+          .sort(
+            (a, b) =>
+              new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime(),
+          )
+          .map((post) => (
+            <DetailedPostPreview key={post.id} post={post} />
+          ))}
 
         {user && <CreateNewsLinkCard />}
       </div>
