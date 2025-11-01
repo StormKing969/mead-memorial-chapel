@@ -9,6 +9,14 @@ export interface Post {
   category: CategoryOptions;
 }
 
+export interface EugenicsPost {
+    id: string;
+    title: string;
+    content: string;
+    createdAt: string;
+    documentUrl: string;
+}
+
 export type CategoryOptions =
   | "Lawsuit"
   | "General"

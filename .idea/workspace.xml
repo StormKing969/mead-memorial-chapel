@@ -4,11 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="10/30/25 - Client Change Request">
+    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="10/31/25 - Styling Changes">
+      <change afterPath="$PROJECT_DIR$/app/components/DetailedEugenicsArticle.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/PreviewEugenicsPost.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/routes/create-eugenics-article.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/routes/eugenics.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sections/eugenics/CreateEugenicsArticlePost.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sections/eugenics/EugenicsPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sections/home/LatestEugenicsPost.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/PreviewPost.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/PreviewPost.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/sections/home/LatestBlogPosts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/home/LatestBlogPosts.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/sections/news/NewsPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/news/NewsPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.react-router/types/+routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/.react-router/types/+routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/CreateNewsLinkCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/CreateNewsLinkCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/DetailedPostPreview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/DetailedPostPreview.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lib/firebase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/lib/firebase.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sections/article/ArticlePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/article/ArticlePage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/constants/navbar/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/constants/navbar/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/types/post.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/post.d.ts" afterDir="false" />
     </list>
@@ -61,31 +73,31 @@
     <option name="sortByType" value="true" />
     <option name="sortKey" value="BY_TYPE" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Work/Web Development/mead-memorial-chapel&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.build.executor&quot;: &quot;Run&quot;,
-    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Work\\Web Development\\mead-memorial-chapel\\node_modules\\prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;junie.project.settings&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Work\\Web Development\\mead-memorial-chapel\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Work/Web Development/mead-memorial-chapel/app/sections/eugenics",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.build.executor": "Run",
+    "npm.dev.executor": "Run",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Work\\Web Development\\mead-memorial-chapel\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "junie.project.settings",
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "C:\\Work\\Web Development\\mead-memorial-chapel\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -97,6 +109,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Work\Web Development\mead-memorial-chapel\app\sections\eugenics" />
       <recent name="C:\Work\Web Development\mead-memorial-chapel\constants\about" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -186,15 +199,7 @@
       <workItem from="1761615704166" duration="1534000" />
       <workItem from="1761662435481" duration="5797000" />
       <workItem from="1761840369071" duration="8761000" />
-      <workItem from="1761869078000" duration="5738000" />
-    </task>
-    <task id="LOCAL-00007" summary="Blog Article Page Complete">
-      <option name="closed" value="true" />
-      <created>1758311133392</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1758311133392</updated>
+      <workItem from="1761869078000" duration="15665000" />
     </task>
     <task id="LOCAL-00008" summary="About Page Complete II">
       <option name="closed" value="true" />
@@ -580,14 +585,21 @@
       <option name="project" value="LOCAL" />
       <updated>1761870620560</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="10/31/25 - Styling Changes">
+      <option name="closed" value="true" />
+      <created>1761951274550</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1761951274550</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Petition Update III" />
     <MESSAGE value="Document Categorization" />
     <MESSAGE value="Document Categorization I" />
     <MESSAGE value="Location Map" />
@@ -612,6 +624,7 @@
     <MESSAGE value="10/30/25 - Delete article and back button on article" />
     <MESSAGE value="10/30/25 - Added 'Edit' functionality" />
     <MESSAGE value="10/30/25 - Client Change Request" />
-    <option name="LAST_COMMIT_MESSAGE" value="10/30/25 - Client Change Request" />
+    <MESSAGE value="10/31/25 - Styling Changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="10/31/25 - Styling Changes" />
   </component>
 </project>

@@ -56,7 +56,7 @@ const ArticlePage = ({
 
     const finalImageUrl = computeImageUrl(formImageInput || "");
 
-    const success = await updatePostById(id, {
+    const success = await updatePostById(id, "posts", {
       title: formTitle,
       content: formContent,
       authorName: formAuthorName,
@@ -112,7 +112,7 @@ const ArticlePage = ({
                 "border-2 border-gray-500 bg-neutral-300 rounded-sm p-1 hover:cursor-pointer hover:scale-110 transition duration-200"
               }
               onClick={() => {
-                deletePostById(id).finally(() => {
+                deletePostById(id, "posts").finally(() => {
                   navigate("/news");
                 });
               }}

@@ -30,6 +30,12 @@ type Pages = {
   "/create-news-post": {
     params: {};
   };
+  "/eugenics": {
+    params: {};
+  };
+  "/create-eugenics-article": {
+    params: {};
+  };
   "/lawsuit": {
     params: {};
   };
@@ -47,7 +53,7 @@ type Pages = {
 type RouteFiles = {
   "root.tsx": {
     id: "root";
-    page: "/" | "/about" | "/auth" | "/news" | "/news/:id" | "/create-news-post" | "/lawsuit" | "/lawsuit/documents" | "/main" | "/petition";
+    page: "/" | "/about" | "/auth" | "/news" | "/news/:id" | "/create-news-post" | "/eugenics" | "/create-eugenics-article" | "/lawsuit" | "/lawsuit/documents" | "/main" | "/petition";
   };
   "routes/home.tsx": {
     id: "routes/home";
@@ -72,6 +78,14 @@ type RouteFiles = {
   "routes/create-news-post.tsx": {
     id: "routes/create-news-post";
     page: "/create-news-post";
+  };
+  "routes/eugenics.tsx": {
+    id: "routes/eugenics";
+    page: "/eugenics";
+  };
+  "routes/create-eugenics-article.tsx": {
+    id: "routes/create-eugenics-article";
+    page: "/create-eugenics-article";
   };
   "routes/lawsuit.tsx": {
     id: "routes/lawsuit";

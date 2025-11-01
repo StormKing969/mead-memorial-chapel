@@ -20,7 +20,7 @@ import {
   type User,
 } from "@firebase/auth";
 import { useEffect, useState } from "react";
-import type { Post } from "../../types/post";
+import type { EugenicsPost, Post } from "../../types/post";
 import { useNavigate } from "react-router";
 
 // Your web app's Firebase configuration
@@ -77,6 +77,25 @@ export function getCurrentBlogPosts() {
   }, []);
 
   return posts;
+}
+
+export function getCurrentEugenicsPosts() {
+  const [eugenicsPosts, setEugenicsPosts] = useState<EugenicsPost[]>([]);
+
+  useEffect(() => {
+    const q = query(collection(db, "eugenics"), orderBy("createdAt", "desc"));
+
+    return onSnapshot(q, (snapshot) => {
+      setEugenicsPosts(
+        snapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        })) as EugenicsPost[],
+      );
+    });
+  }, []);
+
+  return eugenicsPosts;
 }
 
 export function authFunctions() {
@@ -138,11 +157,11 @@ export async function getPetitionListCount() {
   return querySnapshot.docs.length;
 }
 
-export async function deletePostById(id: string) {
+export async function deletePostById(id: string, collectionId: string) {
   try {
     // In our data model, the Firestore document ID may differ from the post.id field
     // so we first locate the document(s) by the stored field and then delete by ref.
-    const q = query(collection(db, "posts"), where("id", "==", id));
+    const q = query(collection(db, collectionId), where("id", "==", id));
     const snapshot = await getDocs(q);
 
     if (snapshot.empty) {
@@ -159,10 +178,11 @@ export async function deletePostById(id: string) {
 
 export async function updatePostById(
   id: string,
-  data: Partial<Pick<Post, "title" | "content" | "authorName" | "imageUrl">>,
+  collectionId: string,
+  data: Partial<Pick<Post, "title" | "content" | "authorName" | "imageUrl">> | Partial<Pick<EugenicsPost, "title" | "content" | "documentUrl">>,
 ) {
   try {
-    const q = query(collection(db, "posts"), where("id", "==", id));
+    const q = query(collection(db, collectionId), where("id", "==", id));
     const snapshot = await getDocs(q);
 
     if (snapshot.empty) {

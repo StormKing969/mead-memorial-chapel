@@ -1,11 +1,13 @@
 import React from "react";
 import type { User } from "@firebase/auth";
-import { Link, useNavigate } from "react-router";
+import {Link, useLocation, useNavigate} from "react-router";
 import { authFunctions } from "~/lib/firebase";
 import { NavbarLinks } from "../../constants/navbar";
 
 const Navbar = ({ user }: { user: User | null }) => {
   const navigate = useNavigate();
+  const location = useLocation();
+  const currentPath = location.pathname;
   const { logoutFunction } = authFunctions();
 
   return (
@@ -41,7 +43,9 @@ const Navbar = ({ user }: { user: User | null }) => {
               "bg-blue-400 text-white px-4 py-2 rounded cursor-pointer hover:bg-blue-700 focus:outline-none mr-4"
             }
             onClick={() => {
-              navigate("/create-news-post");
+              navigate(
+                `${currentPath === "/eugenics" ? "/create-eugenics-article" : "/create-news-post"}`,
+              );
             }}
           >
             Create Post

@@ -7,7 +7,6 @@ const DetailedPostPreview = ({
 }: {
   post: Post;
 }) => {
-  console.log(imageUrl);
   return (
     <article
       key={id}

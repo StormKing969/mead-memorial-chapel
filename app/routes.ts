@@ -7,6 +7,8 @@ export default [
   route("/news", "routes/news.tsx"),
   route("/news/:id", "routes/news-post.tsx"),
   route("/create-news-post", "routes/create-news-post.tsx"),
+  route("/eugenics", "routes/eugenics.tsx"),
+  route("/create-eugenics-article", "routes/create-eugenics-article.tsx"),
   route("/lawsuit", "routes/lawsuit.tsx"),
   route("/lawsuit/documents", "routes/documents.tsx"),
   route("/main", "routes/main.tsx"),

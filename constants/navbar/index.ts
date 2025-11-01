@@ -22,6 +22,10 @@ export const NavbarLinks = [
     url: "/news",
   },
   {
+    title: "Eugenics",
+    url: "/eugenics",
+  },
+  {
     title: "Lawsuit",
     url: "/lawsuit",
   },
