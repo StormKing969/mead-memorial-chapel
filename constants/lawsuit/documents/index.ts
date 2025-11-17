@@ -27,6 +27,7 @@ export const BaseFilePath = {
   "Motion for Amicus Brief": "motion-for-amicus-brief",
   "Amicus Brief Motion Granted": "amicus-brief-motion-granted",
   "Opposition to Amicus Brief Motion": "opposition-to-amicus-brief-motion",
+  "Supreme Court Entry Order": "supreme-court-entry-order",
   null: "",
 };
 
@@ -36,13 +37,14 @@ export const BaseFilePath = {
  * When adding a new category, consider updating `DocumentTypes` too to keep
  * categories consistent across the application.
  *
- * @type {DocumentTypes[]}
+ * @type {{ id: string; title: DocumentTypes }[]}
  */
-export const DocumentCategories: DocumentTypes[] = [
-  "Appeal to Vermont Supreme Court",
-  "Motion for Amicus Brief",
-  "Amicus Brief Motion Granted",
-  "Opposition to Amicus Brief Motion",
+export const DocumentCategories: { id: string; title: DocumentTypes }[] = [
+  { id: "01", title: "Appeal to Vermont Supreme Court" },
+  { id: "02", title: "Motion for Amicus Brief" },
+  { id: "03", title: "Amicus Brief Motion Granted" },
+  { id: "04", title: "Opposition to Amicus Brief Motion" },
+  { id: "05", title: "Supreme Court Entry Order" },
 ];
 
 /**
@@ -206,4 +208,16 @@ export const Files: DocumentObj[] = [
     videoLink: null,
   },
   //################## Opposition to Amicus Brief Motion ##################
+
+  //################## Supreme Court Entry Order ##################
+  {
+    title:
+      "Vermont Supreme Court Entry Order Denying Plaintiff's Motion for Reconsideration of Amicus Brief Participation",
+    category: "Supreme Court Entry Order",
+    date: "2025-11-05",
+    fileName:
+      "VT Supreme Court Entry Order - Reconsideration of Amicus Brief.pdf",
+    videoLink: null,
+  },
+  //################## Supreme Court Entry Order ##################
 ];

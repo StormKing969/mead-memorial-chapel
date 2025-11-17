@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="10/31/25 - Timeline Update &amp; Lawsuit Intro Text">
-      <change beforePath="$PROJECT_DIR$/app/sections/lawsuit/LawsuitContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/lawsuit/LawsuitContent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants/lawsuit/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/constants/lawsuit/index.ts" afterDir="false" />
+    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="11/16/25 - Updated Key Parties Invloved">
+      <change afterPath="$PROJECT_DIR$/public/lawsuit/documents/supreme-court-entry-order/VT Supreme Court Entry Order - Reconsideration of Amicus Brief.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sections/lawsuit/documents/DocumentContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/lawsuit/documents/DocumentContent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constants/lawsuit/documents/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/constants/lawsuit/documents/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/types/documents.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/documents.d.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,14 +185,6 @@
       <workItem from="1761662435481" duration="5797000" />
       <workItem from="1761840369071" duration="8761000" />
       <workItem from="1761869078000" duration="5738000" />
-    </task>
-    <task id="LOCAL-00008" summary="About Page Complete II">
-      <option name="closed" value="true" />
-      <created>1758318656029</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1758318656029</updated>
     </task>
     <task id="LOCAL-00009" summary="About Page Bug Fix I">
       <option name="closed" value="true" />
@@ -576,14 +570,21 @@
       <option name="project" value="LOCAL" />
       <updated>1763351186694</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="11/16/25 - Updated Key Parties Invloved">
+      <option name="closed" value="true" />
+      <created>1763352855852</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1763352855852</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Document Categorization" />
     <MESSAGE value="Document Categorization I" />
     <MESSAGE value="Location Map" />
     <MESSAGE value="Footer Update" />
@@ -608,6 +609,7 @@
     <MESSAGE value="10/30/25 - Added 'Edit' functionality" />
     <MESSAGE value="10/30/25 - Client Change Request" />
     <MESSAGE value="10/31/25 - Timeline Update &amp; Lawsuit Intro Text" />
-    <option name="LAST_COMMIT_MESSAGE" value="10/31/25 - Timeline Update &amp; Lawsuit Intro Text" />
+    <MESSAGE value="11/16/25 - Updated Key Parties Invloved" />
+    <option name="LAST_COMMIT_MESSAGE" value="11/16/25 - Updated Key Parties Invloved" />
   </component>
 </project>

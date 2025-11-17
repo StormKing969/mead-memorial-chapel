@@ -25,6 +25,7 @@ export type DocumentTypes =
   | "Motion for Amicus Brief"
   | "Amicus Brief Motion Granted"
   | "Opposition to Amicus Brief Motion"
+  | "Supreme Court Entry Order"
   | null;
 
 /**

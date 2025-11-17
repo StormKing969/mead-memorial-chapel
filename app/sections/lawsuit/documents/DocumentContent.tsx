@@ -47,13 +47,17 @@ const DocumentContent = () => {
         </h2>
         {DocumentCategories.map((category) => (
           <button
-            key={category}
+            key={category.id}
             className={`${
-              category === currentCategory ? "text-blue-600 shadow-md" : ""
+              category.title === currentCategory
+                ? "text-blue-600 shadow-md"
+                : ""
             } cursor-pointer border-gray-300 w-full mb-4 last:mb-0 hover:shadow-md hover:text-blue-600 px-4 py-2 text-left rounded-lg`}
-            onClick={() => handleOnClick({ targetRef: sectionRef, category })}
+            onClick={() =>
+              handleOnClick({ targetRef: sectionRef, category: category.title })
+            }
           >
-            {category}
+            {category.title}
           </button>
         ))}
       </div>
