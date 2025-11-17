@@ -101,24 +101,25 @@ export const InvolvedParties = [
   {
     title: "Plaintiff",
     people:
-      "John Mead Estate, represented by Jim Douglas (Administrator and former Vermont Governor)",
+      "Estate of John A. Mead, represented by Jim Douglas (Administrator and former Governor of Vermont)",
   },
   {
     title: "Defendant",
-    people: "Middlebury College, through its Board of Trustees and officers",
+    people:
+      "Middlebury College, represented by its Board of Trustees and senior officers",
   },
   {
     title: "Counsel for Plaintiff",
-    people: "[Name of Law Firm / Principal Attorney]",
+    people: "L. Brooke Dingledine, Valsangiacomo & Pelkey, P.C.",
   },
   {
     title: "Counsel for Defendant",
-    people: "[Name of Law Firm / Principal Attorney]",
+    people: "Justin Barnard, Dinse P.C.",
   },
   {
     title: "Other Stakeholders",
     people:
-      "Vermont Supreme Court; Mead family descendants; public supporters; media outlets covering the dispute",
+      "Vermont Supreme Court; Descendants of the Mead family; Public supporters; Media organizations covering the case",
   },
 ];
 

@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="10/30/25 - Client Change Request">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/PreviewPost.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/PreviewPost.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/sections/home/LatestBlogPosts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/home/LatestBlogPosts.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/sections/news/NewsPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/news/NewsPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants/navbar/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/constants/navbar/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/types/post.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/post.d.ts" afterDir="false" />
+    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="10/31/25 - Timeline Update &amp; Lawsuit Intro Text">
+      <change beforePath="$PROJECT_DIR$/app/sections/lawsuit/LawsuitContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/lawsuit/LawsuitContent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constants/lawsuit/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/constants/lawsuit/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +16,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="document-updates" />
+        <entry key="$PROJECT_DIR$" value="new-section" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -187,14 +183,6 @@
       <workItem from="1761662435481" duration="5797000" />
       <workItem from="1761840369071" duration="8761000" />
       <workItem from="1761869078000" duration="5738000" />
-    </task>
-    <task id="LOCAL-00007" summary="Blog Article Page Complete">
-      <option name="closed" value="true" />
-      <created>1758311133392</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1758311133392</updated>
     </task>
     <task id="LOCAL-00008" summary="About Page Complete II">
       <option name="closed" value="true" />
@@ -580,14 +568,21 @@
       <option name="project" value="LOCAL" />
       <updated>1761870620560</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="10/31/25 - Timeline Update &amp; Lawsuit Intro Text">
+      <option name="closed" value="true" />
+      <created>1763351186694</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1763351186694</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Petition Update III" />
     <MESSAGE value="Document Categorization" />
     <MESSAGE value="Document Categorization I" />
     <MESSAGE value="Location Map" />
@@ -612,6 +607,7 @@
     <MESSAGE value="10/30/25 - Delete article and back button on article" />
     <MESSAGE value="10/30/25 - Added 'Edit' functionality" />
     <MESSAGE value="10/30/25 - Client Change Request" />
-    <option name="LAST_COMMIT_MESSAGE" value="10/30/25 - Client Change Request" />
+    <MESSAGE value="10/31/25 - Timeline Update &amp; Lawsuit Intro Text" />
+    <option name="LAST_COMMIT_MESSAGE" value="10/31/25 - Timeline Update &amp; Lawsuit Intro Text" />
   </component>
 </project>

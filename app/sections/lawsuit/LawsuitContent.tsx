@@ -150,19 +150,19 @@ const LawsuitContent = () => {
             Key Parties Involved
           </h2>
 
-          <table className={"hidden sm:block"}>
+          <table className={"hidden md:block"}>
             <tbody className={"divide-y divide-gray-200"}>
               {InvolvedParties.map((ev, i) => (
                 <tr key={i} className={"h-[75px]"}>
-                  <td className={"font-bold"}>{ev.title}</td>
-                  <td>{ev.people}</td>
+                  <td className={"font-bold px-5"}>{ev.title}</td>
+                  <td className={"px-5"}>{ev.people}</td>
                 </tr>
               ))}
             </tbody>
           </table>
 
           {InvolvedParties.map((ev, i) => (
-            <div key={i} className={" sm:hidden"}>
+            <div key={i} className={"md:hidden"}>
               <p className={"font-bold"}>{ev.title}</p>
               <p className={"text-neutral-800"}>{ev.people}</p>
               <br />
