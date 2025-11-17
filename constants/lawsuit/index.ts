@@ -53,44 +53,34 @@ export const LawsuitSection = [
  */
 export const TimelineEvents = [
   {
-    date: "Fall 2021",
-    title: "College Removes Mead Name from Chapel",
-    desc: "Middlebury College removes the Mead name from the Memorial Chapel following internal review and public debate.",
+    date: "September, 2021",
+    title: "College removes Mead name from chapel",
+    desc: "Middlebury College quietly removed the name 'Mead Memorial Chapel' from the marble building on campus, citing concerns about John A. Mead's historical role in promoting eugenics policies and prompting controversy that later led to legal action.",
   },
   {
-    date: "Early 2022",
-    title: "Mead Estate Files Complaint",
-    desc: "The Mead estate files a formal complaint in Vermont Superior Court alleging improper removal of the name and seeking relief.",
+    date: "March, 2023",
+    title: "Lawsuit filed by Estate of John A. Mead",
+    desc: "The Estate of John A. Mead, with former Vermont Governor Jim Douglas serving as special administrator, filed a lawsuit against The President and Fellows of Middlebury College alleging breach of contract and improper removal of the Mead Memorial Chapel name; court filing date recorded March 24, 2023.",
   },
   {
-    date: "Spring 2022",
-    title: "Motion to Dismiss and Plaintiff Response",
-    desc: "Middlebury files a motion to dismiss the complaint and the Mead estate files an opposition, beginning adversarial briefing.",
+    date: "August, 2023",
+    title: "Judge allows lawsuit to proceed",
+    desc: "A Vermont judge ruled that the lawsuit brought by the Mead estate could move forward, allowing the case to continue through the court process rather than being dismissed at an early stage.",
   },
   {
-    date: "Summer 2022",
-    title: "Court Denies Dismissal; Discovery Commences",
-    desc: "The court denies the motion to dismiss and the case advances into discovery, including document production and witness interviews.",
+    date: "September, 2024",
+    title: "Litigation enters second year amid discovery disputes",
+    desc: "Approximately 18 months into the litigation, the parties had attended multiple oral arguments and clashed over discovery issues, including debates about depositions and the relevance of certain requests as they awaited further rulings.",
   },
   {
-    date: "Late 2022",
-    title: "Answer Filed and Summary Judgment Filings",
-    desc: "Middlebury files its formal answer; both parties exchange summary judgment briefs and evidence for the court's consideration.",
+    date: "April, 2025",
+    title: "Vermont Superior Court rules in favor of Middlebury College",
+    desc: "The Vermont Superior Court issued a decision closing the Middlebury Chapel lawsuit in favor of Middlebury College, resolving the case at the trial court level though the judgment left open the possibility of appeal by the Mead estate.",
   },
   {
-    date: "Winter 2023",
-    title: "Partial Summary Judgment Decision",
-    desc: "The court issues a summary judgment ruling granting partial relief and narrowing the issues for trial.",
-  },
-  {
-    date: "2024",
-    title: "Appeals to Vermont Supreme Court",
-    desc: "One or both parties timely file notices of appeal and the matter is transmitted to the Vermont Supreme Court for review.",
-  },
-  {
-    date: "Current",
-    title: "Post-Trial Briefing and Awaiting Final Decision",
-    desc: "Parties submit post-trial and appellate briefs on damages and remedies while awaiting the final appellate decision.",
+    date: "November, 2025",
+    title: "Appeal to Vermont Supreme Court filed",
+    desc: "Following the adverse Superior Court ruling, the Mead estate (represented by former Governor Jim Douglas) appealed the decision to the Vermont Supreme Court, taking the dispute to the state’s highest court where it attracted filings of interest from other colleges and stakeholders.",
   },
 ];
 
