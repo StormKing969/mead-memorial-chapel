@@ -31,7 +31,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className={"font-serif container"}>
+    <main className={"font-serif"}>
       <section
         className={
           "md:px-25 px-5 relative bg-gray-900 text-white h-[50vh] flex flex-col justify-center items-start text-left"
