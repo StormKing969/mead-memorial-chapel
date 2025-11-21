@@ -135,7 +135,7 @@ const Footer = () => {
             href={"https://sajanaw.com/"}
             className={"underline text-blue-600 hover:text-blue-800"}
           >
-            Sajana Wijesinghe
+            NovLSC LP
           </a>
         </p>
       </div>
