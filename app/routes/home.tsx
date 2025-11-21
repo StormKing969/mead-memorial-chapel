@@ -45,7 +45,7 @@ export default function Home() {
 
         <div
           className={
-            "relative z-10 flex flex-col items-center justify-center text-center"
+            "relative z-10 flex flex-col items-center justify-center text-center w-full"
           }
         >
           <div className={"text-4xl md:text-6xl font-bold mb-6 space-y-2"}>

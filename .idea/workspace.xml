@@ -5,8 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="11/16/25 - Updated legal documents">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.react-router/types/+future.ts" beforeDir="false" afterPath="$PROJECT_DIR$/.react-router/types/+future.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.react-router/types/+routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/.react-router/types/+routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.react-router/types/+server-build.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/.react-router/types/+server-build.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.react-router/types/app/+types/root.ts" beforeDir="false" afterPath="$PROJECT_DIR$/.react-router/types/app/+types/root.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.react-router/types/app/routes/+types/about.ts" beforeDir="false" afterPath="$PROJECT_DIR$/.react-router/types/app/routes/+types/about.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.react-router/types/app/routes/+types/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/.react-router/types/app/routes/+types/auth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.react-router/types/app/routes/+types/create-news-post.ts" beforeDir="false" afterPath="$PROJECT_DIR$/.react-router/types/app/routes/+types/create-news-post.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.react-router/types/app/routes/+types/documents.ts" beforeDir="false" afterPath="$PROJECT_DIR$/.react-router/types/app/routes/+types/documents.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.react-router/types/app/routes/+types/home.ts" beforeDir="false" afterPath="$PROJECT_DIR$/.react-router/types/app/routes/+types/home.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.react-router/types/app/routes/+types/lawsuit.ts" beforeDir="false" afterPath="$PROJECT_DIR$/.react-router/types/app/routes/+types/lawsuit.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.react-router/types/app/routes/+types/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/.react-router/types/app/routes/+types/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.react-router/types/app/routes/+types/news-post.ts" beforeDir="false" afterPath="$PROJECT_DIR$/.react-router/types/app/routes/+types/news-post.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.react-router/types/app/routes/+types/news.ts" beforeDir="false" afterPath="$PROJECT_DIR$/.react-router/types/app/routes/+types/news.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.react-router/types/app/routes/+types/petition.ts" beforeDir="false" afterPath="$PROJECT_DIR$/.react-router/types/app/routes/+types/petition.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/routes/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sections/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sections/lawsuit/documents/DocumentContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/lawsuit/documents/DocumentContent.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +152,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-WS-252.27397.92" />
+        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-WS-252.28238.10" />
       </set>
     </attachedChunks>
   </component>
@@ -184,6 +199,7 @@
       <workItem from="1761840369071" duration="8761000" />
       <workItem from="1761869078000" duration="5738000" />
       <workItem from="1763743284136" duration="1965000" />
+      <workItem from="1763754653954" duration="420000" />
     </task>
     <task id="LOCAL-00010" summary="About Page Bug Fix II">
       <option name="closed" value="true" />

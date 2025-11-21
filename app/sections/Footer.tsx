@@ -21,19 +21,21 @@ const Footer = () => {
             "flex flex-col text-center px-5 md:flex-row md:justify-around md:text-left gap-10 w-full"
           }
         >
-          <img src={"/logo.svg"} alt={"logo"} className={"max-h-[200px]"} />
+          <Link to={"/"}>
+            <img src={"/logo.svg"} alt={"logo"} className={"max-h-[200px]"} />
+          </Link>
 
           <div>
             <h3 className={"font-bold text-xl mb-4"}>Quick Links</h3>
             <ul className={"space-y-1"}>
               <li>
                 <Link
-                  to={"/"}
+                  to={"/main"}
                   className={
                     "text-blue-600 hover:text-blue-800 hover:font-bold transition-all"
                   }
                 >
-                  Home
+                  Main Page
                 </Link>
               </li>
               <li>

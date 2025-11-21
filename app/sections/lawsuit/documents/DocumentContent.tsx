@@ -39,7 +39,7 @@ const DocumentContent = () => {
     >
       <div
         className={
-          "sticky top-32 flex flex-col h-full max-h-[550px] min-w-[200px] w-full max-w-[300px] md:border-r-2 border-gray-200 p-4"
+          "sticky top-32 flex flex-col h-full min-w-[200px] w-full max-w-[300px] md:border-r-2 border-gray-200 p-4"
         }
       >
         <h2 className={"text-2xl font-bold text-gray-900 mb-8"}>
@@ -64,7 +64,7 @@ const DocumentContent = () => {
 
       <div className={"w-full"}>
         {currentCategory ? (
-          <>
+          <div className={"p-4"}>
             <h2 className={"text-2xl font-bold text-gray-900 mb-8"}>
               {currentCategory}
             </h2>
@@ -77,7 +77,7 @@ const DocumentContent = () => {
                 />
               ))}
             </div>
-          </>
+          </div>
         ) : (
           <h3
             className={
