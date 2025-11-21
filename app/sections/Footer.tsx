@@ -135,7 +135,7 @@ const Footer = () => {
           © 2025 Mead Memorial Chapel | Designed & Built by{" "}
           <a
             href={"https://sajanaw.com/"}
-            className={"underline text-blue-600 hover:text-blue-800"}
+            className={"text-blue-600 hover:text-blue-800"}
           >
             NovLSC LP
           </a>
