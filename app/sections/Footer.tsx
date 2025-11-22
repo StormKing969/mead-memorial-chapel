@@ -18,7 +18,7 @@ const Footer = () => {
       >
         <div
           className={
-            "flex flex-col text-center px-5 md:flex-row md:justify-around md:text-left gap-10 w-full"
+            "flex flex-col items-center justify-center text-center px-5 md:flex-row md:justify-around md:text-left gap-10 w-full"
           }
         >
           <Link to={"/"}>
