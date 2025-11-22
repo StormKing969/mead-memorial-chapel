@@ -28,6 +28,7 @@ export const BaseFilePath = {
   "Amicus Brief Motion Granted": "amicus-brief-motion-granted",
   "Opposition to Amicus Brief Motion": "opposition-to-amicus-brief-motion",
   "Supreme Court Entry Order": "supreme-court-entry-order",
+  "Amicus Brief Update": "amicus-brief-update",
   null: "",
 };
 
@@ -45,6 +46,7 @@ export const DocumentCategories: { id: string; title: DocumentTypes }[] = [
   { id: "03", title: "Amicus Brief Motion Granted" },
   { id: "04", title: "Opposition to Amicus Brief Motion" },
   { id: "05", title: "Supreme Court Entry Order" },
+  { id: "06", title: "Amicus Brief Update" },
 ];
 
 /**
@@ -220,4 +222,14 @@ export const Files: DocumentObj[] = [
     videoLink: null,
   },
   //################## Supreme Court Entry Order ##################
+
+  //################## Amicus Brief Update ##################
+  {
+    title: "Brief of Amici Curiae",
+    category: "Amicus Brief Update",
+    date: "2025-11-21",
+    fileName: "Brief of Amici Curiae.pdf",
+    videoLink: null,
+  },
+  //################## Amicus Brief Update ##################
 ];
