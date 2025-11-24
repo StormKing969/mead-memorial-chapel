@@ -29,6 +29,7 @@ export const BaseFilePath = {
   "Opposition to Amicus Brief Motion": "opposition-to-amicus-brief-motion",
   "Supreme Court Entry Order": "supreme-court-entry-order",
   "Amicus Brief Update": "amicus-brief-update",
+  "Appellate Printed Case Materials": "appellate-printed-case-materials",
   null: "",
 };
 
@@ -47,6 +48,7 @@ export const DocumentCategories: { id: string; title: DocumentTypes }[] = [
   { id: "04", title: "Opposition to Amicus Brief Motion" },
   { id: "05", title: "Supreme Court Entry Order" },
   { id: "06", title: "Amicus Brief Update" },
+  { id: "07", title: "Appellate Printed Case Materials" },
 ];
 
 /**
@@ -232,4 +234,56 @@ export const Files: DocumentObj[] = [
     videoLink: null,
   },
   //################## Amicus Brief Update ##################
+
+  //################## Appellate Printed Case Materials ##################
+  {
+    title: "PRINTED CASE VOLUMES TABLE OF CONTENTS",
+    category: "Appellate Printed Case Materials",
+    date: "2025-09-19",
+    fileName: "Printed Case Volumes - Table of Contents Filed.pdf",
+    videoLink: null,
+  },
+  {
+    title: "V.R.A.P. 32(a)(7)(D) Certificate of Compliance",
+    category: "Appellate Printed Case Materials",
+    date: "2025-09-22",
+    fileName: "Cert of Compliance Filed.pdf",
+    videoLink: null,
+  },
+  {
+    title: "PRINTED CASE Vol I - Pleadings Filed",
+    category: "Appellate Printed Case Materials",
+    date: "2025-09-19",
+    fileName: "PRINTED CASE Vol I - Pleadings Filed.pdf",
+    videoLink: null,
+  },
+  {
+    title: "PRINTED CASE Vol II - Complaint Exhibits Filed",
+    category: "Appellate Printed Case Materials",
+    date: "2025-09-19",
+    fileName: "PRINTED CASE Vol II - Complaint Exhibits Filed.pdf",
+    videoLink: null,
+  },
+  {
+    title: "PRINTED CASE Vol III - D's MSJ Exhibits Filed",
+    category: "Appellate Printed Case Materials",
+    date: "2025-09-19",
+    fileName: "PRINTED CASE Vol III - D's MSJ Exhibits Filed.pdf",
+    videoLink: null,
+  },
+  {
+    title: "PRINTED CASE Vol IV - P's MSJ Exhibits 1-49 Filed",
+    category: "Appellate Printed Case Materials",
+    date: "2025-09-19",
+    fileName: "PRINTED CASE Vol IV - P's MSJ Exhibits 1-49 Filed.pdf",
+    videoLink: null,
+  },
+  {
+    title: "PRINTED CASE Vol V - P's MSJ Exhibits 50-71 Filed",
+    category: "Appellate Printed Case Materials",
+    date: "2025-09-19",
+    fileName: "PRINTED CASE Vol V - P's MSJ Exhibits 50-71 Filed.pdf",
+    videoLink: null,
+  },
+  //################## Appellate Printed Case Materials ##################
 ];

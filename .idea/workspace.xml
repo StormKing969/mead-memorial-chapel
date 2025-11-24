@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="11/21/25 - Bug Fixes II">
-      <change afterPath="$PROJECT_DIR$/public/lawsuit/documents/amicus-brief-update/Brief of Amici Curiae.pdf" afterDir="false" />
+    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="11/21/25 - Footer Bug Fix">
+      <change afterPath="$PROJECT_DIR$/public/lawsuit/documents/appellate-printed-case-materials/Cert of Compliance Filed.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lawsuit/documents/appellate-printed-case-materials/PRINTED CASE Vol I - Pleadings Filed.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lawsuit/documents/appellate-printed-case-materials/PRINTED CASE Vol II - Complaint Exhibits Filed.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lawsuit/documents/appellate-printed-case-materials/PRINTED CASE Vol III - D's MSJ Exhibits Filed.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lawsuit/documents/appellate-printed-case-materials/PRINTED CASE Vol IV - P's MSJ Exhibits 1-49 Filed.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lawsuit/documents/appellate-printed-case-materials/PRINTED CASE Vol V - P's MSJ Exhibits 50-71 Filed.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lawsuit/documents/appellate-printed-case-materials/Printed Case Volumes - Table of Contents Filed.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/constants/lawsuit/documents/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/constants/lawsuit/documents/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/types/documents.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/documents.d.ts" afterDir="false" />
     </list>
@@ -97,11 +104,11 @@
       <recent name="C:\Work\Web Development\mead-memorial-chapel\constants\about" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Work\Web Development\mead-memorial-chapel\public\lawsuit\documents\amicus-brief-update" />
       <recent name="C:\Work\Web Development\mead-memorial-chapel\public\lawsuit\documents\supreme-court-entry-order" />
       <recent name="C:\Work\Web Development\mead-memorial-chapel\public" />
       <recent name="C:\Work\Web Development\mead-memorial-chapel\public\lawsuit" />
       <recent name="C:\Work\Web Development\mead-memorial-chapel\public\lawsuit\documents\opposition-to-amicus-brief-motion" />
-      <recent name="C:\Work\Web Development\mead-memorial-chapel\public\lawsuit\documents\appeal-to-vermont-supreme-court" />
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
@@ -185,23 +192,9 @@
       <workItem from="1761840369071" duration="8761000" />
       <workItem from="1761869078000" duration="5738000" />
       <workItem from="1763743284136" duration="1965000" />
-      <workItem from="1763754653954" duration="2168000" />
-    </task>
-    <task id="LOCAL-00012" summary="HomePage Complete">
-      <option name="closed" value="true" />
-      <created>1758516810334</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1758516810334</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Temp Update">
-      <option name="closed" value="true" />
-      <created>1758520466223</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1758520466223</updated>
+      <workItem from="1763754653954" duration="2322000" />
+      <workItem from="1763784058349" duration="96000" />
+      <workItem from="1763942739690" duration="1532000" />
     </task>
     <task id="LOCAL-00014" summary="Temp Update I">
       <option name="closed" value="true" />
@@ -579,15 +572,29 @@
       <option name="project" value="LOCAL" />
       <updated>1763755329773</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="11/21/25 - Documents Update">
+      <option name="closed" value="true" />
+      <created>1763773350095</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1763773350095</updated>
+    </task>
+    <task id="LOCAL-00062" summary="11/21/25 - Footer Bug Fix">
+      <option name="closed" value="true" />
+      <created>1763784143948</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1763784143948</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Documents Update I" />
-    <MESSAGE value="Documents Update II" />
     <MESSAGE value="EmailJS Setup" />
     <MESSAGE value="Netlify - Leaflet Fix I" />
     <MESSAGE value="Netlify - Leaflet Fix II" />
@@ -611,6 +618,8 @@
     <MESSAGE value="11/16/25 - Updated legal documents" />
     <MESSAGE value="11/21/25 - Bug Fixes I" />
     <MESSAGE value="11/21/25 - Bug Fixes II" />
-    <option name="LAST_COMMIT_MESSAGE" value="11/21/25 - Bug Fixes II" />
+    <MESSAGE value="11/21/25 - Documents Update" />
+    <MESSAGE value="11/21/25 - Footer Bug Fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="11/21/25 - Footer Bug Fix" />
   </component>
 </project>
