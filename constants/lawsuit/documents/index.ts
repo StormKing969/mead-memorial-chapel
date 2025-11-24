@@ -30,6 +30,8 @@ export const BaseFilePath = {
   "Supreme Court Entry Order": "supreme-court-entry-order",
   "Amicus Brief Update": "amicus-brief-update",
   "Appellate Printed Case Materials": "appellate-printed-case-materials",
+  "Opposition to Motion for Reconsideration":
+    "opposition-to-motion-for-reconsideration",
   null: "",
 };
 
@@ -43,12 +45,13 @@ export const BaseFilePath = {
  */
 export const DocumentCategories: { id: string; title: DocumentTypes }[] = [
   { id: "01", title: "Appeal to Vermont Supreme Court" },
-  { id: "02", title: "Motion for Amicus Brief" },
-  { id: "03", title: "Amicus Brief Motion Granted" },
-  { id: "04", title: "Opposition to Amicus Brief Motion" },
-  { id: "05", title: "Supreme Court Entry Order" },
-  { id: "06", title: "Amicus Brief Update" },
-  { id: "07", title: "Appellate Printed Case Materials" },
+  { id: "02", title: "Opposition to Motion for Reconsideration" },
+  { id: "03", title: "Motion for Amicus Brief" },
+  { id: "04", title: "Amicus Brief Motion Granted" },
+  { id: "05", title: "Opposition to Amicus Brief Motion" },
+  { id: "06", title: "Supreme Court Entry Order" },
+  { id: "07", title: "Amicus Brief Update" },
+  { id: "08", title: "Appellate Printed Case Materials" },
 ];
 
 /**
@@ -73,6 +76,17 @@ export const Files: DocumentObj[] = [
     videoLink: null,
   },
   //################## Amicus Brief Motion Granted ##################
+
+  //################## Opposition to Motion for Reconsideration ##################
+  {
+    title: "Opposition to Motion for Reconsideration",
+    category: "Opposition to Motion for Reconsideration",
+    date: "2025-10-31",
+    fileName:
+      "Opposition to Motion for Reconsideration 10-31-25(2625108.1) (002).pdf",
+    videoLink: null,
+  },
+  //################## Opposition to Motion for Reconsideration ##################
 
   //################## Motion for Amicus Brief ##################
   {
@@ -236,6 +250,13 @@ export const Files: DocumentObj[] = [
   //################## Amicus Brief Update ##################
 
   //################## Appellate Printed Case Materials ##################
+  {
+    title: "Appellee Middlebury College's Brief",
+    category: "Appellate Printed Case Materials",
+    date: "2025-11-21",
+    fileName: "Appellee Middlebury College's Brief.pdf",
+    videoLink: null,
+  },
   {
     title: "PRINTED CASE VOLUMES TABLE OF CONTENTS",
     category: "Appellate Printed Case Materials",
