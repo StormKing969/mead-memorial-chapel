@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="11/23/25 - Documents Update - Opposition to Motion for Reconsideration" />
+    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="11/24/25 - Create Post Section Update">
+      <change beforePath="$PROJECT_DIR$/app/sections/article/ArticlePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/article/ArticlePage.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -184,14 +186,7 @@
       <workItem from="1763754653954" duration="2322000" />
       <workItem from="1763784058349" duration="96000" />
       <workItem from="1763942739690" duration="2061000" />
-    </task>
-    <task id="LOCAL-00016" summary="Documents Page Done">
-      <option name="closed" value="true" />
-      <created>1758650723956</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1758650723957</updated>
+      <workItem from="1764008376440" duration="618000" />
     </task>
     <task id="LOCAL-00017" summary="Minor Changes I">
       <option name="closed" value="true" />
@@ -577,14 +572,21 @@
       <option name="project" value="LOCAL" />
       <updated>1763944809544</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="11/24/25 - Create Post Section Update">
+      <option name="closed" value="true" />
+      <created>1764008707775</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1764008707775</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Netlify - Leaflet Fix II" />
     <MESSAGE value="Customer Change Request I" />
     <MESSAGE value="Customer Change Request II" />
     <MESSAGE value="Customer Change Request II - Minor Changes" />
@@ -609,6 +611,7 @@
     <MESSAGE value="11/21/25 - Footer Bug Fix" />
     <MESSAGE value="11/23/25 - Documents Update - Appellate Printed Case Materials" />
     <MESSAGE value="11/23/25 - Documents Update - Opposition to Motion for Reconsideration" />
-    <option name="LAST_COMMIT_MESSAGE" value="11/23/25 - Documents Update - Opposition to Motion for Reconsideration" />
+    <MESSAGE value="11/24/25 - Create Post Section Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="11/24/25 - Create Post Section Update" />
   </component>
 </project>

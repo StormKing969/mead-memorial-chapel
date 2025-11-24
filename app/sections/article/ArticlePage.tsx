@@ -151,7 +151,7 @@ const ArticlePage = ({
             )}
           </div>
 
-          <div className={"my-6 whitespace-pre-line"}>{displayContent}</div>
+          <div className={"my-6 whitespace-pre-line break-words text-pretty"}>{displayContent}</div>
 
           <p
             className={
