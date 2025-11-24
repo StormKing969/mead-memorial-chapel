@@ -95,7 +95,7 @@ export function authFunctions() {
   const loginFunction = async (email: string, password: string) => {
     try {
       await signInWithEmailAndPassword(auth, email, password).then(() => {
-        navigate("/create-news-post");
+        navigate("/news");
       });
     } catch (error) {
       console.error("Error signing in: ", error);
