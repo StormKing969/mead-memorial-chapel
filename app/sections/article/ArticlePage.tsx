@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import type { Post } from "../../../types/post";
 import { deletePostById, updatePostById, useAuth } from "~/lib/firebase";
 import { useNavigate } from "react-router";
+import Linkify from "linkify-react";
 
 const ArticlePage = ({
   post: { id, title, createdAt, imageUrl, content, authorName, category },
@@ -74,6 +75,12 @@ const ArticlePage = ({
     } else {
       alert("Failed to update the article. Please try again.");
     }
+  };
+
+  const linkifyOptions = {
+    className: "text-sky-500 hover:text-sky-700 transition-colors",
+    target: "_blank",
+    rel: "noopener noreferrer",
   };
 
   return (
@@ -151,7 +158,11 @@ const ArticlePage = ({
             )}
           </div>
 
-          <div className={"my-6 whitespace-pre-line break-words text-pretty"}>{displayContent}</div>
+          <Linkify options={linkifyOptions}>
+            <div className={"my-6 whitespace-pre-line break-words text-pretty"}>
+              {displayContent}
+            </div>
+          </Linkify>
 
           <p
             className={
