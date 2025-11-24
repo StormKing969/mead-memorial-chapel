@@ -44,9 +44,13 @@ const CreateArticle = () => {
     if (imageName.length === 0) {
       imgUrl = "";
     } else if (imageName.startsWith("https://")) {
-        imgUrl = imageName;
+      imgUrl = imageName;
     } else {
       imgUrl = "/news/" + category.toLowerCase() + "/" + imageName;
+    }
+
+    if (userName.length === 0) {
+      setUserName("Anonymous");
     }
 
     const newId = doc(collection(db, "posts")).id;
@@ -57,7 +61,7 @@ const CreateArticle = () => {
       content,
       authorID: auth.currentUser?.uid || null,
       createdAt: formattedDate,
-      authorName: userName || "Anonymous",
+      authorName: userName,
       category: category,
       imageUrl: imgUrl,
     })
@@ -98,7 +102,6 @@ const CreateArticle = () => {
           className={"border px-3 py-2 w-full"}
           value={userName}
           onChange={(e) => setUserName(e.target.value)}
-          required
         />
 
         <textarea
