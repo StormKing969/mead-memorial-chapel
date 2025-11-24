@@ -6,10 +6,10 @@ export interface Post {
   authorID: string;
   createdAt: string;
   imageUrl: string;
-  category: CategoryOptions;
+  category: CategoryOptionsType;
 }
 
-export type CategoryOptions =
+export type CategoryOptionsType =
   | "Lawsuit"
   | "General"
   | "Events"

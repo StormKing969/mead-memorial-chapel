@@ -1,23 +1,24 @@
 import React, { useState } from "react";
 import { auth, db, useAuth } from "~/lib/firebase";
 import { addDoc, collection, doc } from "@firebase/firestore";
-import type { CategoryOptions } from "../../../types/post";
+import type { CategoryOptionsType } from "../../../types/post";
 import { useNavigate } from "react-router";
+
+export const CategoriesOptions = [
+  "Lawsuit",
+  "General",
+  "Events",
+  "Announcements",
+  "Community",
+];
 
 const CreateArticle = () => {
   const { user } = useAuth();
   const navigate = useNavigate();
-  const Categories = [
-    "Lawsuit",
-    "General",
-    "Events",
-    "Announcements",
-    "Community",
-  ];
   const [title, setTitle] = useState<string>("");
   const [content, setContent] = useState<string>("");
   const [userName, setUserName] = useState<string>("");
-  const [category, setCategory] = useState<CategoryOptions>("General");
+  const [category, setCategory] = useState<CategoryOptionsType>("General");
   const [imageName, setImageName] = useState<string>("");
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -117,11 +118,11 @@ const CreateArticle = () => {
             className={"w-fit bg-gray-50 p-3 border"}
             value={category}
             onChange={(e) => {
-              setCategory(e.target.value as CategoryOptions);
+              setCategory(e.target.value as CategoryOptionsType);
             }}
             required
           >
-            {Categories.map((ele, index) => (
+            {CategoriesOptions.map((ele, index) => (
               <option key={index} value={ele}>
                 {ele}
               </option>

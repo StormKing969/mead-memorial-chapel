@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import type { Post } from "../../../types/post";
+import type { CategoryOptionsType, Post } from "../../../types/post";
 import { deletePostById, updatePostById, useAuth } from "~/lib/firebase";
 import { useNavigate } from "react-router";
 import Linkify from "linkify-react";
+import { CategoriesOptions } from "~/sections/news/CreateArticle";
 
 const ArticlePage = ({
   post: { id, title, createdAt, imageUrl, content, authorName, category },
@@ -18,6 +19,7 @@ const ArticlePage = ({
   const [displayAuthorName, setDisplayAuthorName] =
     useState<string>(authorName);
   const [displayImageUrl, setDisplayImageUrl] = useState<string>(imageUrl);
+  const [displayCategory, setDisplayCategory] = useState<string>(category);
   const [displayCreatedAt, setDisplayCreatedAt] = useState<string | undefined>(
     createdAt,
   );
@@ -29,6 +31,8 @@ const ArticlePage = ({
   const [formAuthorName, setFormAuthorName] =
     useState<string>(displayAuthorName);
   const [formImageInput, setFormImageInput] = useState<string>(displayImageUrl);
+  const [formCategory, setFormCategory] =
+    useState<CategoryOptionsType>("General");
 
   const computeImageUrl = (input: string) => {
     if (!input || input.length === 0) return "";
@@ -57,10 +61,15 @@ const ArticlePage = ({
 
     const finalImageUrl = computeImageUrl(formImageInput || "");
 
+    if (formAuthorName.length === 0) {
+      setFormAuthorName("Anonymous");
+    }
+
     const success = await updatePostById(id, {
       title: formTitle,
       content: formContent,
       authorName: formAuthorName,
+      category: formCategory,
       imageUrl: finalImageUrl,
     });
 
@@ -71,6 +80,7 @@ const ArticlePage = ({
       setDisplayAuthorName(formAuthorName);
       setDisplayImageUrl(finalImageUrl);
       setDisplayCreatedAt(newDate);
+      setDisplayCategory(formCategory);
       setIsEditing(false);
     } else {
       alert("Failed to update the article. Please try again.");
@@ -138,7 +148,7 @@ const ArticlePage = ({
         <>
           <h1 className={"text-3xl font-bold"}>{displayTitle}</h1>
           <p className={"text-gray-600 mb-4 mt-2"}>
-            Published on {displayCreatedAt}
+            Published on {displayCreatedAt} • {displayCategory}
           </p>
           <div className={"flex flex-col justify-center items-center"}>
             {displayImageUrl ? (
@@ -194,6 +204,20 @@ const ArticlePage = ({
             onChange={(e) => setFormContent(e.target.value)}
             placeholder="Content"
           />
+          <select
+            className={"w-fit bg-gray-50 p-3 border"}
+            value={category}
+            onChange={(e) => {
+              setFormCategory(e.target.value as CategoryOptionsType);
+            }}
+            required
+          >
+            {CategoriesOptions.map((ele, index) => (
+              <option key={index} value={ele}>
+                {ele}
+              </option>
+            ))}
+          </select>
           <input
             type="text"
             className={"border px-3 py-2 w-full"}

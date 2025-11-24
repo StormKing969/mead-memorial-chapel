@@ -159,7 +159,9 @@ export async function deletePostById(id: string) {
 
 export async function updatePostById(
   id: string,
-  data: Partial<Pick<Post, "title" | "content" | "authorName" | "imageUrl">>,
+  data: Partial<
+    Pick<Post, "title" | "content" | "authorName" | "imageUrl" | "category">
+  >,
 ) {
   try {
     const q = query(collection(db, "posts"), where("id", "==", id));
