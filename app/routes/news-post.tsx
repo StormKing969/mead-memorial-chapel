@@ -31,7 +31,16 @@ const NewsPost = () => {
   return (
     <main className={"font-serif"}>
       <Navbar user={null} />
-      <ArticlePage post={post} />
+      <ArticlePage
+        id={post.id}
+        title={post.title}
+        createdAt={post.createdAt}
+        imageUrl={post.imageUrl}
+        content={post.content}
+        authorName={!(post.authorName.length === 0) ? post.authorName : "Anonymous"}
+        category={post.category}
+        authorID={post.authorID}
+      />
     </main>
   );
 };

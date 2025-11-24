@@ -6,10 +6,14 @@ import Linkify from "linkify-react";
 import { CategoriesOptions } from "~/sections/news/CreateArticle";
 
 const ArticlePage = ({
-  post: { id, title, createdAt, imageUrl, content, authorName, category },
-}: {
-  post: Post;
-}) => {
+  id,
+  title,
+  createdAt,
+  imageUrl,
+  content,
+  authorName,
+  category,
+}: Post) => {
   const navigate = useNavigate();
   const { user } = useAuth();
 
