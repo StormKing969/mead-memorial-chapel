@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="11/24/25 - Create auth redirect">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="12/03/25 - Changed the order of the posts" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -192,15 +190,7 @@
       <workItem from="1764012537060" duration="356000" />
       <workItem from="1764012903637" duration="13000" />
       <workItem from="1764257635369" duration="24000" />
-      <workItem from="1764785664493" duration="415000" />
-    </task>
-    <task id="LOCAL-00022" summary="Customer Changes II">
-      <option name="closed" value="true" />
-      <created>1760403893253</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1760403893253</updated>
+      <workItem from="1764785664493" duration="739000" />
     </task>
     <task id="LOCAL-00023" summary="Customer Changes III">
       <option name="closed" value="true" />
@@ -586,14 +576,21 @@
       <option name="project" value="LOCAL" />
       <updated>1764012622185</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="12/03/25 - Changed the order of the posts">
+      <option name="closed" value="true" />
+      <created>1764786197097</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1764786197097</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Bug Fix I" />
     <MESSAGE value="Bug Fix II" />
     <MESSAGE value="Footer Update I" />
     <MESSAGE value="10/27/25 - Bug Fix II" />
@@ -618,6 +615,7 @@
     <MESSAGE value="11/24/25 - Bug Fix" />
     <MESSAGE value="11/24/25 - Bug Fix II" />
     <MESSAGE value="11/24/25 - Create auth redirect" />
-    <option name="LAST_COMMIT_MESSAGE" value="11/24/25 - Create auth redirect" />
+    <MESSAGE value="12/03/25 - Changed the order of the posts" />
+    <option name="LAST_COMMIT_MESSAGE" value="12/03/25 - Changed the order of the posts" />
   </component>
 </project>
