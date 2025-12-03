@@ -27,7 +27,7 @@ const NewsPage = ({ user }: { user: User | null }) => {
         {posts
           .sort(
             (a, b) =>
-              new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime(),
+              new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime(),
           )
           .map((post) => (
             <DetailedPostPreview key={post.id} post={post} />

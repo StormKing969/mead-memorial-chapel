@@ -23,7 +23,7 @@ const LatestBlogPosts = () => {
           .slice(0, 6)
           .sort(
             (a, b) =>
-              new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime(),
+              new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime(),
           )
           .map((post: Post) => (
             <PreviewPost key={post.id} post={post} />
