@@ -190,3 +190,18 @@ export async function updatePostById(
     return false;
   }
 }
+
+export async function getGoogleLink(fileName: string) {
+    const q = query(collection(db, "googleAudioMap"), where("fileName", "==", fileName));
+
+    const querySnapshot = await getDocs(q);
+
+    if (querySnapshot.empty) {
+        console.log("No matching documents.");
+        return null;
+    }
+
+    const docSnap = querySnapshot.docs[0];
+    const data = docSnap.data();
+    return data.googleLink;
+}
