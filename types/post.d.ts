@@ -6,6 +6,7 @@ export interface Post {
   authorID: string;
   createdAt: string;
   imageUrl: string;
+  imageCredit: string;
   category: CategoryOptionsType;
 }
 

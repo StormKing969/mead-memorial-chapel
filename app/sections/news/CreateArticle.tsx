@@ -20,6 +20,7 @@ const CreateArticle = () => {
   const [userName, setUserName] = useState<string>("");
   const [category, setCategory] = useState<CategoryOptionsType>("General");
   const [imageName, setImageName] = useState<string>("");
+  const [imageCredit, setImageCredit] = useState<string>("");
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -45,6 +46,10 @@ const CreateArticle = () => {
     if (imageName.length === 0) {
       imgUrl = "";
     } else if (imageName.startsWith("https://")) {
+      if (imageCredit.length === 0) {
+        alert("This image is not yours. Please acknowledge the owner!");
+        return;
+      }
       imgUrl = imageName;
     } else {
       imgUrl = "/news/" + category.toLowerCase() + "/" + imageName;
@@ -65,6 +70,7 @@ const CreateArticle = () => {
       authorName: userName,
       category: category,
       imageUrl: imgUrl,
+      imageCredit: imageCredit,
     })
       .then(() => {
         setTitle("");
@@ -72,6 +78,7 @@ const CreateArticle = () => {
         setUserName("");
         setCategory("General");
         setImageName("");
+        setImageCredit("");
       })
       .finally(() => {
         navigate("/news");
@@ -113,30 +120,36 @@ const CreateArticle = () => {
           required
         />
 
-        <div className={"flex flex-row items-center justify-between gap-5"}>
-          <select
-            className={"w-fit bg-gray-50 p-3 border"}
-            value={category}
-            onChange={(e) => {
-              setCategory(e.target.value as CategoryOptionsType);
-            }}
-            required
-          >
-            {CategoriesOptions.map((ele, index) => (
-              <option key={index} value={ele}>
-                {ele}
-              </option>
-            ))}
-          </select>
+        <select
+          className={"w-fit bg-gray-50 p-3 border"}
+          value={category}
+          onChange={(e) => {
+            setCategory(e.target.value as CategoryOptionsType);
+          }}
+          required
+        >
+          {CategoriesOptions.map((ele, index) => (
+            <option key={index} value={ele}>
+              {ele}
+            </option>
+          ))}
+        </select>
 
-          <input
-            type="text"
-            placeholder="Image Name (with extension)"
-            className={"border p-3 w-fit h-full"}
-            value={imageName}
-            onChange={(e) => setImageName(e.target.value)}
-          />
-        </div>
+        <input
+          type="text"
+          placeholder="Image Name (with extension)"
+          className={"border p-3 w-full h-full"}
+          value={imageName}
+          onChange={(e) => setImageName(e.target.value)}
+        />
+
+        <input
+          type="text"
+          placeholder="Sourced from..."
+          className={"border p-3 w-1/2 h-full"}
+          value={imageCredit}
+          onChange={(e) => setImageCredit(e.target.value)}
+        />
 
         <button
           type="submit"

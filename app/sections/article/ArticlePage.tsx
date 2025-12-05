@@ -13,6 +13,7 @@ const ArticlePage = ({
   content,
   authorName,
   category,
+  imageCredit,
 }: Post) => {
   const navigate = useNavigate();
   const { user } = useAuth();
@@ -23,6 +24,8 @@ const ArticlePage = ({
   const [displayAuthorName, setDisplayAuthorName] =
     useState<string>(authorName);
   const [displayImageUrl, setDisplayImageUrl] = useState<string>(imageUrl);
+  const [displayImageCredits, setDisplayImageCredits] =
+    useState<string>(imageCredit);
   const [displayCategory, setDisplayCategory] = useState<string>(category);
   const [displayCreatedAt, setDisplayCreatedAt] = useState<string | undefined>(
     createdAt,
@@ -35,14 +38,10 @@ const ArticlePage = ({
   const [formAuthorName, setFormAuthorName] =
     useState<string>(displayAuthorName);
   const [formImageInput, setFormImageInput] = useState<string>(displayImageUrl);
+  const [formImageInputCredit, setFormImageInputCredit] =
+    useState<string>(displayImageCredits);
   const [formCategory, setFormCategory] =
-    useState<CategoryOptionsType>("General");
-
-  const computeImageUrl = (input: string) => {
-    if (!input || input.length === 0) return "";
-    if (input.startsWith("https://")) return input;
-    return "/news/" + category.toLowerCase() + "/" + input;
-  };
+    useState<CategoryOptionsType>(displayCategory as CategoryOptionsType);
 
   const validateImageInput = (input: string) => {
     if (!input || input.length === 0) return true;
@@ -63,7 +62,12 @@ const ArticlePage = ({
       return;
     }
 
-    const finalImageUrl = computeImageUrl(formImageInput || "");
+    if (formImageInput.startsWith("https://")) {
+      if (!formImageInputCredit || formImageInputCredit.length === 0) {
+        alert("This image is not yours. Please acknowledge the owner!");
+        return;
+      }
+    }
 
     if (formAuthorName.length === 0) {
       setFormAuthorName("Anonymous");
@@ -74,7 +78,7 @@ const ArticlePage = ({
       content: formContent,
       authorName: formAuthorName,
       category: formCategory,
-      imageUrl: finalImageUrl,
+      imageUrl: formImageInput,
     });
 
     if (success) {
@@ -82,9 +86,10 @@ const ArticlePage = ({
       setDisplayTitle(formTitle);
       setDisplayContent(formContent);
       setDisplayAuthorName(formAuthorName);
-      setDisplayImageUrl(finalImageUrl);
+      setDisplayImageUrl(formImageInput);
       setDisplayCreatedAt(newDate);
       setDisplayCategory(formCategory);
+      setDisplayImageCredits(formImageInputCredit);
       setIsEditing(false);
     } else {
       alert("Failed to update the article. Please try again.");
@@ -156,11 +161,18 @@ const ArticlePage = ({
           </p>
           <div className={"flex flex-col justify-center items-center"}>
             {displayImageUrl ? (
-              <img
-                src={displayImageUrl}
-                alt={`${displayTitle} image`}
-                className={"object-contain w-full h-full rounded max-w-[650px]"}
-              />
+              <div>
+                <img
+                  src={displayImageUrl}
+                  alt={`${displayTitle} image`}
+                  className={
+                    "object-contain w-full h-full rounded max-w-[650px]"
+                  }
+                />
+                <p className={"text-sm text-neutral-400 text-center mt-2"}>
+                  Image sourced from {displayImageCredits}
+                </p>
+              </div>
             ) : (
               <img
                 src={"/no-image-icon.png"}
@@ -209,8 +221,8 @@ const ArticlePage = ({
             placeholder="Content"
           />
           <select
-            className={"w-fit bg-gray-50 p-3 border"}
-            value={category}
+            className={"w-fit bg-gray-50 p-3 border cursor-pointer"}
+            value={formCategory}
             onChange={(e) => {
               setFormCategory(e.target.value as CategoryOptionsType);
             }}
@@ -229,18 +241,25 @@ const ArticlePage = ({
             onChange={(e) => setFormImageInput(e.target.value)}
             placeholder="Image URL or filename (with extension)"
           />
+          <input
+            type="text"
+            placeholder="Sourced from..."
+            className={"border px-3 py-2 w-1/2"}
+            value={formImageInputCredit}
+            onChange={(e) => setFormImageInputCredit(e.target.value)}
+          />
 
           <div className={"flex gap-3"}>
             <button
               className={
-                "bg-gray-900 text-white px-6 py-2 rounded hover:bg-gray-700"
+                "bg-gray-900 text-white px-6 py-2 rounded hover:bg-gray-700 cursor-pointer"
               }
               onClick={onSave}
             >
               Save
             </button>
             <button
-              className={"border px-6 py-2 rounded hover:bg-gray-100"}
+              className={"border px-6 py-2 rounded hover:bg-gray-100 cursor-pointer"}
               onClick={() => setIsEditing(false)}
             >
               Cancel

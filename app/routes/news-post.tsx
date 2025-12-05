@@ -40,6 +40,7 @@ const NewsPost = () => {
         authorName={!(post.authorName.length === 0) ? post.authorName : "Anonymous"}
         category={post.category}
         authorID={post.authorID}
+        imageCredit={post.imageCredit}
       />
     </main>
   );

@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="12/03/25 - Added images to the post section">
+    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="12/05/25 - Fixed images issue">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/DetailedPostPreview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/DetailedPostPreview.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/news-post.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/news-post.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sections/article/ArticlePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/article/ArticlePage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sections/news/CreateArticle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/news/CreateArticle.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/types/post.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/post.d.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,14 +200,7 @@
       <workItem from="1764012903637" duration="13000" />
       <workItem from="1764257635369" duration="24000" />
       <workItem from="1764785664493" duration="2173000" />
-    </task>
-    <task id="LOCAL-00024" summary="Bug Fix I - 10/13/25">
-      <option name="closed" value="true" />
-      <created>1760408942580</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1760408942580</updated>
+      <workItem from="1764957683873" duration="3123000" />
     </task>
     <task id="LOCAL-00025" summary="Update VI">
       <option name="closed" value="true" />
@@ -588,14 +586,21 @@
       <option name="project" value="LOCAL" />
       <updated>1764786682687</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="12/05/25 - Fixed images issue">
+      <option name="closed" value="true" />
+      <created>1764957834160</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1764957834160</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Footer Update I" />
     <MESSAGE value="10/27/25 - Bug Fix II" />
     <MESSAGE value="10/27/25 - Customer Change Request II" />
     <MESSAGE value="10/28/25 - Mobile View Changes" />
@@ -620,6 +625,7 @@
     <MESSAGE value="11/24/25 - Create auth redirect" />
     <MESSAGE value="12/03/25 - Changed the order of the posts" />
     <MESSAGE value="12/03/25 - Added images to the post section" />
-    <option name="LAST_COMMIT_MESSAGE" value="12/03/25 - Added images to the post section" />
+    <MESSAGE value="12/05/25 - Fixed images issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="12/05/25 - Fixed images issue" />
   </component>
 </project>
