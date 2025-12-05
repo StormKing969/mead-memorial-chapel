@@ -31,13 +31,13 @@ const CreateArticle = () => {
     const date = new Date();
     const formattedDate = date.toLocaleDateString("en-US");
 
-    if (
-      imageName.length !== 0 &&
-      !imageName.endsWith(".jpg") &&
-      !imageName.endsWith(".png") &&
-      !imageName.endsWith(".svg")
-    ) {
-      alert("Image name must end with .jpg, .png, or .svg");
+    if (imageName.length !== 0 && !imageName.startsWith("http")) {
+      if (
+        !imageName.endsWith(".jpg") &&
+        !imageName.endsWith(".png") &&
+        !imageName.endsWith(".svg")
+      )
+        alert("Image name must end with .jpg, .png, or .svg");
       return;
     }
 

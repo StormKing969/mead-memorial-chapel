@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="12/03/25 - Changed the order of the posts" />
+    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="12/03/25 - Added images to the post section">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,7 +66,7 @@
     &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Work/Web Development/mead-memorial-chapel&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Work/Web Development/mead-memorial-chapel/public/news/lawsuit&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -90,14 +92,16 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Work\Web Development\mead-memorial-chapel\public\news\lawsuit" />
+      <recent name="C:\Work\Web Development\mead-memorial-chapel\public\news" />
       <recent name="C:\Work\Web Development\mead-memorial-chapel\constants\about" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Work\Web Development\mead-memorial-chapel\public\news\lawsuit" />
       <recent name="C:\Work\Web Development\mead-memorial-chapel\public\lawsuit\documents\opposition-to-motion-for-reconsideration" />
       <recent name="C:\Work\Web Development\mead-memorial-chapel\public\lawsuit\documents\appellate-printed-case-materials" />
       <recent name="C:\Work\Web Development\mead-memorial-chapel\public\lawsuit\documents\amicus-brief-update" />
       <recent name="C:\Work\Web Development\mead-memorial-chapel\public\lawsuit\documents\supreme-court-entry-order" />
-      <recent name="C:\Work\Web Development\mead-memorial-chapel\public" />
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
@@ -190,15 +194,7 @@
       <workItem from="1764012537060" duration="356000" />
       <workItem from="1764012903637" duration="13000" />
       <workItem from="1764257635369" duration="24000" />
-      <workItem from="1764785664493" duration="739000" />
-    </task>
-    <task id="LOCAL-00023" summary="Customer Changes III">
-      <option name="closed" value="true" />
-      <created>1760406545737</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1760406545737</updated>
+      <workItem from="1764785664493" duration="2173000" />
     </task>
     <task id="LOCAL-00024" summary="Bug Fix I - 10/13/25">
       <option name="closed" value="true" />
@@ -584,14 +580,21 @@
       <option name="project" value="LOCAL" />
       <updated>1764786197097</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="12/03/25 - Added images to the post section">
+      <option name="closed" value="true" />
+      <created>1764786682687</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1764786682687</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Bug Fix II" />
     <MESSAGE value="Footer Update I" />
     <MESSAGE value="10/27/25 - Bug Fix II" />
     <MESSAGE value="10/27/25 - Customer Change Request II" />
@@ -616,6 +619,7 @@
     <MESSAGE value="11/24/25 - Bug Fix II" />
     <MESSAGE value="11/24/25 - Create auth redirect" />
     <MESSAGE value="12/03/25 - Changed the order of the posts" />
-    <option name="LAST_COMMIT_MESSAGE" value="12/03/25 - Changed the order of the posts" />
+    <MESSAGE value="12/03/25 - Added images to the post section" />
+    <option name="LAST_COMMIT_MESSAGE" value="12/03/25 - Added images to the post section" />
   </component>
 </project>
