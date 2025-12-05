@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import type { CategoryOptionsType, Post } from "../../../types/post";
 import {
   deletePostById,
@@ -13,7 +13,7 @@ import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 import "../../audio.css";
 
-const ArticlePage = async ({
+const ArticlePage = ({
   id,
   title,
   createdAt,
@@ -38,16 +38,22 @@ const ArticlePage = async ({
   const [displayCreatedAt, setDisplayCreatedAt] = useState<string | undefined>(
     createdAt,
   );
+  useEffect(() => {
+    let cancelled = false;
+    const resolveLink = async () => {
+      if (!imageUrl || !imageUrl.endsWith(".mp3")) return;
+      const fileName = imageUrl.substring(imageUrl.lastIndexOf("/") + 1);
+      const url = await getGoogleLink(fileName);
+      if (!cancelled && url) {
+        setDisplayImageUrl(url);
+      }
+    };
+    resolveLink();
 
-  if (imageUrl.endsWith(".mp3")) {
-    const url = await getGoogleLink(
-      imageUrl.substring(imageUrl.lastIndexOf("/") + 1),
-    );
-
-    if (url) {
-      setDisplayImageUrl(url);
-    }
-  }
+    return () => {
+      cancelled = true;
+    };
+  }, [imageUrl]);
 
   // Edit mode states
   const [isEditing, setIsEditing] = useState<boolean>(false);

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import type { Post } from "../../types/post";
 import { Link } from "react-router";
 import AudioPlayer from "react-h5-audio-player";
@@ -6,22 +6,31 @@ import "react-h5-audio-player/lib/styles.css";
 import "../audio.css";
 import { getGoogleLink } from "~/lib/firebase";
 
-const DetailedPostPreview = async ({
+const DetailedPostPreview = ({
   post: { id, title, content, authorName, createdAt, imageUrl, category },
 }: {
   post: Post;
 }) => {
   const [trueLink, setTrueLink] = useState<string>(imageUrl);
 
-  if (imageUrl.endsWith(".mp3")) {
-    const url = await getGoogleLink(
-      imageUrl.substring(imageUrl.lastIndexOf("/") + 1),
-    );
+  useEffect(() => {
+    let cancelled = false;
 
-    if (url) {
-      setTrueLink(url);
-    }
-  }
+    const resolveLink = async () => {
+      if (!imageUrl || !imageUrl.endsWith(".mp3")) return;
+      const fileName = imageUrl.substring(imageUrl.lastIndexOf("/") + 1);
+      const url = await getGoogleLink(fileName);
+      if (!cancelled && url) {
+        setTrueLink(url);
+      }
+    };
+
+    resolveLink();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [imageUrl]);
 
   return (
     <article

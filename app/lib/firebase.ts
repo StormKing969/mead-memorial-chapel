@@ -192,18 +192,39 @@ export async function updatePostById(
 }
 
 export async function getGoogleLink(inputtedFileName: string) {
-    const q = query(
-        collection(db, "googleAudioMap"),
-        where("fileName", "==", inputtedFileName)
-    );
-    const querySnapshot = await getDocs(q);
-    if (querySnapshot.empty) {
-        console.log("No matching documents.");
-        return null;
+    // Simple in-memory cache to avoid repeated Firestore reads
+    // across components/renders for the same file name.
+    // Note: cache lifespan is per page load.
+    if (!(globalThis as any).__googleLinkCache) {
+      (globalThis as any).__googleLinkCache = new Map<string, string | null>();
+    }
+    const cache: Map<string, string | null> = (globalThis as any).__googleLinkCache;
+
+    const cached = cache.get(inputtedFileName);
+    if (cached !== undefined) {
+      return cached;
     }
 
-    const docSnap = querySnapshot.docs[0];
-    const data = docSnap.data();
+    try {
+      const q = query(
+        collection(db, "googleAudioMap"),
+        where("fileName", "==", inputtedFileName)
+      );
+      const querySnapshot = await getDocs(q);
+      if (querySnapshot.empty) {
+        console.log("No matching documents.");
+        cache.set(inputtedFileName, null);
+        return null;
+      }
 
-    return data.googleLink || null;
+      const docSnap = querySnapshot.docs[0];
+      const data = docSnap.data() as { googleLink?: string };
+      const link = data.googleLink || null;
+      cache.set(inputtedFileName, link);
+      return link;
+    } catch (e) {
+      console.error("Failed to fetch google link:", e);
+      cache.set(inputtedFileName, null);
+      return null;
+    }
 }
