@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="12/05/25 - Added audio">
-      <change afterPath="$PROJECT_DIR$/app/audio.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="12/05/25 - Audio Bug Fix IV">
+      <change beforePath="$PROJECT_DIR$/app/audio.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/DetailedPostPreview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/DetailedPostPreview.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/PreviewPost.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/PreviewPost.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/lib/firebase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/lib/firebase.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/sections/article/ArticlePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/article/ArticlePage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/sections/news/CreateArticle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/news/CreateArticle.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -205,55 +203,7 @@
       <workItem from="1764785664493" duration="2173000" />
       <workItem from="1764957683873" duration="3169000" />
       <workItem from="1764961105130" duration="1965000" />
-      <workItem from="1764965006622" duration="5013000" />
-    </task>
-    <task id="LOCAL-00028" summary="Temp Updates II">
-      <option name="closed" value="true" />
-      <created>1760538925314</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1760538925314</updated>
-    </task>
-    <task id="LOCAL-00029" summary="Petition Update I">
-      <option name="closed" value="true" />
-      <created>1760641803197</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1760641803197</updated>
-    </task>
-    <task id="LOCAL-00030" summary="Petition Update II">
-      <option name="closed" value="true" />
-      <created>1760645514874</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1760645514874</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Petition Update III">
-      <option name="closed" value="true" />
-      <created>1760646321224</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1760646321224</updated>
-    </task>
-    <task id="LOCAL-00032" summary="Document Categorization">
-      <option name="closed" value="true" />
-      <created>1760823523083</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1760823523083</updated>
-    </task>
-    <task id="LOCAL-00033" summary="Document Categorization I">
-      <option name="closed" value="true" />
-      <created>1760826446120</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1760826446120</updated>
+      <workItem from="1764965006622" duration="7424000" />
     </task>
     <task id="LOCAL-00034" summary="Location Map">
       <option name="closed" value="true" />
@@ -599,18 +549,61 @@
       <option name="project" value="LOCAL" />
       <updated>1764963010550</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="12/05/25 - Added audio">
+      <option name="closed" value="true" />
+      <created>1764970094812</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1764970094812</updated>
+    </task>
+    <task id="LOCAL-00078" summary="12/05/25 - Added audio II">
+      <option name="closed" value="true" />
+      <created>1764970212493</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1764970212493</updated>
+    </task>
+    <task id="LOCAL-00079" summary="12/05/25 - Audio Bug Fix">
+      <option name="closed" value="true" />
+      <created>1764970791157</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1764970791157</updated>
+    </task>
+    <task id="LOCAL-00080" summary="12/05/25 - Audio Bug Fix II">
+      <option name="closed" value="true" />
+      <created>1764971370393</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1764971370393</updated>
+    </task>
+    <task id="LOCAL-00081" summary="12/05/25 - Audio Bug Fix III">
+      <option name="closed" value="true" />
+      <created>1764971545466</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1764971545466</updated>
+    </task>
+    <task id="LOCAL-00082" summary="12/05/25 - Audio Bug Fix III">
+      <option name="closed" value="true" />
+      <created>1764971693933</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1764971693933</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="10/30/25 - Delete article and back button on article" />
-    <MESSAGE value="10/30/25 - Added 'Edit' functionality" />
-    <MESSAGE value="10/30/25 - Client Change Request" />
-    <MESSAGE value="10/31/25 - Timeline Update &amp; Lawsuit Intro Text" />
-    <MESSAGE value="11/16/25 - Updated Key Parties Invloved" />
     <MESSAGE value="11/16/25 - Updated legal documents" />
     <MESSAGE value="11/21/25 - Bug Fixes I" />
     <MESSAGE value="11/21/25 - Bug Fixes II" />
@@ -631,6 +624,11 @@
     <MESSAGE value="12/05/25 - Small styling fix &amp; bug fix" />
     <MESSAGE value="12/05/25 - More bug fixes" />
     <MESSAGE value="12/05/25 - Added audio" />
-    <option name="LAST_COMMIT_MESSAGE" value="12/05/25 - Added audio" />
+    <MESSAGE value="12/05/25 - Added audio II" />
+    <MESSAGE value="12/05/25 - Audio Bug Fix" />
+    <MESSAGE value="12/05/25 - Audio Bug Fix II" />
+    <MESSAGE value="12/05/25 - Audio Bug Fix III" />
+    <MESSAGE value="12/05/25 - Audio Bug Fix IV" />
+    <option name="LAST_COMMIT_MESSAGE" value="12/05/25 - Audio Bug Fix IV" />
   </component>
 </project>

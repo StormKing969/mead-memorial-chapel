@@ -9,9 +9,6 @@ import {
 import { useNavigate } from "react-router";
 import Linkify from "linkify-react";
 import { CategoriesOptions } from "~/sections/news/CreateArticle";
-import AudioPlayer from "react-h5-audio-player";
-import "react-h5-audio-player/lib/styles.css";
-import "../../audio.css";
 
 const ArticlePage = ({
   id,
@@ -38,24 +35,6 @@ const ArticlePage = ({
   const [displayCreatedAt, setDisplayCreatedAt] = useState<string | undefined>(
     createdAt,
   );
-  useEffect(() => {
-    let cancelled = false;
-    const resolveLink = async () => {
-      if (!imageUrl || !imageUrl.endsWith(".mp3")) return;
-      const fileName = imageUrl.substring(imageUrl.lastIndexOf("/") + 1);
-      const url = await getGoogleLink(fileName);
-      if (!cancelled && url) {
-        setDisplayImageUrl(url);
-      } else {
-          setDisplayImageUrl("");
-      }
-    };
-    resolveLink();
-
-    return () => {
-      cancelled = true;
-    };
-  }, [imageUrl]);
 
   // Edit mode states
   const [isEditing, setIsEditing] = useState<boolean>(false);
@@ -138,6 +117,25 @@ const ArticlePage = ({
     rel: "noopener noreferrer",
   };
 
+  const [trueLink, setTrueLink] = useState<string>("");
+
+  useEffect(() => {
+    let cancelled = false;
+    const resolveLink = async () => {
+      if (!imageUrl || !imageUrl.endsWith(".mp3")) return;
+      const fileName = imageUrl.substring(imageUrl.lastIndexOf("/") + 1);
+      const url = await getGoogleLink(fileName);
+      if (!cancelled && url) {
+        setTrueLink(url);
+      }
+    };
+    resolveLink();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [imageUrl]);
+
   return (
     <article
       className={
@@ -198,8 +196,12 @@ const ArticlePage = ({
           <div className={"flex flex-col justify-center items-center"}>
             {displayImageUrl ? (
               displayImageUrl.endsWith(".mp3") ? (
-                <div className={"w-full"}>
-                  <AudioPlayer autoPlay={false} src={displayImageUrl} />
+                <div className={"w-full h-fit"}>
+                  <iframe
+                    src={trueLink}
+                    width={"100%"}
+                    height={"100%"}
+                  ></iframe>
                 </div>
               ) : (
                 <div>

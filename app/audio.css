@@ -1,5 +1,0 @@
-@import "tailwindcss";
-
-.rhap_container {
-    @apply bg-neutral-200 rounded-2xl shadow-lg;
-}

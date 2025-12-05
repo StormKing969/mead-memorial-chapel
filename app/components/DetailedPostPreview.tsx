@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from "react";
 import type { Post } from "../../types/post";
 import { Link } from "react-router";
-import AudioPlayer from "react-h5-audio-player";
-import "react-h5-audio-player/lib/styles.css";
-import "../audio.css";
 import { getGoogleLink } from "~/lib/firebase";
 
 const DetailedPostPreview = ({
@@ -39,8 +36,8 @@ const DetailedPostPreview = ({
     >
       {imageUrl ? (
         imageUrl.endsWith(".mp3") ? (
-          <div className={"w-full"}>
-            <AudioPlayer autoPlay={false} src={trueLink} />
+          <div className={"w-full h-fit"}>
+              <iframe src={trueLink} width={"100%"} height={"100%"}></iframe>
           </div>
         ) : (
           <img

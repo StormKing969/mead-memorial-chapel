@@ -198,14 +198,14 @@ export async function getGoogleLink(inputtedFileName: string) {
     if (!(globalThis as any).__googleLinkCache) {
       (globalThis as any).__googleLinkCache = new Map<string, string | null>();
     }
-    const cache: Map<string, string | null> = (globalThis as any).__googleLinkCache;
 
+    const cache: Map<string, string | null> = (globalThis as any).__googleLinkCache;
     const cached = cache.get(inputtedFileName);
     if (cached !== undefined) {
       return cached;
     }
-    console.log("inputtedFileName: ", inputtedFileName);
 
+    console.log("inputtedFileName: ", inputtedFileName);
     try {
       const q = query(
         collection(db, "googleAudioMap"),
