@@ -37,11 +37,14 @@ const ArticlePage = ({
   const [formContent, setFormContent] = useState<string>(displayContent);
   const [formAuthorName, setFormAuthorName] =
     useState<string>(displayAuthorName);
-  const [formImageInput, setFormImageInput] = useState<string>(displayImageUrl);
+  const [formImageInput, setFormImageInput] = useState<string>(
+    displayImageUrl.substring(displayImageUrl.lastIndexOf("/") + 1),
+  );
   const [formImageInputCredit, setFormImageInputCredit] =
     useState<string>(displayImageCredits);
-  const [formCategory, setFormCategory] =
-    useState<CategoryOptionsType>(displayCategory as CategoryOptionsType);
+  const [formCategory, setFormCategory] = useState<CategoryOptionsType>(
+    displayCategory as CategoryOptionsType,
+  );
 
   const validateImageInput = (input: string) => {
     if (!input || input.length === 0) return true;
@@ -57,6 +60,7 @@ const ArticlePage = ({
       return;
     }
 
+    let finalImageUrl = "";
     if (!validateImageInput(formImageInput)) {
       alert("Image name must end with .jpg, .png, or .svg");
       return;
@@ -67,6 +71,10 @@ const ArticlePage = ({
         alert("This image is not yours. Please acknowledge the owner!");
         return;
       }
+      finalImageUrl = formImageInput;
+    } else {
+      finalImageUrl =
+        "/news/" + formCategory.toLowerCase() + "/" + formImageInput;
     }
 
     if (formAuthorName.length === 0) {
@@ -78,7 +86,8 @@ const ArticlePage = ({
       content: formContent,
       authorName: formAuthorName,
       category: formCategory,
-      imageUrl: formImageInput,
+      imageUrl: finalImageUrl,
+      imageCredit: formImageInputCredit,
     });
 
     if (success) {
@@ -86,7 +95,7 @@ const ArticlePage = ({
       setDisplayTitle(formTitle);
       setDisplayContent(formContent);
       setDisplayAuthorName(formAuthorName);
-      setDisplayImageUrl(formImageInput);
+      setDisplayImageUrl(finalImageUrl);
       setDisplayCreatedAt(newDate);
       setDisplayCategory(formCategory);
       setDisplayImageCredits(formImageInputCredit);
@@ -169,9 +178,11 @@ const ArticlePage = ({
                     "object-contain w-full h-full rounded max-w-[650px]"
                   }
                 />
-                <p className={"text-sm text-neutral-400 text-center mt-2"}>
-                  Image sourced from {displayImageCredits}
-                </p>
+                {displayImageCredits && (
+                  <p className={"text-sm text-neutral-400 text-center mt-2"}>
+                    Image sourced from {displayImageCredits}
+                  </p>
+                )}
               </div>
             ) : (
               <img
@@ -259,7 +270,9 @@ const ArticlePage = ({
               Save
             </button>
             <button
-              className={"border px-6 py-2 rounded hover:bg-gray-100 cursor-pointer"}
+              className={
+                "border px-6 py-2 rounded hover:bg-gray-100 cursor-pointer"
+              }
               onClick={() => setIsEditing(false)}
             >
               Cancel

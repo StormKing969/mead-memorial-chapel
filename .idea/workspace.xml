@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="12/05/25 - Fixed bugs and crediting issues" />
+    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="12/05/25 - Small styling fix &amp; bug fix">
+      <change beforePath="$PROJECT_DIR$/app/lib/firebase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/lib/firebase.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sections/article/ArticlePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/article/ArticlePage.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -194,14 +197,7 @@
       <workItem from="1764257635369" duration="24000" />
       <workItem from="1764785664493" duration="2173000" />
       <workItem from="1764957683873" duration="3169000" />
-    </task>
-    <task id="LOCAL-00026" summary="Update VII">
-      <option name="closed" value="true" />
-      <created>1760411366847</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1760411366847</updated>
+      <workItem from="1764961105130" duration="1874000" />
     </task>
     <task id="LOCAL-00027" summary="Temp Updates I">
       <option name="closed" value="true" />
@@ -587,14 +583,21 @@
       <option name="project" value="LOCAL" />
       <updated>1764960859025</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="12/05/25 - Small styling fix &amp; bug fix">
+      <option name="closed" value="true" />
+      <created>1764961407709</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1764961407709</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="10/27/25 - Customer Change Request II" />
     <MESSAGE value="10/28/25 - Mobile View Changes" />
     <MESSAGE value="10/28/25 - Mobile View Changes II" />
     <MESSAGE value="10/30/25 - Delete article and back button on article" />
@@ -619,6 +622,7 @@
     <MESSAGE value="12/03/25 - Added images to the post section" />
     <MESSAGE value="12/05/25 - Fixed images issue" />
     <MESSAGE value="12/05/25 - Fixed bugs and crediting issues" />
-    <option name="LAST_COMMIT_MESSAGE" value="12/05/25 - Fixed bugs and crediting issues" />
+    <MESSAGE value="12/05/25 - Small styling fix &amp; bug fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="12/05/25 - Small styling fix &amp; bug fix" />
   </component>
 </project>

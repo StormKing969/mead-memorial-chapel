@@ -160,7 +160,7 @@ export async function deletePostById(id: string) {
 export async function updatePostById(
   id: string,
   data: Partial<
-    Pick<Post, "title" | "content" | "authorName" | "imageUrl" | "category">
+    Pick<Post, "title" | "content" | "authorName" | "imageUrl" | "imageCredit" | "category">
   >,
 ) {
   try {
