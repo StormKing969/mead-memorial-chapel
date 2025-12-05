@@ -1,25 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router";
 import type { Post } from "../../types/post";
+import AudioPlayer from "react-h5-audio-player";
+import "react-h5-audio-player/lib/styles.css";
+import "../audio.css";
+import { getGoogleLink } from "~/lib/firebase";
 
-const PreviewPost = ({
+const PreviewPost = async ({
   post: { id, title, content, imageUrl },
 }: {
   post: Post;
 }) => {
+  const [trueLink, setTrueLink] = useState<string>(imageUrl);
+
+  if (imageUrl.endsWith(".mp3")) {
+    const url = await getGoogleLink(
+      imageUrl.substring(imageUrl.lastIndexOf("/") + 1),
+    );
+
+    if (url) {
+      setTrueLink(url);
+    }
+  }
+
   return (
     <div className={"relative bg-gray-50 rounded-lg shadow-md overflow-hidden"}>
       {imageUrl ? (
-        <img
-          src={imageUrl}
-          alt={`${title} thumbnail`}
-          className={"h-48 w-full object-cover"}
-        />
+        imageUrl.endsWith(".mp3") ? (
+          <div className={"w-full"}>
+            <AudioPlayer autoPlay={false} src={trueLink} />
+          </div>
+        ) : (
+          <img
+            src={imageUrl}
+            alt={`${title} thumbnail`}
+            className={"h-48 w-full object-cover"}
+            loading={"lazy"}
+          />
+        )
       ) : (
         <img
           src={"/no-image-icon.png"}
           alt={`${title} thumbnail`}
           className={"h-48 w-full object-contain overflow-hidden"}
+          loading={"lazy"}
         />
       )}
 

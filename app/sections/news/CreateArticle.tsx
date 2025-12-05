@@ -32,7 +32,11 @@ const CreateArticle = () => {
     const date = new Date();
     const formattedDate = date.toLocaleDateString("en-US");
 
-    if (imageName.length !== 0 && !imageName.startsWith("http")) {
+    if (
+      imageName.length !== 0 &&
+      !imageName.startsWith("http") &&
+      !imageName.endsWith(".mp3")
+    ) {
       if (
         !imageName.endsWith(".jpg") &&
         !imageName.endsWith(".png") &&

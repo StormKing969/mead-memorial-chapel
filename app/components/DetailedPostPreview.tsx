@@ -1,24 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 import type { Post } from "../../types/post";
 import { Link } from "react-router";
+import AudioPlayer from "react-h5-audio-player";
+import "react-h5-audio-player/lib/styles.css";
+import "../audio.css";
+import { getGoogleLink } from "~/lib/firebase";
 
-const DetailedPostPreview = ({
+const DetailedPostPreview = async ({
   post: { id, title, content, authorName, createdAt, imageUrl, category },
 }: {
   post: Post;
 }) => {
+  const [trueLink, setTrueLink] = useState<string>(imageUrl);
+
+  if (imageUrl.endsWith(".mp3")) {
+    const url = await getGoogleLink(
+      imageUrl.substring(imageUrl.lastIndexOf("/") + 1),
+    );
+
+    if (url) {
+      setTrueLink(url);
+    }
+  }
+
   return (
     <article
       key={id}
       className={"bg-white shadow-md rounded-lg overflow-hidden flex flex-col"}
     >
       {imageUrl ? (
-        <img
-          src={imageUrl}
-          alt={`${title} thumbnail`}
-          className={"h-48 w-full object-cover"}
-          loading={"lazy"}
-        />
+        imageUrl.endsWith(".mp3") ? (
+          <div className={"w-full"}>
+            <AudioPlayer autoPlay={false} src={trueLink} />
+          </div>
+        ) : (
+          <img
+            src={imageUrl}
+            alt={`${title} thumbnail`}
+            className={"h-48 w-full object-cover"}
+            loading={"lazy"}
+          />
+        )
       ) : (
         <img
           src={"/no-image-icon.png"}

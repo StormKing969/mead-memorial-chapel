@@ -1,11 +1,19 @@
 import React, { useState } from "react";
 import type { CategoryOptionsType, Post } from "../../../types/post";
-import { deletePostById, updatePostById, useAuth } from "~/lib/firebase";
+import {
+  deletePostById,
+  getGoogleLink,
+  updatePostById,
+  useAuth,
+} from "~/lib/firebase";
 import { useNavigate } from "react-router";
 import Linkify from "linkify-react";
 import { CategoriesOptions } from "~/sections/news/CreateArticle";
+import AudioPlayer from "react-h5-audio-player";
+import "react-h5-audio-player/lib/styles.css";
+import "../../audio.css";
 
-const ArticlePage = ({
+const ArticlePage = async ({
   id,
   title,
   createdAt,
@@ -31,6 +39,16 @@ const ArticlePage = ({
     createdAt,
   );
 
+  if (imageUrl.endsWith(".mp3")) {
+    const url = await getGoogleLink(
+      imageUrl.substring(imageUrl.lastIndexOf("/") + 1),
+    );
+
+    if (url) {
+      setDisplayImageUrl(url);
+    }
+  }
+
   // Edit mode states
   const [isEditing, setIsEditing] = useState<boolean>(false);
   const [formTitle, setFormTitle] = useState<string>(displayTitle);
@@ -49,6 +67,7 @@ const ArticlePage = ({
   const validateImageInput = (input: string) => {
     if (!input || input.length === 0) return true;
     if (input.startsWith("https://")) return true;
+    if (input.endsWith(".mp3")) return true;
     return (
       input.endsWith(".jpg") || input.endsWith(".png") || input.endsWith(".svg")
     );
@@ -170,20 +189,26 @@ const ArticlePage = ({
           </p>
           <div className={"flex flex-col justify-center items-center"}>
             {displayImageUrl ? (
-              <div>
-                <img
-                  src={displayImageUrl}
-                  alt={`${displayTitle} image`}
-                  className={
-                    "object-contain w-full h-full rounded max-w-[650px]"
-                  }
-                />
-                {displayImageCredits && (
-                  <p className={"text-sm text-neutral-400 text-center mt-2"}>
-                    Image sourced from {displayImageCredits}
-                  </p>
-                )}
-              </div>
+              displayImageUrl.endsWith(".mp3") ? (
+                <div className={"w-full"}>
+                  <AudioPlayer autoPlay={false} src={displayImageUrl} />
+                </div>
+              ) : (
+                <div>
+                  <img
+                    src={displayImageUrl}
+                    alt={`${displayTitle} image`}
+                    className={
+                      "object-contain w-full h-full rounded max-w-[650px]"
+                    }
+                  />
+                  {displayImageCredits && (
+                    <p className={"text-sm text-neutral-400 text-center mt-2"}>
+                      Image sourced from {displayImageCredits}
+                    </p>
+                  )}
+                </div>
+              )
             ) : (
               <img
                 src={"/no-image-icon.png"}

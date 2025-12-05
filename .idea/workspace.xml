@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="12/05/25 - Small styling fix &amp; bug fix">
+    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="12/05/25 - Added audio">
+      <change afterPath="$PROJECT_DIR$/app/audio.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/DetailedPostPreview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/DetailedPostPreview.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/PreviewPost.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/PreviewPost.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/lib/firebase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/lib/firebase.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/sections/article/ArticlePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/article/ArticlePage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sections/news/CreateArticle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/news/CreateArticle.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,15 +204,8 @@
       <workItem from="1764257635369" duration="24000" />
       <workItem from="1764785664493" duration="2173000" />
       <workItem from="1764957683873" duration="3169000" />
-      <workItem from="1764961105130" duration="1874000" />
-    </task>
-    <task id="LOCAL-00027" summary="Temp Updates I">
-      <option name="closed" value="true" />
-      <created>1760486579591</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1760486579591</updated>
+      <workItem from="1764961105130" duration="1965000" />
+      <workItem from="1764965006622" duration="5013000" />
     </task>
     <task id="LOCAL-00028" summary="Temp Updates II">
       <option name="closed" value="true" />
@@ -591,15 +591,21 @@
       <option name="project" value="LOCAL" />
       <updated>1764961407709</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="12/05/25 - More bug fixes">
+      <option name="closed" value="true" />
+      <created>1764963010550</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1764963010550</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="10/28/25 - Mobile View Changes" />
-    <MESSAGE value="10/28/25 - Mobile View Changes II" />
     <MESSAGE value="10/30/25 - Delete article and back button on article" />
     <MESSAGE value="10/30/25 - Added 'Edit' functionality" />
     <MESSAGE value="10/30/25 - Client Change Request" />
@@ -623,6 +629,8 @@
     <MESSAGE value="12/05/25 - Fixed images issue" />
     <MESSAGE value="12/05/25 - Fixed bugs and crediting issues" />
     <MESSAGE value="12/05/25 - Small styling fix &amp; bug fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="12/05/25 - Small styling fix &amp; bug fix" />
+    <MESSAGE value="12/05/25 - More bug fixes" />
+    <MESSAGE value="12/05/25 - Added audio" />
+    <option name="LAST_COMMIT_MESSAGE" value="12/05/25 - Added audio" />
   </component>
 </project>
