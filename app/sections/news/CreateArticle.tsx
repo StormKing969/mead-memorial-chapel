@@ -37,9 +37,10 @@ const CreateArticle = () => {
         !imageName.endsWith(".jpg") &&
         !imageName.endsWith(".png") &&
         !imageName.endsWith(".svg")
-      )
+      ) {
         alert("Image name must end with .jpg, .png, or .svg");
-      return;
+        return;
+      }
     }
 
     let imgUrl: string;
@@ -121,7 +122,7 @@ const CreateArticle = () => {
         />
 
         <select
-          className={"w-fit bg-gray-50 p-3 border"}
+          className={"w-fit bg-gray-50 p-3 border cursor-pointer"}
           value={category}
           onChange={(e) => {
             setCategory(e.target.value as CategoryOptionsType);
@@ -154,7 +155,7 @@ const CreateArticle = () => {
         <button
           type="submit"
           className={
-            "bg-gray-900 text-white px-6 py-2 rounded hover:bg-gray-700"
+            "bg-gray-900 text-white px-6 py-2 rounded hover:bg-gray-700 cursor-pointer"
           }
         >
           Publish
