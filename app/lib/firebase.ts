@@ -204,6 +204,7 @@ export async function getGoogleLink(inputtedFileName: string) {
     if (cached !== undefined) {
       return cached;
     }
+    console.log("inputtedFileName: ", inputtedFileName);
 
     try {
       const q = query(
