@@ -191,11 +191,12 @@ export async function updatePostById(
   }
 }
 
-export async function getGoogleLink(fileName: string) {
-    const q = query(collection(db, "googleAudioMap"), where("fileName", "==", fileName));
-
+export async function getGoogleLink(inputtedFileName: string) {
+    const q = query(
+        collection(db, "googleAudioMap"),
+        where("fileName", "==", inputtedFileName)
+    );
     const querySnapshot = await getDocs(q);
-
     if (querySnapshot.empty) {
         console.log("No matching documents.");
         return null;
@@ -203,5 +204,6 @@ export async function getGoogleLink(fileName: string) {
 
     const docSnap = querySnapshot.docs[0];
     const data = docSnap.data();
-    return data.googleLink;
+
+    return data.googleLink || null;
 }
