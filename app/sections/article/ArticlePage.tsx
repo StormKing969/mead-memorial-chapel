@@ -46,6 +46,8 @@ const ArticlePage = ({
       const url = await getGoogleLink(fileName);
       if (!cancelled && url) {
         setDisplayImageUrl(url);
+      } else {
+          setDisplayImageUrl("");
       }
     };
     resolveLink();

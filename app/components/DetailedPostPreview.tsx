@@ -11,7 +11,7 @@ const DetailedPostPreview = ({
 }: {
   post: Post;
 }) => {
-  const [trueLink, setTrueLink] = useState<string>(imageUrl);
+  const [trueLink, setTrueLink] = useState<string>("");
 
   useEffect(() => {
     let cancelled = false;
