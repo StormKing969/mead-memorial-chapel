@@ -29,6 +29,7 @@ export type DocumentTypes =
   | "Amicus Brief Update"
   | "Appellate Printed Case Materials"
   | "Opposition to Motion for Reconsideration"
+  | "Reply Brief"
   | null;
 
 /**

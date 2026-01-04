@@ -32,6 +32,7 @@ export const BaseFilePath = {
   "Appellate Printed Case Materials": "appellate-printed-case-materials",
   "Opposition to Motion for Reconsideration":
     "opposition-to-motion-for-reconsideration",
+  "Reply Brief": "reply-brief",
   null: "",
 };
 
@@ -52,6 +53,7 @@ export const DocumentCategories: { id: string; title: DocumentTypes }[] = [
   { id: "06", title: "Supreme Court Entry Order" },
   { id: "07", title: "Amicus Brief Update" },
   { id: "08", title: "Appellate Printed Case Materials" },
+  { id: "09", title: "Reply Brief" },
 ];
 
 /**
@@ -307,4 +309,38 @@ export const Files: DocumentObj[] = [
     videoLink: null,
   },
   //################## Appellate Printed Case Materials ##################
+
+  //################## Reply Brief ##################
+  {
+    title: "Appellant's Reply Brief",
+    category: "Reply Brief",
+    date: "2025-01-01",
+    fileName: "Appellant's Reply Brief.pdf",
+    videoLink: null,
+  },
+  //################## Reply Brief ##################
+
+  //################## Amicus Brief Motion Granted ##################
+  {
+    title: "Appellant's Corrected Brief",
+    category: "Amicus Brief Motion Granted",
+    date: "2026-01-02",
+    fileName: "Appellant's Corrected Brief - for filing.pdf",
+    videoLink: null,
+  },
+  {
+    title: "Appellant's Corrected Brief (Redline/Strikeout)",
+    category: "Amicus Brief Motion Granted",
+    date: "2026-01-02",
+    fileName: "Appellant's Corrected Brief - Redline-Strikeout.pdf",
+    videoLink: null,
+  },
+  {
+    title: "Motion for Leave to Correct Brief",
+    category: "Amicus Brief Motion Granted",
+    date: "2026-01-02",
+    fileName: "Motion for Leave to Correct Brief.pdf",
+    videoLink: null,
+  },
+  //################## Amicus Brief Motion Granted ##################
 ];
