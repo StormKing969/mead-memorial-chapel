@@ -34,6 +34,7 @@ export const BaseFilePath = {
     "opposition-to-motion-for-reconsideration",
   "Reply Brief": "reply-brief",
   "Corrected Brief Filings": "corrected-brief-filings",
+  "Appellee Reply Brief": "appellee-reply-brief",
   null: "",
 };
 
@@ -56,6 +57,7 @@ export const DocumentCategories: { id: string; title: DocumentTypes }[] = [
   { id: "08", title: "Appellate Printed Case Materials" },
   { id: "09", title: "Reply Brief" },
   { id: "10", title: "Corrected Brief Filings" },
+  { id: "11", title: "Appellee Reply Brief" },
 ];
 
 /**
@@ -166,7 +168,7 @@ export const Files: DocumentObj[] = [
     title: "Appellant’s Brief",
     category: "Appeal to Vermont Supreme Court",
     date: "2025-09-22",
-    fileName: "Appellant's Brief Filed.pdf",
+    fileName: "Appellant's Corrected Principal Brief - for filing.pdf",
     videoLink: null,
   },
   {
@@ -342,6 +344,16 @@ export const Files: DocumentObj[] = [
     category: "Corrected Brief Filings",
     date: "2026-01-02",
     fileName: "Motion for Leave to Correct Brief.pdf",
+    videoLink: null,
+  },
+  //################## Amicus Brief Motion Granted ##################
+
+  //################## Amicus Brief Motion Granted ##################
+  {
+    title: "Appellee Middlebury College's Reply Brief",
+    category: "Appellee Reply Brief",
+    date: "2026-01-09",
+    fileName: "Appellee Middlebury College's Reply Brief - To E File.pdf",
     videoLink: null,
   },
   //################## Amicus Brief Motion Granted ##################

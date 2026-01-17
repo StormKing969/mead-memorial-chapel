@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="12/05/25 - Audio Bug Fix IV">
+    <list default="true" id="fbc11a09-4296-4d8a-b1b6-8e3276c1580e" name="Changes" comment="01/04/26 - Category Update">
+      <change afterPath="$PROJECT_DIR$/public/lawsuit/documents/appeal-to-vermont-supreme-court/Appellant's Corrected Principal Brief - for filing.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lawsuit/documents/appellee-reply-brief/Appellee Middlebury College's Reply Brief - To E File.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/constants/lawsuit/documents/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/constants/lawsuit/documents/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/lawsuit/documents/amicus-brief-motion-granted/Amicus Brief Motion Granted.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/public/lawsuit/documents/corrected-brief-filings/Amicus Brief Motion Granted.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/lawsuit/documents/amicus-brief-motion-granted/Appellant's Corrected Brief - Redline-Strikeout.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/public/lawsuit/documents/corrected-brief-filings/Appellant's Corrected Brief - Redline-Strikeout.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/lawsuit/documents/amicus-brief-motion-granted/Appellant's Corrected Brief - for filing.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/public/lawsuit/documents/corrected-brief-filings/Appellant's Corrected Brief - for filing.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/types/documents.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/documents.d.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,11 +103,11 @@
       <recent name="C:\Work\Web Development\mead-memorial-chapel\constants\about" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Work\Web Development\mead-memorial-chapel\public\lawsuit\documents\corrected-brief-filings" />
       <recent name="C:\Work\Web Development\mead-memorial-chapel\public\lawsuit\documents\amicus-brief-motion-granted" />
       <recent name="C:\Work\Web Development\mead-memorial-chapel\public\lawsuit\documents\reply-brief" />
       <recent name="C:\Work\Web Development\mead-memorial-chapel\public\news\lawsuit" />
       <recent name="C:\Work\Web Development\mead-memorial-chapel\public\lawsuit\documents\opposition-to-motion-for-reconsideration" />
-      <recent name="C:\Work\Web Development\mead-memorial-chapel\public\lawsuit\documents\appellate-printed-case-materials" />
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
@@ -144,7 +144,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-WS-253.29346.143" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-WS-253.29346.242" />
       </set>
     </attachedChunks>
   </component>
@@ -205,15 +205,10 @@
       <workItem from="1764961105130" duration="1965000" />
       <workItem from="1764965006622" duration="7424000" />
       <workItem from="1767543011701" duration="172000" />
-      <workItem from="1767543328705" duration="987000" />
-    </task>
-    <task id="LOCAL-00034" summary="Location Map">
-      <option name="closed" value="true" />
-      <created>1761162204133</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1761162204133</updated>
+      <workItem from="1767543328705" duration="1416000" />
+      <workItem from="1767749099409" duration="1481000" />
+      <workItem from="1767893957300" duration="512000" />
+      <workItem from="1768615288674" duration="671000" />
     </task>
     <task id="LOCAL-00035" summary="Footer Update">
       <option name="closed" value="true" />
@@ -599,14 +594,21 @@
       <option name="project" value="LOCAL" />
       <updated>1764971693933</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="01/04/26 - Category Update">
+      <option name="closed" value="true" />
+      <created>1767544393088</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1767544393088</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="11/16/25 - Updated legal documents" />
     <MESSAGE value="11/21/25 - Bug Fixes I" />
     <MESSAGE value="11/21/25 - Bug Fixes II" />
     <MESSAGE value="11/21/25 - Documents Update" />
@@ -631,6 +633,7 @@
     <MESSAGE value="12/05/25 - Audio Bug Fix II" />
     <MESSAGE value="12/05/25 - Audio Bug Fix III" />
     <MESSAGE value="12/05/25 - Audio Bug Fix IV" />
-    <option name="LAST_COMMIT_MESSAGE" value="12/05/25 - Audio Bug Fix IV" />
+    <MESSAGE value="01/04/26 - Category Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="01/04/26 - Category Update" />
   </component>
 </project>

@@ -31,6 +31,7 @@ export type DocumentTypes =
   | "Opposition to Motion for Reconsideration"
   | "Reply Brief"
   | "Corrected Brief Filings"
+  | "Appellee Reply Brief"
   | null;
 
 /**
